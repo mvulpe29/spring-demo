@@ -12,7 +12,7 @@ public class Address {
 
     private String streetName;
 
-    @OneToMany(mappedBy = "address")
+    @OneToMany(mappedBy = "address", orphanRemoval = true)
     private List<Person> people;
 
     public long getId() {

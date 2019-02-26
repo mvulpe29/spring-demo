@@ -11,12 +11,14 @@ public class Person {
 
     private String firstName;
     private String lastName;
+    private Boolean deleted;
 
     @ManyToOne
     @JoinColumn(name = "address_id")
     private Address address;
 
     public Person() {
+        this.deleted = false;
     }
 
     public long getId() {
@@ -49,5 +51,13 @@ public class Person {
 
     public void setAddress(Address address) {
         this.address = address;
+    }
+
+    public Boolean getDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(Boolean deleted) {
+        this.deleted = deleted;
     }
 }
