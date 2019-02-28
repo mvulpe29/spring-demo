@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+@SuppressWarnings("unchecked")
 @RepositoryRestController
 public class CompanyController {
 
@@ -31,16 +32,16 @@ public class CompanyController {
         this.companyRepository = companyRepository;
     }
 
-    @PreAuthorize("hasPermission(#name, 'read')")
-    @RequestMapping(method = RequestMethod.GET, path = "/companies", produces = "application/hal+json")
+    @PreAuthorize("hasPermission(#owner, 'read')")
+    @RequestMapping(method = RequestMethod.GET, path = "/companies/search/findAll", produces = "application/hal+json")
     public ResponseEntity<Page<Address>> getCompanies(
-            @Spec(path = "name", params = "filter[name][EQ]", spec = Equal.class) Specification<Company> specification,
-            @RequestParam("filter[name][EQ]") String name,
+            @Spec(path = "owner", params = "filter[owner][EQ]", spec = Equal.class) Specification<Company> specification,
+            @RequestParam("filter[owner][EQ]") String owner,
+            Pageable pageable,
             PersistentEntityResourceAssembler assembler) {
 
-        Page<Company> page = ((Page<Company>) this.companyRepository.findAll(specification, Pageable.unpaged()));
+        Page<Company> page = this.companyRepository.findAll(specification, pageable);
         PagedResources<Company> pagedResources = pagedAssembler.toResource(page, (ResourceAssembler) assembler);
-
         return new ResponseEntity(pagedResources, HttpStatus.OK);
     }
 }

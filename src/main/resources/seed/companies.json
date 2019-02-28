@@ -1,402 +1,502 @@
 [
     {
-        "name": "Vantage",
-        "registryNo": 6959
+        "name": "Equicom",
+        "owner": "mihai",
+        "registryNo": 9818
     },
     {
-        "name": "Zyple",
-        "registryNo": 9022
+        "name": "Isonus",
+        "owner": "mihai",
+        "registryNo": 6917
     },
     {
-        "name": "Dancity",
-        "registryNo": 3670
+        "name": "Exiand",
+        "owner": "mihai",
+        "registryNo": 1289
     },
     {
-        "name": "Turnling",
-        "registryNo": 7367
+        "name": "Geekular",
+        "owner": "user",
+        "registryNo": 7014
     },
     {
-        "name": "Hawkster",
-        "registryNo": 2831
+        "name": "Vidto",
+        "owner": "user",
+        "registryNo": 2351
     },
     {
-        "name": "Comtest",
-        "registryNo": 4289
+        "name": "Isologia",
+        "owner": "george",
+        "registryNo": 2975
     },
     {
-        "name": "Bittor",
-        "registryNo": 3531
+        "name": "Pasturia",
+        "owner": "mihai",
+        "registryNo": 4439
     },
     {
-        "name": "Digifad",
-        "registryNo": 6296
+        "name": "Qualitex",
+        "owner": "mihai",
+        "registryNo": 3981
     },
     {
-        "name": "Circum",
-        "registryNo": 4425
+        "name": "Sentia",
+        "owner": "user",
+        "registryNo": 2882
     },
     {
-        "name": "Zepitope",
-        "registryNo": 3119
+        "name": "Buzzmaker",
+        "owner": "mihai",
+        "registryNo": 9023
     },
     {
-        "name": "Greeker",
-        "registryNo": 6607
+        "name": "Exotechno",
+        "owner": "user",
+        "registryNo": 2354
     },
     {
-        "name": "Zounds",
-        "registryNo": 6861
+        "name": "Oatfarm",
+        "owner": "user",
+        "registryNo": 7055
     },
     {
         "name": "Memora",
-        "registryNo": 2598
+        "owner": "george",
+        "registryNo": 2438
     },
     {
-        "name": "Marqet",
-        "registryNo": 5489
+        "name": "Ecrater",
+        "owner": "user",
+        "registryNo": 8212
     },
     {
-        "name": "Ozean",
-        "registryNo": 3284
+        "name": "Tripsch",
+        "owner": "mihai",
+        "registryNo": 9607
     },
     {
-        "name": "Elentrix",
-        "registryNo": 1698
+        "name": "Kaggle",
+        "owner": "george",
+        "registryNo": 5759
     },
     {
-        "name": "Ecratic",
-        "registryNo": 3790
+        "name": "Orbaxter",
+        "owner": "user",
+        "registryNo": 6379
     },
     {
-        "name": "Mondicil",
-        "registryNo": 2793
+        "name": "Oronoko",
+        "owner": "george",
+        "registryNo": 6083
     },
     {
-        "name": "Telepark",
-        "registryNo": 2062
+        "name": "Avit",
+        "owner": "mihai",
+        "registryNo": 6263
     },
     {
-        "name": "Vixo",
-        "registryNo": 1430
+        "name": "Krag",
+        "owner": "mihai",
+        "registryNo": 6260
     },
     {
-        "name": "Navir",
-        "registryNo": 2100
+        "name": "Helixo",
+        "owner": "george",
+        "registryNo": 3214
     },
     {
-        "name": "Zerology",
-        "registryNo": 4090
+        "name": "Elpro",
+        "owner": "user",
+        "registryNo": 9816
     },
     {
-        "name": "Cogentry",
-        "registryNo": 3962
-    },
-    {
-        "name": "Rameon",
-        "registryNo": 4829
-    },
-    {
-        "name": "Harmoney",
-        "registryNo": 6903
-    },
-    {
-        "name": "Ecraze",
-        "registryNo": 8400
-    },
-    {
-        "name": "Rubadub",
-        "registryNo": 9760
-    },
-    {
-        "name": "Amtas",
-        "registryNo": 3432
-    },
-    {
-        "name": "Opticom",
-        "registryNo": 3542
-    },
-    {
-        "name": "Cormoran",
-        "registryNo": 8221
-    },
-    {
-        "name": "Ludak",
-        "registryNo": 2895
-    },
-    {
-        "name": "Honotron",
-        "registryNo": 7324
-    },
-    {
-        "name": "Junipoor",
-        "registryNo": 1834
-    },
-    {
-        "name": "Surelogic",
-        "registryNo": 4344
-    },
-    {
-        "name": "Gronk",
-        "registryNo": 8252
-    },
-    {
-        "name": "Quizmo",
-        "registryNo": 6354
-    },
-    {
-        "name": "Apextri",
-        "registryNo": 2865
-    },
-    {
-        "name": "Premiant",
-        "registryNo": 9927
-    },
-    {
-        "name": "Grainspot",
-        "registryNo": 5628
-    },
-    {
-        "name": "Scentric",
-        "registryNo": 6574
-    },
-    {
-        "name": "Isoplex",
-        "registryNo": 7608
-    },
-    {
-        "name": "Zytrek",
-        "registryNo": 8275
-    },
-    {
-        "name": "Tropolis",
-        "registryNo": 6099
-    },
-    {
-        "name": "Pharmex",
-        "registryNo": 1265
-    },
-    {
-        "name": "Medesign",
-        "registryNo": 4565
-    },
-    {
-        "name": "Amril",
-        "registryNo": 5182
-    },
-    {
-        "name": "Uberlux",
-        "registryNo": 5865
-    },
-    {
-        "name": "Limozen",
-        "registryNo": 4505
-    },
-    {
-        "name": "Xumonk",
-        "registryNo": 9998
-    },
-    {
-        "name": "Aquasseur",
-        "registryNo": 4050
-    },
-    {
-        "name": "Senmei",
-        "registryNo": 1090
-    },
-    {
-        "name": "Gadtron",
-        "registryNo": 3041
-    },
-    {
-        "name": "Polarium",
-        "registryNo": 8547
-    },
-    {
-        "name": "Straloy",
-        "registryNo": 3693
-    },
-    {
-        "name": "Zytrax",
-        "registryNo": 3538
-    },
-    {
-        "name": "Rodemco",
-        "registryNo": 6594
-    },
-    {
-        "name": "Dogspa",
-        "registryNo": 7881
-    },
-    {
-        "name": "Qiao",
-        "registryNo": 7879
-    },
-    {
-        "name": "Malathion",
-        "registryNo": 9521
-    },
-    {
-        "name": "Locazone",
-        "registryNo": 8321
-    },
-    {
-        "name": "Austech",
-        "registryNo": 2719
-    },
-    {
-        "name": "Magnafone",
-        "registryNo": 8282
-    },
-    {
-        "name": "Corporana",
-        "registryNo": 9510
-    },
-    {
-        "name": "Chillium",
-        "registryNo": 1372
-    },
-    {
-        "name": "Sealoud",
-        "registryNo": 3098
-    },
-    {
-        "name": "Extragene",
-        "registryNo": 7151
-    },
-    {
-        "name": "Talae",
-        "registryNo": 2951
-    },
-    {
-        "name": "Dreamia",
-        "registryNo": 8157
-    },
-    {
-        "name": "Centree",
-        "registryNo": 6658
-    },
-    {
-        "name": "Stockpost",
-        "registryNo": 7536
-    },
-    {
-        "name": "Intergeek",
-        "registryNo": 9581
-    },
-    {
-        "name": "Assistix",
-        "registryNo": 7366
-    },
-    {
-        "name": "Manufact",
-        "registryNo": 3042
-    },
-    {
-        "name": "Polaria",
-        "registryNo": 3579
-    },
-    {
-        "name": "Flotonic",
-        "registryNo": 1117
-    },
-    {
-        "name": "Entroflex",
-        "registryNo": 9140
-    },
-    {
-        "name": "Bovis",
-        "registryNo": 5782
-    },
-    {
-        "name": "Zensure",
-        "registryNo": 2788
-    },
-    {
-        "name": "Isodrive",
-        "registryNo": 6855
-    },
-    {
-        "name": "Krog",
-        "registryNo": 6424
-    },
-    {
-        "name": "Enthaze",
-        "registryNo": 2566
-    },
-    {
-        "name": "Qaboos",
-        "registryNo": 6503
-    },
-    {
-        "name": "Andershun",
-        "registryNo": 1233
-    },
-    {
-        "name": "Softmicro",
-        "registryNo": 6171
-    },
-    {
-        "name": "Mobildata",
-        "registryNo": 4234
-    },
-    {
-        "name": "Renovize",
-        "registryNo": 3940
-    },
-    {
-        "name": "Cognicode",
-        "registryNo": 4495
-    },
-    {
-        "name": "Voratak",
-        "registryNo": 3321
-    },
-    {
-        "name": "Spacewax",
-        "registryNo": 1767
-    },
-    {
-        "name": "Ecosys",
-        "registryNo": 4052
-    },
-    {
-        "name": "Geekol",
-        "registryNo": 3978
-    },
-    {
-        "name": "Zanymax",
-        "registryNo": 3962
-    },
-    {
-        "name": "Steelfab",
-        "registryNo": 1169
-    },
-    {
-        "name": "Synkgen",
-        "registryNo": 4693
-    },
-    {
-        "name": "Qimonk",
-        "registryNo": 8104
-    },
-    {
-        "name": "Koffee",
-        "registryNo": 8411
-    },
-    {
-        "name": "Exoteric",
-        "registryNo": 4350
-    },
-    {
-        "name": "Inrt",
-        "registryNo": 4913
-    },
-    {
-        "name": "Zerbina",
+        "name": "Gology",
+        "owner": "user",
         "registryNo": 9809
     },
     {
-        "name": "Oulu",
-        "registryNo": 4961
+        "name": "Insurity",
+        "owner": "mihai",
+        "registryNo": 7523
+    },
+    {
+        "name": "Interodeo",
+        "owner": "user",
+        "registryNo": 1588
+    },
+    {
+        "name": "Neurocell",
+        "owner": "george",
+        "registryNo": 6964
+    },
+    {
+        "name": "Comtent",
+        "owner": "george",
+        "registryNo": 2874
+    },
+    {
+        "name": "Honotron",
+        "owner": "user",
+        "registryNo": 7676
+    },
+    {
+        "name": "Netbook",
+        "owner": "george",
+        "registryNo": 6054
+    },
+    {
+        "name": "Navir",
+        "owner": "george",
+        "registryNo": 8474
+    },
+    {
+        "name": "Zaj",
+        "owner": "user",
+        "registryNo": 4762
+    },
+    {
+        "name": "Bleeko",
+        "owner": "mihai",
+        "registryNo": 6754
+    },
+    {
+        "name": "Uncorp",
+        "owner": "mihai",
+        "registryNo": 3525
+    },
+    {
+        "name": "Ozean",
+        "owner": "mihai",
+        "registryNo": 1956
+    },
+    {
+        "name": "Geofarm",
+        "owner": "mihai",
+        "registryNo": 2855
+    },
+    {
+        "name": "Earthplex",
+        "owner": "george",
+        "registryNo": 2679
+    },
+    {
+        "name": "Turnabout",
+        "owner": "mihai",
+        "registryNo": 4572
+    },
+    {
+        "name": "Accruex",
+        "owner": "george",
+        "registryNo": 6403
+    },
+    {
+        "name": "Decratex",
+        "owner": "user",
+        "registryNo": 4896
+    },
+    {
+        "name": "Unisure",
+        "owner": "mihai",
+        "registryNo": 8312
+    },
+    {
+        "name": "Dyno",
+        "owner": "george",
+        "registryNo": 2608
+    },
+    {
+        "name": "Centice",
+        "owner": "user",
+        "registryNo": 9875
+    },
+    {
+        "name": "Speedbolt",
+        "owner": "mihai",
+        "registryNo": 7147
+    },
+    {
+        "name": "Gogol",
+        "owner": "user",
+        "registryNo": 1273
+    },
+    {
+        "name": "Permadyne",
+        "owner": "mihai",
+        "registryNo": 2232
+    },
+    {
+        "name": "Bitendrex",
+        "owner": "mihai",
+        "registryNo": 8492
+    },
+    {
+        "name": "Yurture",
+        "owner": "user",
+        "registryNo": 2161
+    },
+    {
+        "name": "Senmao",
+        "owner": "user",
+        "registryNo": 5268
+    },
+    {
+        "name": "Zentury",
+        "owner": "mihai",
+        "registryNo": 3237
+    },
+    {
+        "name": "Gorganic",
+        "owner": "user",
+        "registryNo": 1847
+    },
+    {
+        "name": "Talkalot",
+        "owner": "mihai",
+        "registryNo": 8136
+    },
+    {
+        "name": "Virxo",
+        "owner": "george",
+        "registryNo": 3483
+    },
+    {
+        "name": "Bluplanet",
+        "owner": "george",
+        "registryNo": 1639
+    },
+    {
+        "name": "Bytrex",
+        "owner": "george",
+        "registryNo": 8193
+    },
+    {
+        "name": "Genmex",
+        "owner": "mihai",
+        "registryNo": 9277
+    },
+    {
+        "name": "Portico",
+        "owner": "george",
+        "registryNo": 6603
+    },
+    {
+        "name": "Sarasonic",
+        "owner": "george",
+        "registryNo": 8941
+    },
+    {
+        "name": "Nurali",
+        "owner": "mihai",
+        "registryNo": 1682
+    },
+    {
+        "name": "Terascape",
+        "owner": "george",
+        "registryNo": 8313
+    },
+    {
+        "name": "Cedward",
+        "owner": "user",
+        "registryNo": 8671
+    },
+    {
+        "name": "Neptide",
+        "owner": "user",
+        "registryNo": 5168
+    },
+    {
+        "name": "Digirang",
+        "owner": "mihai",
+        "registryNo": 4097
+    },
+    {
+        "name": "Temorak",
+        "owner": "george",
+        "registryNo": 6410
+    },
+    {
+        "name": "Colaire",
+        "owner": "user",
+        "registryNo": 6349
+    },
+    {
+        "name": "Scenty",
+        "owner": "mihai",
+        "registryNo": 7615
+    },
+    {
+        "name": "Strezzo",
+        "owner": "user",
+        "registryNo": 4386
+    },
+    {
+        "name": "Prowaste",
+        "owner": "user",
+        "registryNo": 8725
+    },
+    {
+        "name": "Comtours",
+        "owner": "user",
+        "registryNo": 3028
+    },
+    {
+        "name": "Nikuda",
+        "owner": "mihai",
+        "registryNo": 4869
+    },
+    {
+        "name": "Cytrex",
+        "owner": "user",
+        "registryNo": 7041
+    },
+    {
+        "name": "Telpod",
+        "owner": "mihai",
+        "registryNo": 8571
+    },
+    {
+        "name": "Eyewax",
+        "owner": "george",
+        "registryNo": 6243
+    },
+    {
+        "name": "Zomboid",
+        "owner": "george",
+        "registryNo": 7944
+    },
+    {
+        "name": "Dymi",
+        "owner": "user",
+        "registryNo": 6664
+    },
+    {
+        "name": "Puria",
+        "owner": "george",
+        "registryNo": 4313
+    },
+    {
+        "name": "Zenco",
+        "owner": "user",
+        "registryNo": 3157
+    },
+    {
+        "name": "Slumberia",
+        "owner": "george",
+        "registryNo": 7430
+    },
+    {
+        "name": "Chorizon",
+        "owner": "mihai",
+        "registryNo": 2543
+    },
+    {
+        "name": "Quotezart",
+        "owner": "mihai",
+        "registryNo": 7303
+    },
+    {
+        "name": "Jamnation",
+        "owner": "user",
+        "registryNo": 3896
+    },
+    {
+        "name": "Zaphire",
+        "owner": "mihai",
+        "registryNo": 8068
+    },
+    {
+        "name": "Geeky",
+        "owner": "george",
+        "registryNo": 8114
+    },
+    {
+        "name": "Bugsall",
+        "owner": "user",
+        "registryNo": 3700
+    },
+    {
+        "name": "Isosure",
+        "owner": "user",
+        "registryNo": 2792
+    },
+    {
+        "name": "Translink",
+        "owner": "george",
+        "registryNo": 6015
+    },
+    {
+        "name": "Enersol",
+        "owner": "george",
+        "registryNo": 5603
+    },
+    {
+        "name": "Zanymax",
+        "owner": "george",
+        "registryNo": 7682
+    },
+    {
+        "name": "Entropix",
+        "owner": "mihai",
+        "registryNo": 2806
+    },
+    {
+        "name": "Datagene",
+        "owner": "user",
+        "registryNo": 8338
+    },
+    {
+        "name": "Olucore",
+        "owner": "mihai",
+        "registryNo": 1938
+    },
+    {
+        "name": "Isotrack",
+        "owner": "george",
+        "registryNo": 8930
+    },
+    {
+        "name": "Dreamia",
+        "owner": "george",
+        "registryNo": 9404
+    },
+    {
+        "name": "Springbee",
+        "owner": "george",
+        "registryNo": 5981
+    },
+    {
+        "name": "Zillar",
+        "owner": "mihai",
+        "registryNo": 8421
+    },
+    {
+        "name": "Bunga",
+        "owner": "mihai",
+        "registryNo": 8750
+    },
+    {
+        "name": "Endicil",
+        "owner": "user",
+        "registryNo": 3841
+    },
+    {
+        "name": "Recritube",
+        "owner": "user",
+        "registryNo": 4546
+    },
+    {
+        "name": "Entogrok",
+        "owner": "mihai",
+        "registryNo": 3996
+    },
+    {
+        "name": "Ronbert",
+        "owner": "mihai",
+        "registryNo": 5041
+    },
+    {
+        "name": "Idetica",
+        "owner": "george",
+        "registryNo": 6027
     }
 ]
