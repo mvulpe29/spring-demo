@@ -17,6 +17,9 @@ public class Person {
     @JoinColumn(name = "address_id")
     private Address address;
 
+    @Embedded
+    private Contact contact;
+
     public Person() {
         this.deleted = false;
     }
@@ -59,5 +62,13 @@ public class Person {
 
     public void setDeleted(Boolean deleted) {
         this.deleted = deleted;
+    }
+
+    public Contact getContact() {
+        return contact;
+    }
+
+    public void setContact(Contact contact) {
+        this.contact = contact;
     }
 }
