@@ -10,6 +10,7 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.web.header.writers.frameoptions.XFrameOptionsHeaderWriter;
 
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
@@ -50,6 +51,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.GET, "/api/**").permitAll()
                 .and()
                 .httpBasic()
+                .and().headers().addHeaderWriter(new XFrameOptionsHeaderWriter(XFrameOptionsHeaderWriter.XFrameOptionsMode.SAMEORIGIN))
                 .and().csrf().disable();
     }
 }
