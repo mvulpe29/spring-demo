@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.addresses;
 
 import net.kaczmarzyk.spring.data.jpa.domain.Equal;
 import net.kaczmarzyk.spring.data.jpa.web.annotation.And;

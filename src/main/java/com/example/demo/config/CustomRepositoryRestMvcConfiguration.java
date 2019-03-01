@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.config;
 
 import net.kaczmarzyk.spring.data.jpa.web.SpecificationArgumentResolver;
 import org.springframework.beans.factory.ObjectFactory;
@@ -34,6 +34,9 @@ public class CustomRepositoryRestMvcConfiguration extends RepositoryRestMvcConfi
     public RepositoryRestConfiguration repositoryRestConfiguration() {
         RepositoryRestConfiguration config = super.repositoryRestConfiguration();
         this.properties.applyTo(config);
+        config.getCorsRegistry().addMapping("/**")
+                .allowedOrigins("*")
+                .allowedMethods("GET", "HEAD", "POST", "PUT", "DELETE");
         return config;
     }
 

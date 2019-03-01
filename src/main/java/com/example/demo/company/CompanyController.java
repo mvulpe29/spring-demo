@@ -1,6 +1,6 @@
 package com.example.demo.company;
 
-import com.example.demo.Address;
+import com.example.demo.addresses.Address;
 import net.kaczmarzyk.spring.data.jpa.domain.Equal;
 import net.kaczmarzyk.spring.data.jpa.web.annotation.Spec;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.config;
 
 import org.apache.catalina.connector.Connector;
 import org.springframework.boot.web.embedded.tomcat.TomcatConnectorCustomizer;

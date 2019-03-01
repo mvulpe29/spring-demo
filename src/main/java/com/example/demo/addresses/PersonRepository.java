@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.addresses;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
@@ -10,7 +10,6 @@ import th.co.geniustree.springdata.jpa.repository.JpaSpecificationExecutorWithPr
 
 import java.util.List;
 
-@CrossOrigin
 @RepositoryRestResource(collectionResourceRel = "people", path = "people")
 public interface PersonRepository extends JpaRepository<Person, Long>, JpaSpecificationExecutor<Person>, QueryByExampleExecutor<Person>, JpaSpecificationExecutorWithProjection<Person> {
 

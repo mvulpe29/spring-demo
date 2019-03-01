@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.addresses;
 
 import org.springframework.data.rest.core.annotation.HandleAfterSave;
 import org.springframework.data.rest.core.annotation.HandleBeforeCreate;
