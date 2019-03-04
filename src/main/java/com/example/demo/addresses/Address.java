@@ -1,10 +1,16 @@
 package com.example.demo.addresses;
 
-import javax.persistence.*;
+import com.example.demo.BaseEntityInterface;
+import org.hibernate.envers.Audited;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.List;
 
 @Entity
-public class Address {
+@Audited
+public class Address implements BaseEntityInterface {
 
     @Id
     private long id;

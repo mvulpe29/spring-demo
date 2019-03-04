@@ -15,7 +15,6 @@ import th.co.geniustree.springdata.jpa.repository.support.JpaSpecificationExecut
 import java.util.List;
 
 @SpringBootConfiguration
-@EnableJpaRepositories(repositoryBaseClass = JpaSpecificationExecutorWithProjectionImpl.class)
 @ComponentScan(basePackages = "com.example")
 @EnableAutoConfiguration
 public class DemoApplication implements WebMvcConfigurer {

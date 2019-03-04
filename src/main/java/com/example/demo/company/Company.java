@@ -1,10 +1,14 @@
 package com.example.demo.company;
 
+import com.example.demo.BaseEntityInterface;
+import org.hibernate.envers.Audited;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Company {
+@Audited
+public class Company implements BaseEntityInterface {
 
     @Id
     private long id;

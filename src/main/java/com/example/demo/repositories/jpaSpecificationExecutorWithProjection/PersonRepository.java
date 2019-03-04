@@ -1,16 +1,16 @@
-package com.example.demo.addresses;
+package com.example.demo.repositories.jpaSpecificationExecutorWithProjection;
 
+import com.example.demo.addresses.Person;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.repository.query.QueryByExampleExecutor;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import th.co.geniustree.springdata.jpa.repository.JpaSpecificationExecutorWithProjection;
 
 import java.util.List;
 
-@RepositoryRestResource(collectionResourceRel = "people", path = "people")
+@RepositoryRestResource(collectionResourceRel = "people", path = "ppl")
 public interface PersonRepository extends JpaRepository<Person, Long>, JpaSpecificationExecutor<Person>, QueryByExampleExecutor<Person>, JpaSpecificationExecutorWithProjection<Person> {
 
     List<Person> findByLastName(@Param("name") String name);

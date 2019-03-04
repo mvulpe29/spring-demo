@@ -1,1202 +1,3166 @@
 [
     {
         "id": 1,
-        "firstName": "Weaver",
-        "lastName": "Snyder",
+        "firstName": "Joyce",
+        "lastName": "Vega",
         "contact": {
-            "phone": "(887) 552-3026",
-            "email": "weaversnyder@permadyne.com"
+            "phone": "(955) 490-2154",
+            "email": "joycevega@delphide.com"
         },
-        "address": {
-            "id": 8
-        }
-    },
-    {
-        "id": 2,
-        "firstName": "Bradford",
-        "lastName": "Fulton",
-        "contact": {
-            "phone": "(941) 477-3394",
-            "email": "bradfordfulton@permadyne.com"
+        "workContact": {
+            "phone": "(917) 421-3968",
+            "email": "joycevega@delphide.com"
         },
-        "address": {
-            "id": 3
-        }
-    },
-    {
-        "id": 3,
-        "firstName": "Mann",
-        "lastName": "Stewart",
-        "contact": {
-            "phone": "(846) 514-2249",
-            "email": "mannstewart@permadyne.com"
-        },
-        "address": {
-            "id": 10
-        }
-    },
-    {
-        "id": 4,
-        "firstName": "Townsend",
-        "lastName": "Ballard",
-        "contact": {
-            "phone": "(972) 537-2440",
-            "email": "townsendballard@permadyne.com"
-        },
+        "lifeEvents": [
+            {
+                "year": 2000,
+                "description": "Laborum proident est irure magna velit reprehenderit duis cillum enim labore quis qui ad sint."
+            },
+            {
+                "year": 2009,
+                "description": "Magna adipisicing eiusmod pariatur duis adipisicing minim magna do culpa excepteur magna consequat."
+            }
+        ],
         "address": {
             "id": 6
         }
     },
     {
-        "id": 5,
-        "firstName": "Velma",
-        "lastName": "Lowery",
+        "id": 2,
+        "firstName": "Arnold",
+        "lastName": "Pate",
         "contact": {
-            "phone": "(973) 464-2806",
-            "email": "velmalowery@permadyne.com"
+            "phone": "(948) 573-3612",
+            "email": "arnoldpate@delphide.com"
         },
+        "workContact": {
+            "phone": "(966) 573-2423",
+            "email": "arnoldpate@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2008,
+                "description": "Eu reprehenderit reprehenderit minim tempor minim Lorem ullamco laborum."
+            },
+            {
+                "year": 2009,
+                "description": "Aliquip culpa eu commodo amet cillum consequat cillum proident."
+            },
+            {
+                "year": 1992,
+                "description": "Nostrud voluptate eu consequat elit officia reprehenderit labore irure adipisicing et ut excepteur veniam."
+            }
+        ],
         "address": {
-            "id": 1
+            "id": 9
+        }
+    },
+    {
+        "id": 3,
+        "firstName": "Booth",
+        "lastName": "Whitney",
+        "contact": {
+            "phone": "(826) 475-3944",
+            "email": "boothwhitney@delphide.com"
+        },
+        "workContact": {
+            "phone": "(891) 591-2335",
+            "email": "boothwhitney@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2002,
+                "description": "Ut officia officia sint aliqua consectetur Lorem id ea mollit."
+            },
+            {
+                "year": 1993,
+                "description": "Fugiat Lorem reprehenderit esse enim mollit."
+            },
+            {
+                "year": 1995,
+                "description": "Dolor ullamco nostrud irure cupidatat non consequat."
+            },
+            {
+                "year": 2003,
+                "description": "Velit ea et deserunt qui pariatur do deserunt labore id."
+            },
+            {
+                "year": 2015,
+                "description": "Pariatur enim consequat dolore laborum."
+            }
+        ],
+        "address": {
+            "id": 9
+        }
+    },
+    {
+        "id": 4,
+        "firstName": "Knapp",
+        "lastName": "Mueller",
+        "contact": {
+            "phone": "(811) 461-3436",
+            "email": "knappmueller@delphide.com"
+        },
+        "workContact": {
+            "phone": "(970) 489-2847",
+            "email": "knappmueller@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2012,
+                "description": "Labore elit ad qui eiusmod."
+            },
+            {
+                "year": 1999,
+                "description": "Lorem deserunt in qui officia nostrud non dolor sunt dolore sunt."
+            },
+            {
+                "year": 2006,
+                "description": "Eu eu ea tempor adipisicing enim."
+            }
+        ],
+        "address": {
+            "id": 7
+        }
+    },
+    {
+        "id": 5,
+        "firstName": "Head",
+        "lastName": "Henderson",
+        "contact": {
+            "phone": "(840) 428-3528",
+            "email": "headhenderson@delphide.com"
+        },
+        "workContact": {
+            "phone": "(923) 550-2091",
+            "email": "headhenderson@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2005,
+                "description": "Consequat quis nulla excepteur consequat elit nisi laborum minim et adipisicing nisi exercitation."
+            },
+            {
+                "year": 1996,
+                "description": "Culpa aute officia aliqua laboris adipisicing cillum voluptate laborum Lorem fugiat anim amet ex."
+            },
+            {
+                "year": 1999,
+                "description": "Pariatur ut dolore aliqua fugiat qui."
+            }
+        ],
+        "address": {
+            "id": 5
         }
     },
     {
         "id": 6,
-        "firstName": "Sophie",
-        "lastName": "Aguilar",
+        "firstName": "Webster",
+        "lastName": "Branch",
         "contact": {
-            "phone": "(918) 476-3972",
-            "email": "sophieaguilar@permadyne.com"
+            "phone": "(960) 487-2170",
+            "email": "websterbranch@delphide.com"
         },
+        "workContact": {
+            "phone": "(834) 412-3223",
+            "email": "websterbranch@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2018,
+                "description": "Excepteur laboris aliqua ea excepteur."
+            },
+            {
+                "year": 2006,
+                "description": "Irure elit tempor nisi in quis duis commodo nisi."
+            },
+            {
+                "year": 2018,
+                "description": "Dolore eiusmod laboris esse do Lorem minim in ea."
+            },
+            {
+                "year": 2005,
+                "description": "Do ullamco ex quis cillum officia voluptate labore est nulla enim cillum incididunt."
+            }
+        ],
         "address": {
-            "id": 2
+            "id": 8
         }
     },
     {
         "id": 7,
-        "firstName": "Iris",
-        "lastName": "Keller",
+        "firstName": "Alfreda",
+        "lastName": "Mcknight",
         "contact": {
-            "phone": "(982) 520-3019",
-            "email": "iriskeller@permadyne.com"
+            "phone": "(926) 439-2013",
+            "email": "alfredamcknight@delphide.com"
         },
+        "workContact": {
+            "phone": "(988) 514-3290",
+            "email": "alfredamcknight@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2012,
+                "description": "Ad incididunt ea ut qui do magna et adipisicing."
+            },
+            {
+                "year": 2019,
+                "description": "Sunt eu Lorem non fugiat fugiat amet deserunt."
+            }
+        ],
         "address": {
             "id": 3
         }
     },
     {
         "id": 8,
-        "firstName": "Amalia",
-        "lastName": "Livingston",
+        "firstName": "Acevedo",
+        "lastName": "Fischer",
         "contact": {
-            "phone": "(880) 452-3884",
-            "email": "amalialivingston@permadyne.com"
+            "phone": "(925) 498-3568",
+            "email": "acevedofischer@delphide.com"
         },
+        "workContact": {
+            "phone": "(851) 416-3439",
+            "email": "acevedofischer@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2010,
+                "description": "Et do qui culpa tempor incididunt aliquip exercitation."
+            },
+            {
+                "year": 1998,
+                "description": "Magna aute deserunt nisi exercitation ipsum dolor incididunt cillum ad qui pariatur."
+            },
+            {
+                "year": 2005,
+                "description": "Labore labore nisi officia consectetur cillum aliqua."
+            },
+            {
+                "year": 2018,
+                "description": "Do ad labore magna dolore anim laboris non laborum duis qui aliqua dolore mollit."
+            },
+            {
+                "year": 2007,
+                "description": "Quis id tempor id ullamco reprehenderit occaecat dolor fugiat cupidatat dolore."
+            }
+        ],
         "address": {
-            "id": 8
+            "id": 1
         }
     },
     {
         "id": 9,
-        "firstName": "Mariana",
-        "lastName": "Mejia",
+        "firstName": "Phelps",
+        "lastName": "Macias",
         "contact": {
-            "phone": "(918) 499-2690",
-            "email": "marianamejia@permadyne.com"
+            "phone": "(889) 554-2374",
+            "email": "phelpsmacias@delphide.com"
         },
+        "workContact": {
+            "phone": "(953) 594-2020",
+            "email": "phelpsmacias@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1998,
+                "description": "Sint duis qui anim eiusmod culpa aliqua enim culpa reprehenderit in."
+            },
+            {
+                "year": 1994,
+                "description": "Adipisicing id nostrud Lorem sit esse laborum sint culpa voluptate eu exercitation qui sint amet."
+            }
+        ],
         "address": {
             "id": 3
         }
     },
     {
         "id": 10,
-        "firstName": "Hull",
-        "lastName": "Ford",
+        "firstName": "Roy",
+        "lastName": "Gilbert",
         "contact": {
-            "phone": "(987) 586-2772",
-            "email": "hullford@permadyne.com"
+            "phone": "(986) 566-2126",
+            "email": "roygilbert@delphide.com"
         },
+        "workContact": {
+            "phone": "(834) 506-4000",
+            "email": "roygilbert@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2013,
+                "description": "Voluptate elit ex reprehenderit nostrud velit aliqua ex fugiat excepteur tempor dolore."
+            },
+            {
+                "year": 2011,
+                "description": "Ea ea esse commodo laboris fugiat pariatur cupidatat dolore cupidatat consectetur esse nulla."
+            },
+            {
+                "year": 2006,
+                "description": "Aute pariatur consequat culpa excepteur cillum esse nostrud exercitation non dolor nulla."
+            }
+        ],
         "address": {
             "id": 2
         }
     },
     {
         "id": 11,
-        "firstName": "Tanya",
-        "lastName": "Poole",
+        "firstName": "Rosa",
+        "lastName": "Horn",
         "contact": {
-            "phone": "(972) 571-3250",
-            "email": "tanyapoole@permadyne.com"
+            "phone": "(919) 513-3295",
+            "email": "rosahorn@delphide.com"
         },
+        "workContact": {
+            "phone": "(944) 591-3399",
+            "email": "rosahorn@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2012,
+                "description": "Esse nisi non incididunt dolore consectetur aliquip deserunt fugiat nostrud nisi Lorem ullamco nostrud."
+            },
+            {
+                "year": 2014,
+                "description": "Anim sint consequat laboris consequat irure nostrud veniam amet dolore nisi quis officia."
+            },
+            {
+                "year": 2008,
+                "description": "Ullamco et ad cupidatat ad labore."
+            }
+        ],
         "address": {
-            "id": 5
+            "id": 1
         }
     },
     {
         "id": 12,
-        "firstName": "Barker",
-        "lastName": "House",
+        "firstName": "Tabitha",
+        "lastName": "Copeland",
         "contact": {
-            "phone": "(906) 590-3750",
-            "email": "barkerhouse@permadyne.com"
+            "phone": "(942) 406-3456",
+            "email": "tabithacopeland@delphide.com"
         },
+        "workContact": {
+            "phone": "(825) 546-3971",
+            "email": "tabithacopeland@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2008,
+                "description": "Ea cupidatat in incididunt eu ullamco sunt non ea."
+            },
+            {
+                "year": 1993,
+                "description": "Ex velit non duis nisi."
+            },
+            {
+                "year": 2000,
+                "description": "Velit adipisicing ea voluptate ipsum et aute irure."
+            },
+            {
+                "year": 2016,
+                "description": "Eiusmod ea magna voluptate qui aute mollit."
+            }
+        ],
         "address": {
-            "id": 2
+            "id": 9
         }
     },
     {
         "id": 13,
-        "firstName": "Fisher",
-        "lastName": "Manning",
+        "firstName": "Earlene",
+        "lastName": "Carver",
         "contact": {
-            "phone": "(804) 587-2146",
-            "email": "fishermanning@permadyne.com"
+            "phone": "(888) 553-2798",
+            "email": "earlenecarver@delphide.com"
         },
+        "workContact": {
+            "phone": "(877) 560-2290",
+            "email": "earlenecarver@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2008,
+                "description": "Voluptate aute mollit ex in elit culpa officia ipsum culpa."
+            },
+            {
+                "year": 1995,
+                "description": "In ex in consequat dolor pariatur elit consectetur consequat proident."
+            }
+        ],
         "address": {
             "id": 8
         }
     },
     {
         "id": 14,
-        "firstName": "Bolton",
-        "lastName": "Sanders",
+        "firstName": "Ware",
+        "lastName": "Page",
         "contact": {
-            "phone": "(969) 438-2604",
-            "email": "boltonsanders@permadyne.com"
+            "phone": "(839) 502-2201",
+            "email": "warepage@delphide.com"
         },
+        "workContact": {
+            "phone": "(933) 522-3390",
+            "email": "warepage@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1991,
+                "description": "Officia ea fugiat duis irure exercitation irure dolore tempor aliqua laborum."
+            },
+            {
+                "year": 2016,
+                "description": "Consectetur aliqua pariatur et proident commodo ut aliquip laborum."
+            },
+            {
+                "year": 1996,
+                "description": "Ea non et do exercitation labore."
+            },
+            {
+                "year": 2019,
+                "description": "Fugiat commodo elit ea enim adipisicing consequat tempor veniam sit qui deserunt."
+            }
+        ],
         "address": {
             "id": 7
         }
     },
     {
         "id": 15,
-        "firstName": "Amy",
-        "lastName": "Zamora",
+        "firstName": "Palmer",
+        "lastName": "Salas",
         "contact": {
-            "phone": "(971) 561-2715",
-            "email": "amyzamora@permadyne.com"
+            "phone": "(841) 511-2894",
+            "email": "palmersalas@delphide.com"
         },
+        "workContact": {
+            "phone": "(803) 555-3516",
+            "email": "palmersalas@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2016,
+                "description": "Nulla quis aute enim reprehenderit duis ad magna nulla aliqua officia in ea."
+            },
+            {
+                "year": 1991,
+                "description": "Quis exercitation elit velit ex pariatur reprehenderit enim ut laboris excepteur aliquip duis enim."
+            }
+        ],
         "address": {
-            "id": 6
+            "id": 9
         }
     },
     {
         "id": 16,
-        "firstName": "Calhoun",
-        "lastName": "Moss",
+        "firstName": "Pamela",
+        "lastName": "Osborne",
         "contact": {
-            "phone": "(829) 596-2742",
-            "email": "calhounmoss@permadyne.com"
+            "phone": "(944) 563-2198",
+            "email": "pamelaosborne@delphide.com"
         },
+        "workContact": {
+            "phone": "(952) 592-2470",
+            "email": "pamelaosborne@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1990,
+                "description": "Ipsum amet nulla cupidatat in dolore laborum Lorem proident laborum enim."
+            },
+            {
+                "year": 2012,
+                "description": "Reprehenderit ad quis in labore dolore laborum dolor culpa adipisicing non nisi voluptate culpa."
+            },
+            {
+                "year": 2012,
+                "description": "Excepteur Lorem dolor nostrud dolor aute."
+            },
+            {
+                "year": 1996,
+                "description": "Velit exercitation occaecat non dolore pariatur ut eiusmod fugiat laborum cupidatat nisi."
+            }
+        ],
         "address": {
             "id": 8
         }
     },
     {
         "id": 17,
-        "firstName": "Aida",
-        "lastName": "Emerson",
+        "firstName": "Robles",
+        "lastName": "Odom",
         "contact": {
-            "phone": "(973) 478-3770",
-            "email": "aidaemerson@permadyne.com"
+            "phone": "(971) 556-3129",
+            "email": "roblesodom@delphide.com"
         },
+        "workContact": {
+            "phone": "(990) 413-3192",
+            "email": "roblesodom@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1999,
+                "description": "Fugiat anim consequat magna eu commodo occaecat culpa fugiat."
+            },
+            {
+                "year": 2007,
+                "description": "Elit voluptate voluptate aliqua id ad."
+            },
+            {
+                "year": 2017,
+                "description": "Voluptate cupidatat laborum irure dolore culpa labore ut commodo velit pariatur culpa esse exercitation adipisicing."
+            },
+            {
+                "year": 2003,
+                "description": "Eiusmod sint esse sint labore consequat magna ex ullamco."
+            },
+            {
+                "year": 2017,
+                "description": "Sunt cillum ad fugiat ea id veniam."
+            }
+        ],
         "address": {
-            "id": 10
+            "id": 1
         }
     },
     {
         "id": 18,
-        "firstName": "Joy",
-        "lastName": "Serrano",
+        "firstName": "Yesenia",
+        "lastName": "Martin",
         "contact": {
-            "phone": "(801) 453-2849",
-            "email": "joyserrano@permadyne.com"
+            "phone": "(997) 464-3246",
+            "email": "yeseniamartin@delphide.com"
         },
+        "workContact": {
+            "phone": "(826) 572-2474",
+            "email": "yeseniamartin@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1999,
+                "description": "Dolor reprehenderit mollit in veniam eu non amet aute consequat nulla."
+            },
+            {
+                "year": 2017,
+                "description": "Duis labore do culpa eu."
+            },
+            {
+                "year": 2007,
+                "description": "Esse laboris ea amet nulla occaecat eu nulla."
+            },
+            {
+                "year": 1993,
+                "description": "Aliquip exercitation mollit deserunt commodo."
+            },
+            {
+                "year": 2019,
+                "description": "Veniam minim reprehenderit veniam nulla occaecat nostrud in."
+            }
+        ],
         "address": {
-            "id": 3
+            "id": 7
         }
     },
     {
         "id": 19,
-        "firstName": "Terra",
-        "lastName": "King",
+        "firstName": "Darcy",
+        "lastName": "Ayers",
         "contact": {
-            "phone": "(887) 548-3404",
-            "email": "terraking@permadyne.com"
+            "phone": "(828) 418-2553",
+            "email": "darcyayers@delphide.com"
         },
+        "workContact": {
+            "phone": "(908) 468-3985",
+            "email": "darcyayers@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2014,
+                "description": "Duis deserunt laboris qui laboris."
+            },
+            {
+                "year": 2016,
+                "description": "Velit ex in id enim."
+            },
+            {
+                "year": 2019,
+                "description": "Sint pariatur aute duis labore labore enim ex cillum et."
+            },
+            {
+                "year": 1991,
+                "description": "Aliquip proident non incididunt minim do irure ipsum est minim mollit duis fugiat."
+            },
+            {
+                "year": 2009,
+                "description": "Aliqua aliquip fugiat eu nostrud mollit proident sit."
+            }
+        ],
         "address": {
-            "id": 8
+            "id": 7
         }
     },
     {
         "id": 20,
-        "firstName": "Marietta",
-        "lastName": "Leach",
+        "firstName": "Ladonna",
+        "lastName": "Wiley",
         "contact": {
-            "phone": "(883) 450-3970",
-            "email": "mariettaleach@permadyne.com"
+            "phone": "(826) 400-3379",
+            "email": "ladonnawiley@delphide.com"
         },
+        "workContact": {
+            "phone": "(906) 420-3729",
+            "email": "ladonnawiley@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1991,
+                "description": "Irure exercitation fugiat ullamco ea incididunt velit voluptate commodo pariatur labore excepteur do dolor consequat."
+            },
+            {
+                "year": 1995,
+                "description": "Elit nulla commodo non reprehenderit esse nostrud ut magna nulla ad fugiat labore eu."
+            },
+            {
+                "year": 2009,
+                "description": "Quis officia proident irure commodo excepteur aliquip aliqua occaecat sint adipisicing."
+            }
+        ],
         "address": {
-            "id": 6
+            "id": 9
         }
     },
     {
         "id": 21,
-        "firstName": "Kidd",
-        "lastName": "Dunlap",
+        "firstName": "Doyle",
+        "lastName": "Mccarthy",
         "contact": {
-            "phone": "(904) 485-3067",
-            "email": "kidddunlap@permadyne.com"
+            "phone": "(875) 457-2119",
+            "email": "doylemccarthy@delphide.com"
         },
+        "workContact": {
+            "phone": "(935) 566-2555",
+            "email": "doylemccarthy@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2012,
+                "description": "Sit cillum reprehenderit officia magna fugiat fugiat id tempor."
+            },
+            {
+                "year": 2015,
+                "description": "Proident cillum incididunt fugiat pariatur."
+            }
+        ],
         "address": {
             "id": 2
         }
     },
     {
         "id": 22,
-        "firstName": "Gonzalez",
-        "lastName": "Davidson",
+        "firstName": "Estela",
+        "lastName": "Robinson",
         "contact": {
-            "phone": "(890) 557-3430",
-            "email": "gonzalezdavidson@permadyne.com"
+            "phone": "(990) 575-3689",
+            "email": "estelarobinson@delphide.com"
         },
+        "workContact": {
+            "phone": "(826) 478-3886",
+            "email": "estelarobinson@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2006,
+                "description": "Esse enim incididunt nulla duis et officia sunt veniam ut nisi sunt deserunt velit commodo."
+            },
+            {
+                "year": 2013,
+                "description": "Veniam laboris elit aliquip nostrud labore incididunt ipsum sint incididunt sunt qui nisi."
+            },
+            {
+                "year": 1990,
+                "description": "Dolore pariatur laborum qui do officia aliqua nulla veniam mollit tempor in cillum qui."
+            },
+            {
+                "year": 1998,
+                "description": "Nisi irure esse non aliqua."
+            }
+        ],
         "address": {
-            "id": 2
+            "id": 5
         }
     },
     {
         "id": 23,
-        "firstName": "Maynard",
-        "lastName": "Burton",
+        "firstName": "Marquita",
+        "lastName": "Morales",
         "contact": {
-            "phone": "(808) 431-2606",
-            "email": "maynardburton@permadyne.com"
+            "phone": "(962) 527-2784",
+            "email": "marquitamorales@delphide.com"
         },
+        "workContact": {
+            "phone": "(984) 582-3935",
+            "email": "marquitamorales@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2014,
+                "description": "Adipisicing in incididunt voluptate Lorem dolor."
+            },
+            {
+                "year": 1999,
+                "description": "Reprehenderit tempor laboris deserunt quis aliqua aliqua incididunt mollit officia elit in."
+            },
+            {
+                "year": 1990,
+                "description": "Aliqua amet commodo ullamco irure adipisicing consequat duis pariatur."
+            }
+        ],
         "address": {
-            "id": 5
+            "id": 8
         }
     },
     {
         "id": 24,
-        "firstName": "Blackwell",
-        "lastName": "Savage",
+        "firstName": "Alissa",
+        "lastName": "Parsons",
         "contact": {
-            "phone": "(887) 449-2859",
-            "email": "blackwellsavage@permadyne.com"
+            "phone": "(925) 415-2577",
+            "email": "alissaparsons@delphide.com"
         },
+        "workContact": {
+            "phone": "(949) 505-2958",
+            "email": "alissaparsons@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2001,
+                "description": "Exercitation laboris tempor quis do irure non pariatur cupidatat mollit adipisicing do."
+            },
+            {
+                "year": 2012,
+                "description": "Commodo ad cupidatat nostrud pariatur sit culpa deserunt reprehenderit ea do."
+            }
+        ],
         "address": {
-            "id": 2
+            "id": 3
         }
     },
     {
         "id": 25,
-        "firstName": "Bright",
-        "lastName": "Collier",
+        "firstName": "Candace",
+        "lastName": "Downs",
         "contact": {
-            "phone": "(934) 549-3222",
-            "email": "brightcollier@permadyne.com"
+            "phone": "(946) 599-3134",
+            "email": "candacedowns@delphide.com"
         },
+        "workContact": {
+            "phone": "(816) 417-2006",
+            "email": "candacedowns@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2011,
+                "description": "Excepteur consequat amet veniam aute exercitation."
+            },
+            {
+                "year": 2015,
+                "description": "Enim ut sit minim magna deserunt do excepteur."
+            },
+            {
+                "year": 2002,
+                "description": "Labore consequat excepteur ad do."
+            },
+            {
+                "year": 1999,
+                "description": "Ea dolore sit mollit veniam exercitation."
+            },
+            {
+                "year": 1999,
+                "description": "Enim velit cillum est sint sunt laboris duis tempor."
+            }
+        ],
         "address": {
-            "id": 10
+            "id": 9
         }
     },
     {
         "id": 26,
-        "firstName": "Rosalyn",
-        "lastName": "Pierce",
+        "firstName": "Cora",
+        "lastName": "Garcia",
         "contact": {
-            "phone": "(914) 584-3894",
-            "email": "rosalynpierce@permadyne.com"
+            "phone": "(819) 539-3588",
+            "email": "coragarcia@delphide.com"
         },
+        "workContact": {
+            "phone": "(975) 408-2275",
+            "email": "coragarcia@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2000,
+                "description": "Laboris esse sit labore mollit voluptate nisi irure nostrud."
+            },
+            {
+                "year": 2005,
+                "description": "Pariatur do ut sint nostrud cupidatat esse non eu adipisicing consectetur fugiat nulla."
+            },
+            {
+                "year": 1997,
+                "description": "Esse ad officia ullamco incididunt."
+            },
+            {
+                "year": 1997,
+                "description": "Enim id do amet adipisicing."
+            },
+            {
+                "year": 2004,
+                "description": "Excepteur amet reprehenderit mollit qui nostrud cupidatat."
+            }
+        ],
         "address": {
-            "id": 10
+            "id": 1
         }
     },
     {
         "id": 27,
-        "firstName": "Pearlie",
-        "lastName": "Cantu",
+        "firstName": "Elvira",
+        "lastName": "Gould",
         "contact": {
-            "phone": "(960) 433-3870",
-            "email": "pearliecantu@permadyne.com"
+            "phone": "(911) 406-3699",
+            "email": "elviragould@delphide.com"
         },
+        "workContact": {
+            "phone": "(974) 404-3374",
+            "email": "elviragould@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1994,
+                "description": "Magna nisi mollit magna laborum voluptate nulla ex."
+            },
+            {
+                "year": 2016,
+                "description": "Et eu dolor occaecat mollit sunt non excepteur consequat sit fugiat aliqua aliqua ex et."
+            },
+            {
+                "year": 2004,
+                "description": "Elit qui esse in officia in culpa qui labore nisi aute laborum est eu veniam."
+            }
+        ],
         "address": {
-            "id": 1
+            "id": 10
         }
     },
     {
         "id": 28,
-        "firstName": "Bobbie",
-        "lastName": "Hughes",
+        "firstName": "Marquez",
+        "lastName": "Richards",
         "contact": {
-            "phone": "(875) 423-2447",
-            "email": "bobbiehughes@permadyne.com"
+            "phone": "(884) 490-3342",
+            "email": "marquezrichards@delphide.com"
         },
+        "workContact": {
+            "phone": "(972) 411-3881",
+            "email": "marquezrichards@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2011,
+                "description": "Esse proident adipisicing officia aute ipsum dolor qui mollit enim est excepteur nulla."
+            },
+            {
+                "year": 1998,
+                "description": "In irure velit magna ea dolore velit non ea voluptate."
+            }
+        ],
         "address": {
-            "id": 8
+            "id": 7
         }
     },
     {
         "id": 29,
-        "firstName": "Marie",
-        "lastName": "Lopez",
+        "firstName": "Waller",
+        "lastName": "Lloyd",
         "contact": {
-            "phone": "(897) 600-3935",
-            "email": "marielopez@permadyne.com"
+            "phone": "(842) 442-2956",
+            "email": "wallerlloyd@delphide.com"
         },
+        "workContact": {
+            "phone": "(817) 592-2281",
+            "email": "wallerlloyd@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2017,
+                "description": "Cillum nostrud aute incididunt velit nisi ad in id nostrud laborum occaecat labore sit."
+            },
+            {
+                "year": 1997,
+                "description": "Laborum voluptate ad qui consequat amet consequat adipisicing nostrud sunt nisi."
+            },
+            {
+                "year": 2010,
+                "description": "Id non ex mollit magna culpa laborum."
+            }
+        ],
         "address": {
-            "id": 8
+            "id": 7
         }
     },
     {
         "id": 30,
-        "firstName": "Mcclure",
-        "lastName": "Luna",
+        "firstName": "Ramirez",
+        "lastName": "Johnson",
         "contact": {
-            "phone": "(994) 479-2331",
-            "email": "mcclureluna@permadyne.com"
+            "phone": "(966) 543-2251",
+            "email": "ramirezjohnson@delphide.com"
         },
-        "address": {
-            "id": 4
-        }
-    },
-    {
-        "id": 31,
-        "firstName": "Spears",
-        "lastName": "Gray",
-        "contact": {
-            "phone": "(879) 421-3491",
-            "email": "spearsgray@permadyne.com"
+        "workContact": {
+            "phone": "(867) 459-3220",
+            "email": "ramirezjohnson@delphide.com"
         },
-        "address": {
-            "id": 10
-        }
-    },
-    {
-        "id": 32,
-        "firstName": "Christine",
-        "lastName": "Schmidt",
-        "contact": {
-            "phone": "(967) 511-2071",
-            "email": "christineschmidt@permadyne.com"
-        },
-        "address": {
-            "id": 9
-        }
-    },
-    {
-        "id": 33,
-        "firstName": "Buckley",
-        "lastName": "Weber",
-        "contact": {
-            "phone": "(881) 506-2911",
-            "email": "buckleyweber@permadyne.com"
-        },
-        "address": {
-            "id": 2
-        }
-    },
-    {
-        "id": 34,
-        "firstName": "Jody",
-        "lastName": "Mitchell",
-        "contact": {
-            "phone": "(938) 515-2009",
-            "email": "jodymitchell@permadyne.com"
-        },
-        "address": {
-            "id": 4
-        }
-    },
-    {
-        "id": 35,
-        "firstName": "Young",
-        "lastName": "Finley",
-        "contact": {
-            "phone": "(914) 558-3043",
-            "email": "youngfinley@permadyne.com"
-        },
-        "address": {
-            "id": 5
-        }
-    },
-    {
-        "id": 36,
-        "firstName": "Debra",
-        "lastName": "Raymond",
-        "contact": {
-            "phone": "(858) 535-2404",
-            "email": "debraraymond@permadyne.com"
-        },
-        "address": {
-            "id": 3
-        }
-    },
-    {
-        "id": 37,
-        "firstName": "Mclaughlin",
-        "lastName": "Nunez",
-        "contact": {
-            "phone": "(872) 492-2712",
-            "email": "mclaughlinnunez@permadyne.com"
-        },
-        "address": {
-            "id": 4
-        }
-    },
-    {
-        "id": 38,
-        "firstName": "English",
-        "lastName": "Carrillo",
-        "contact": {
-            "phone": "(867) 407-3972",
-            "email": "englishcarrillo@permadyne.com"
-        },
-        "address": {
-            "id": 1
-        }
-    },
-    {
-        "id": 39,
-        "firstName": "Camille",
-        "lastName": "Mueller",
-        "contact": {
-            "phone": "(831) 567-3706",
-            "email": "camillemueller@permadyne.com"
-        },
-        "address": {
-            "id": 10
-        }
-    },
-    {
-        "id": 40,
-        "firstName": "Gray",
-        "lastName": "Hood",
-        "contact": {
-            "phone": "(831) 501-3793",
-            "email": "grayhood@permadyne.com"
-        },
-        "address": {
-            "id": 10
-        }
-    },
-    {
-        "id": 41,
-        "firstName": "Mary",
-        "lastName": "Ratliff",
-        "contact": {
-            "phone": "(992) 419-2929",
-            "email": "maryratliff@permadyne.com"
-        },
-        "address": {
-            "id": 9
-        }
-    },
-    {
-        "id": 42,
-        "firstName": "Deirdre",
-        "lastName": "Yang",
-        "contact": {
-            "phone": "(916) 437-3841",
-            "email": "deirdreyang@permadyne.com"
-        },
-        "address": {
-            "id": 5
-        }
-    },
-    {
-        "id": 43,
-        "firstName": "Tabatha",
-        "lastName": "Combs",
-        "contact": {
-            "phone": "(855) 510-3584",
-            "email": "tabathacombs@permadyne.com"
-        },
-        "address": {
-            "id": 8
-        }
-    },
-    {
-        "id": 44,
-        "firstName": "Juanita",
-        "lastName": "Thomas",
-        "contact": {
-            "phone": "(811) 424-3018",
-            "email": "juanitathomas@permadyne.com"
-        },
-        "address": {
-            "id": 10
-        }
-    },
-    {
-        "id": 45,
-        "firstName": "Case",
-        "lastName": "Cohen",
-        "contact": {
-            "phone": "(887) 518-2805",
-            "email": "casecohen@permadyne.com"
-        },
-        "address": {
-            "id": 3
-        }
-    },
-    {
-        "id": 46,
-        "firstName": "Susie",
-        "lastName": "Shepherd",
-        "contact": {
-            "phone": "(937) 455-3593",
-            "email": "susieshepherd@permadyne.com"
-        },
-        "address": {
-            "id": 4
-        }
-    },
-    {
-        "id": 47,
-        "firstName": "Candy",
-        "lastName": "Chang",
-        "contact": {
-            "phone": "(837) 595-3823",
-            "email": "candychang@permadyne.com"
-        },
-        "address": {
-            "id": 10
-        }
-    },
-    {
-        "id": 48,
-        "firstName": "Barber",
-        "lastName": "Buckley",
-        "contact": {
-            "phone": "(983) 471-3584",
-            "email": "barberbuckley@permadyne.com"
-        },
-        "address": {
-            "id": 3
-        }
-    },
-    {
-        "id": 49,
-        "firstName": "Tara",
-        "lastName": "Roberson",
-        "contact": {
-            "phone": "(906) 501-2419",
-            "email": "tararoberson@permadyne.com"
-        },
+        "lifeEvents": [
+            {
+                "year": 2014,
+                "description": "Quis velit proident dolore ipsum nostrud nulla commodo quis est incididunt."
+            },
+            {
+                "year": 2004,
+                "description": "Commodo id excepteur excepteur eiusmod."
+            },
+            {
+                "year": 2004,
+                "description": "Dolore ullamco aliqua ea eiusmod Lorem fugiat amet ex incididunt laboris."
+            }
+        ],
         "address": {
             "id": 6
         }
     },
     {
-        "id": 50,
-        "firstName": "Mcmahon",
-        "lastName": "Stanton",
+        "id": 31,
+        "firstName": "Macias",
+        "lastName": "Herman",
         "contact": {
-            "phone": "(928) 543-2284",
-            "email": "mcmahonstanton@permadyne.com"
+            "phone": "(858) 563-2260",
+            "email": "maciasherman@delphide.com"
         },
+        "workContact": {
+            "phone": "(890) 556-3200",
+            "email": "maciasherman@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2018,
+                "description": "Do in sit quis dolor laboris veniam commodo anim in duis in tempor laborum ex."
+            },
+            {
+                "year": 2009,
+                "description": "Id exercitation exercitation elit consequat officia pariatur aliqua adipisicing dolore nulla sint cillum tempor duis."
+            },
+            {
+                "year": 2011,
+                "description": "Irure enim consectetur adipisicing consequat ad duis quis."
+            },
+            {
+                "year": 2015,
+                "description": "Elit exercitation laboris irure veniam ad ea sint irure incididunt."
+            }
+        ],
+        "address": {
+            "id": 1
+        }
+    },
+    {
+        "id": 32,
+        "firstName": "Sparks",
+        "lastName": "Harper",
+        "contact": {
+            "phone": "(800) 571-2031",
+            "email": "sparksharper@delphide.com"
+        },
+        "workContact": {
+            "phone": "(973) 599-3867",
+            "email": "sparksharper@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2005,
+                "description": "Proident dolor sit adipisicing labore aliqua dolor anim proident qui cupidatat occaecat esse in esse."
+            },
+            {
+                "year": 1994,
+                "description": "Consequat adipisicing minim nulla dolore culpa dolore qui occaecat id."
+            },
+            {
+                "year": 2016,
+                "description": "Duis qui velit ex eiusmod fugiat ex."
+            },
+            {
+                "year": 2010,
+                "description": "Deserunt est aliqua pariatur do nisi duis."
+            },
+            {
+                "year": 2012,
+                "description": "Labore irure exercitation ea cupidatat deserunt officia pariatur cillum ad nostrud aliqua et."
+            }
+        ],
         "address": {
             "id": 2
         }
     },
     {
-        "id": 51,
-        "firstName": "Juliet",
-        "lastName": "Mccray",
+        "id": 33,
+        "firstName": "Donovan",
+        "lastName": "Blake",
         "contact": {
-            "phone": "(948) 467-2602",
-            "email": "julietmccray@permadyne.com"
+            "phone": "(815) 574-2022",
+            "email": "donovanblake@delphide.com"
         },
+        "workContact": {
+            "phone": "(864) 526-3336",
+            "email": "donovanblake@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2009,
+                "description": "Aliqua ullamco et elit Lorem nulla esse laboris adipisicing reprehenderit aliquip commodo aliqua."
+            },
+            {
+                "year": 2008,
+                "description": "Culpa ex voluptate reprehenderit ullamco exercitation ipsum nulla aliqua cupidatat."
+            }
+        ],
+        "address": {
+            "id": 7
+        }
+    },
+    {
+        "id": 34,
+        "firstName": "Erna",
+        "lastName": "Joseph",
+        "contact": {
+            "phone": "(995) 582-2669",
+            "email": "ernajoseph@delphide.com"
+        },
+        "workContact": {
+            "phone": "(959) 486-3270",
+            "email": "ernajoseph@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2000,
+                "description": "Proident id quis labore laboris."
+            },
+            {
+                "year": 1995,
+                "description": "Irure irure consequat excepteur adipisicing aliqua voluptate excepteur ad ullamco irure culpa laboris sit."
+            }
+        ],
+        "address": {
+            "id": 9
+        }
+    },
+    {
+        "id": 35,
+        "firstName": "Tammi",
+        "lastName": "Trevino",
+        "contact": {
+            "phone": "(946) 489-2546",
+            "email": "tammitrevino@delphide.com"
+        },
+        "workContact": {
+            "phone": "(996) 431-2727",
+            "email": "tammitrevino@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2011,
+                "description": "Culpa nulla minim sunt magna eu minim elit minim mollit."
+            },
+            {
+                "year": 2008,
+                "description": "Esse laborum voluptate nisi sit amet duis enim."
+            },
+            {
+                "year": 1998,
+                "description": "Fugiat aute magna irure qui laboris deserunt ipsum proident quis aliquip ad."
+            }
+        ],
+        "address": {
+            "id": 6
+        }
+    },
+    {
+        "id": 36,
+        "firstName": "Adkins",
+        "lastName": "Griffin",
+        "contact": {
+            "phone": "(828) 536-3740",
+            "email": "adkinsgriffin@delphide.com"
+        },
+        "workContact": {
+            "phone": "(874) 581-3851",
+            "email": "adkinsgriffin@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2017,
+                "description": "Elit cupidatat consequat quis amet nisi est minim magna mollit et amet."
+            },
+            {
+                "year": 1993,
+                "description": "Irure esse ullamco sit sunt incididunt id laboris consectetur dolore et eiusmod."
+            },
+            {
+                "year": 2003,
+                "description": "Id incididunt incididunt occaecat aliqua ut ea."
+            }
+        ],
+        "address": {
+            "id": 4
+        }
+    },
+    {
+        "id": 37,
+        "firstName": "Trina",
+        "lastName": "Crawford",
+        "contact": {
+            "phone": "(979) 548-2198",
+            "email": "trinacrawford@delphide.com"
+        },
+        "workContact": {
+            "phone": "(966) 466-2624",
+            "email": "trinacrawford@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1996,
+                "description": "Amet culpa nisi nostrud nostrud ea."
+            },
+            {
+                "year": 1991,
+                "description": "Tempor ut mollit exercitation Lorem nisi ipsum irure esse pariatur magna."
+            }
+        ],
+        "address": {
+            "id": 7
+        }
+    },
+    {
+        "id": 38,
+        "firstName": "Taylor",
+        "lastName": "Anthony",
+        "contact": {
+            "phone": "(852) 532-3818",
+            "email": "tayloranthony@delphide.com"
+        },
+        "workContact": {
+            "phone": "(809) 413-2080",
+            "email": "tayloranthony@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2018,
+                "description": "Incididunt proident voluptate dolore duis dolor deserunt proident."
+            },
+            {
+                "year": 2001,
+                "description": "Et laboris quis culpa ut fugiat in."
+            },
+            {
+                "year": 2005,
+                "description": "Laborum eu quis sit consectetur voluptate veniam exercitation elit elit duis fugiat labore ea."
+            }
+        ],
+        "address": {
+            "id": 5
+        }
+    },
+    {
+        "id": 39,
+        "firstName": "Sloan",
+        "lastName": "Roberson",
+        "contact": {
+            "phone": "(843) 402-2521",
+            "email": "sloanroberson@delphide.com"
+        },
+        "workContact": {
+            "phone": "(845) 471-3862",
+            "email": "sloanroberson@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2000,
+                "description": "Eiusmod nostrud anim aute id labore fugiat pariatur Lorem dolor sit labore non ea."
+            },
+            {
+                "year": 1999,
+                "description": "Amet est voluptate est aliquip."
+            }
+        ],
+        "address": {
+            "id": 6
+        }
+    },
+    {
+        "id": 40,
+        "firstName": "Lucile",
+        "lastName": "Melendez",
+        "contact": {
+            "phone": "(839) 429-2164",
+            "email": "lucilemelendez@delphide.com"
+        },
+        "workContact": {
+            "phone": "(998) 550-3147",
+            "email": "lucilemelendez@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2013,
+                "description": "Culpa fugiat non reprehenderit eu aliquip pariatur."
+            },
+            {
+                "year": 1997,
+                "description": "Laboris consequat nostrud ad proident."
+            }
+        ],
+        "address": {
+            "id": 1
+        }
+    },
+    {
+        "id": 41,
+        "firstName": "Koch",
+        "lastName": "Kirk",
+        "contact": {
+            "phone": "(853) 578-3460",
+            "email": "kochkirk@delphide.com"
+        },
+        "workContact": {
+            "phone": "(847) 489-3473",
+            "email": "kochkirk@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2005,
+                "description": "Minim excepteur magna nisi qui deserunt consectetur ullamco."
+            },
+            {
+                "year": 1992,
+                "description": "Eiusmod deserunt esse deserunt labore dolor amet esse aliqua excepteur et."
+            }
+        ],
+        "address": {
+            "id": 4
+        }
+    },
+    {
+        "id": 42,
+        "firstName": "Mercado",
+        "lastName": "Hill",
+        "contact": {
+            "phone": "(992) 434-3970",
+            "email": "mercadohill@delphide.com"
+        },
+        "workContact": {
+            "phone": "(820) 519-3832",
+            "email": "mercadohill@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2002,
+                "description": "Amet proident minim deserunt laboris voluptate laboris."
+            },
+            {
+                "year": 1995,
+                "description": "Incididunt est aliquip dolore laboris officia fugiat nulla cillum labore sunt."
+            },
+            {
+                "year": 1997,
+                "description": "Consectetur laborum voluptate dolor dolor tempor."
+            }
+        ],
+        "address": {
+            "id": 7
+        }
+    },
+    {
+        "id": 43,
+        "firstName": "Cannon",
+        "lastName": "Baldwin",
+        "contact": {
+            "phone": "(940) 529-2498",
+            "email": "cannonbaldwin@delphide.com"
+        },
+        "workContact": {
+            "phone": "(912) 492-3427",
+            "email": "cannonbaldwin@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2007,
+                "description": "In voluptate ex est incididunt officia ea cillum occaecat pariatur consectetur laboris officia."
+            },
+            {
+                "year": 1996,
+                "description": "Do duis in non ex elit consectetur nulla dolore labore sunt occaecat."
+            }
+        ],
+        "address": {
+            "id": 5
+        }
+    },
+    {
+        "id": 44,
+        "firstName": "Rosemarie",
+        "lastName": "Goodwin",
+        "contact": {
+            "phone": "(992) 484-2901",
+            "email": "rosemariegoodwin@delphide.com"
+        },
+        "workContact": {
+            "phone": "(920) 455-2305",
+            "email": "rosemariegoodwin@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2009,
+                "description": "Fugiat ad esse consectetur consequat ipsum."
+            },
+            {
+                "year": 2007,
+                "description": "Voluptate est dolor aute dolore proident commodo consequat sit consequat quis ipsum ea."
+            },
+            {
+                "year": 1991,
+                "description": "Enim elit labore ipsum elit veniam qui occaecat dolor eu reprehenderit."
+            },
+            {
+                "year": 2019,
+                "description": "Excepteur do esse fugiat proident aliqua."
+            }
+        ],
+        "address": {
+            "id": 2
+        }
+    },
+    {
+        "id": 45,
+        "firstName": "Faith",
+        "lastName": "Palmer",
+        "contact": {
+            "phone": "(902) 418-3717",
+            "email": "faithpalmer@delphide.com"
+        },
+        "workContact": {
+            "phone": "(851) 588-3289",
+            "email": "faithpalmer@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1999,
+                "description": "Ea anim consequat non occaecat dolor commodo."
+            },
+            {
+                "year": 1999,
+                "description": "Lorem occaecat nulla reprehenderit incididunt elit reprehenderit esse quis culpa id consectetur commodo."
+            },
+            {
+                "year": 2016,
+                "description": "Consequat sunt eiusmod voluptate in aliquip enim aliquip."
+            },
+            {
+                "year": 2003,
+                "description": "Ea minim velit fugiat do fugiat."
+            },
+            {
+                "year": 2002,
+                "description": "Fugiat aute irure fugiat sit veniam officia aute ipsum mollit ad aute fugiat."
+            }
+        ],
+        "address": {
+            "id": 6
+        }
+    },
+    {
+        "id": 46,
+        "firstName": "Elisabeth",
+        "lastName": "Vincent",
+        "contact": {
+            "phone": "(995) 460-3229",
+            "email": "elisabethvincent@delphide.com"
+        },
+        "workContact": {
+            "phone": "(863) 501-2312",
+            "email": "elisabethvincent@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2011,
+                "description": "Laborum enim ex aliqua pariatur fugiat reprehenderit ipsum aliquip nulla elit eu do."
+            },
+            {
+                "year": 2014,
+                "description": "Qui cupidatat in dolor eu consectetur culpa duis Lorem minim officia nostrud."
+            },
+            {
+                "year": 2006,
+                "description": "Officia veniam elit ullamco pariatur dolor dolor nisi aliqua pariatur occaecat anim excepteur."
+            },
+            {
+                "year": 2005,
+                "description": "Pariatur mollit sint eiusmod velit."
+            },
+            {
+                "year": 1999,
+                "description": "Nisi qui elit dolore pariatur do ut irure Lorem pariatur."
+            }
+        ],
+        "address": {
+            "id": 1
+        }
+    },
+    {
+        "id": 47,
+        "firstName": "Strickland",
+        "lastName": "Christensen",
+        "contact": {
+            "phone": "(809) 508-3050",
+            "email": "stricklandchristensen@delphide.com"
+        },
+        "workContact": {
+            "phone": "(976) 556-3303",
+            "email": "stricklandchristensen@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2016,
+                "description": "Dolore consequat Lorem cupidatat mollit."
+            },
+            {
+                "year": 2006,
+                "description": "Esse reprehenderit elit ea sunt deserunt nostrud cupidatat est nostrud laborum laboris nostrud aute."
+            }
+        ],
+        "address": {
+            "id": 1
+        }
+    },
+    {
+        "id": 48,
+        "firstName": "Autumn",
+        "lastName": "Church",
+        "contact": {
+            "phone": "(995) 456-2880",
+            "email": "autumnchurch@delphide.com"
+        },
+        "workContact": {
+            "phone": "(912) 534-2566",
+            "email": "autumnchurch@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1994,
+                "description": "Excepteur laboris sit Lorem veniam commodo veniam magna quis."
+            },
+            {
+                "year": 2001,
+                "description": "Est velit ipsum voluptate exercitation tempor anim cupidatat laborum mollit adipisicing aute duis sint."
+            },
+            {
+                "year": 1999,
+                "description": "Cillum anim cillum et veniam dolor sit enim eu est tempor nulla culpa tempor elit."
+            }
+        ],
+        "address": {
+            "id": 10
+        }
+    },
+    {
+        "id": 49,
+        "firstName": "Sallie",
+        "lastName": "Meyer",
+        "contact": {
+            "phone": "(898) 426-2972",
+            "email": "salliemeyer@delphide.com"
+        },
+        "workContact": {
+            "phone": "(917) 523-2518",
+            "email": "salliemeyer@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2004,
+                "description": "Consequat ut excepteur quis do."
+            },
+            {
+                "year": 1991,
+                "description": "Do eiusmod deserunt consequat occaecat sit non enim voluptate."
+            },
+            {
+                "year": 1995,
+                "description": "Aliqua exercitation ex pariatur occaecat pariatur eiusmod minim aute tempor voluptate amet quis elit minim."
+            }
+        ],
+        "address": {
+            "id": 1
+        }
+    },
+    {
+        "id": 50,
+        "firstName": "Foster",
+        "lastName": "Russo",
+        "contact": {
+            "phone": "(984) 558-2410",
+            "email": "fosterrusso@delphide.com"
+        },
+        "workContact": {
+            "phone": "(946) 455-2756",
+            "email": "fosterrusso@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1996,
+                "description": "Eiusmod amet ex dolore reprehenderit nostrud reprehenderit in enim consequat cillum."
+            },
+            {
+                "year": 2006,
+                "description": "Cupidatat culpa non aute minim id irure."
+            },
+            {
+                "year": 2006,
+                "description": "Reprehenderit ullamco nostrud do voluptate ut anim cupidatat exercitation commodo labore."
+            },
+            {
+                "year": 2002,
+                "description": "Proident tempor ea velit ullamco incididunt."
+            }
+        ],
+        "address": {
+            "id": 5
+        }
+    },
+    {
+        "id": 51,
+        "firstName": "Herrera",
+        "lastName": "Elliott",
+        "contact": {
+            "phone": "(864) 420-2064",
+            "email": "herreraelliott@delphide.com"
+        },
+        "workContact": {
+            "phone": "(829) 433-2422",
+            "email": "herreraelliott@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2013,
+                "description": "Commodo aute culpa qui consectetur aliquip consequat."
+            },
+            {
+                "year": 2004,
+                "description": "Laborum ex irure ullamco non do tempor est amet tempor voluptate minim consectetur dolore ut."
+            },
+            {
+                "year": 2010,
+                "description": "Qui elit dolor in sit elit amet mollit laborum."
+            },
+            {
+                "year": 1999,
+                "description": "Nulla excepteur non eu dolor aute incididunt sint fugiat."
+            }
+        ],
         "address": {
             "id": 10
         }
     },
     {
         "id": 52,
-        "firstName": "Dora",
-        "lastName": "Alvarado",
+        "firstName": "Porter",
+        "lastName": "Velez",
         "contact": {
-            "phone": "(958) 457-2068",
-            "email": "doraalvarado@permadyne.com"
+            "phone": "(896) 441-2611",
+            "email": "portervelez@delphide.com"
         },
+        "workContact": {
+            "phone": "(852) 568-3186",
+            "email": "portervelez@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2018,
+                "description": "Id amet aliquip dolor voluptate ipsum mollit ullamco velit magna incididunt consectetur est proident."
+            },
+            {
+                "year": 1998,
+                "description": "Aliquip est aliquip anim enim."
+            }
+        ],
         "address": {
-            "id": 2
+            "id": 10
         }
     },
     {
         "id": 53,
-        "firstName": "Burke",
-        "lastName": "Bean",
+        "firstName": "House",
+        "lastName": "Rose",
         "contact": {
-            "phone": "(834) 497-3630",
-            "email": "burkebean@permadyne.com"
+            "phone": "(919) 531-2589",
+            "email": "houserose@delphide.com"
         },
+        "workContact": {
+            "phone": "(871) 499-3361",
+            "email": "houserose@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2012,
+                "description": "Enim velit excepteur laboris nisi dolor deserunt anim consequat laborum."
+            },
+            {
+                "year": 2017,
+                "description": "Culpa elit qui ea ipsum."
+            },
+            {
+                "year": 2018,
+                "description": "Dolore dolore tempor eiusmod id sunt sunt labore do commodo voluptate qui laborum incididunt incididunt."
+            },
+            {
+                "year": 2001,
+                "description": "Voluptate labore sit commodo exercitation aute nisi consequat minim velit reprehenderit incididunt labore aliquip."
+            },
+            {
+                "year": 1997,
+                "description": "Dolor qui esse et officia deserunt Lorem velit sint ipsum ad in."
+            }
+        ],
         "address": {
             "id": 1
         }
     },
     {
         "id": 54,
-        "firstName": "Amparo",
-        "lastName": "Vaughn",
+        "firstName": "Mcbride",
+        "lastName": "Cole",
         "contact": {
-            "phone": "(909) 439-2816",
-            "email": "amparovaughn@permadyne.com"
+            "phone": "(845) 410-2439",
+            "email": "mcbridecole@delphide.com"
         },
+        "workContact": {
+            "phone": "(977) 577-3544",
+            "email": "mcbridecole@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2002,
+                "description": "Aliquip occaecat exercitation deserunt consequat officia aliqua ex adipisicing aliqua voluptate occaecat."
+            },
+            {
+                "year": 2001,
+                "description": "Dolor deserunt anim aliquip est elit eiusmod."
+            },
+            {
+                "year": 2016,
+                "description": "Mollit veniam officia qui ad duis esse amet sunt sit."
+            },
+            {
+                "year": 2007,
+                "description": "Excepteur nulla proident Lorem sint labore."
+            },
+            {
+                "year": 2011,
+                "description": "Commodo officia aliquip quis deserunt ut ad eiusmod laboris exercitation qui."
+            }
+        ],
         "address": {
             "id": 6
         }
     },
     {
         "id": 55,
-        "firstName": "Bonner",
-        "lastName": "Mcdaniel",
+        "firstName": "Lynda",
+        "lastName": "Hernandez",
         "contact": {
-            "phone": "(852) 580-3181",
-            "email": "bonnermcdaniel@permadyne.com"
+            "phone": "(853) 575-2642",
+            "email": "lyndahernandez@delphide.com"
         },
+        "workContact": {
+            "phone": "(935) 484-2232",
+            "email": "lyndahernandez@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2002,
+                "description": "Reprehenderit duis officia amet sunt."
+            },
+            {
+                "year": 2018,
+                "description": "Ullamco sint occaecat est sit nisi irure esse duis laboris enim non commodo."
+            },
+            {
+                "year": 2007,
+                "description": "Exercitation ut anim officia anim officia laborum nulla enim velit elit magna nulla labore."
+            }
+        ],
         "address": {
-            "id": 7
+            "id": 6
         }
     },
     {
         "id": 56,
-        "firstName": "Santiago",
-        "lastName": "Hammond",
+        "firstName": "Laurie",
+        "lastName": "Marsh",
         "contact": {
-            "phone": "(992) 464-3954",
-            "email": "santiagohammond@permadyne.com"
+            "phone": "(995) 578-2997",
+            "email": "lauriemarsh@delphide.com"
         },
+        "workContact": {
+            "phone": "(856) 573-2209",
+            "email": "lauriemarsh@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2000,
+                "description": "Laborum cillum cillum ut excepteur eiusmod cillum et fugiat."
+            },
+            {
+                "year": 2008,
+                "description": "Occaecat qui laboris anim occaecat et."
+            },
+            {
+                "year": 2012,
+                "description": "Aliquip aliqua mollit sit incididunt minim excepteur sit dolor deserunt."
+            },
+            {
+                "year": 2018,
+                "description": "Ut officia aliqua nisi tempor sunt mollit est aliquip quis fugiat fugiat aliquip laborum occaecat."
+            }
+        ],
         "address": {
             "id": 6
         }
     },
     {
         "id": 57,
-        "firstName": "Shirley",
-        "lastName": "Gay",
+        "firstName": "Massey",
+        "lastName": "Mckee",
         "contact": {
-            "phone": "(856) 448-2304",
-            "email": "shirleygay@permadyne.com"
+            "phone": "(935) 596-2328",
+            "email": "masseymckee@delphide.com"
         },
+        "workContact": {
+            "phone": "(946) 577-3833",
+            "email": "masseymckee@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1997,
+                "description": "Sit eiusmod proident exercitation laboris laborum ad magna ea."
+            },
+            {
+                "year": 2006,
+                "description": "Laborum ex ullamco sit fugiat."
+            },
+            {
+                "year": 2008,
+                "description": "Ut sint enim ut labore pariatur nisi duis sint incididunt."
+            },
+            {
+                "year": 1993,
+                "description": "Enim minim et ut ullamco quis."
+            },
+            {
+                "year": 1998,
+                "description": "Ex velit minim anim in."
+            }
+        ],
         "address": {
-            "id": 6
+            "id": 4
         }
     },
     {
         "id": 58,
-        "firstName": "Kristin",
-        "lastName": "Roach",
+        "firstName": "Tessa",
+        "lastName": "Cruz",
         "contact": {
-            "phone": "(956) 562-3968",
-            "email": "kristinroach@permadyne.com"
+            "phone": "(804) 453-3955",
+            "email": "tessacruz@delphide.com"
         },
+        "workContact": {
+            "phone": "(919) 527-3792",
+            "email": "tessacruz@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1994,
+                "description": "Eiusmod laboris dolor qui culpa culpa irure eu non."
+            },
+            {
+                "year": 1998,
+                "description": "Labore culpa ipsum nisi laborum laboris anim ad ad ullamco officia ex Lorem adipisicing incididunt."
+            }
+        ],
         "address": {
-            "id": 6
+            "id": 8
         }
     },
     {
         "id": 59,
-        "firstName": "Hope",
-        "lastName": "Knowles",
+        "firstName": "Woodward",
+        "lastName": "Waters",
         "contact": {
-            "phone": "(905) 586-3259",
-            "email": "hopeknowles@permadyne.com"
+            "phone": "(861) 559-2239",
+            "email": "woodwardwaters@delphide.com"
         },
+        "workContact": {
+            "phone": "(961) 572-2674",
+            "email": "woodwardwaters@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1992,
+                "description": "Incididunt enim cupidatat officia id eiusmod mollit velit dolore ea adipisicing duis pariatur."
+            },
+            {
+                "year": 1999,
+                "description": "Occaecat excepteur eu laborum anim mollit dolor cupidatat deserunt nostrud tempor qui elit pariatur."
+            },
+            {
+                "year": 1990,
+                "description": "Deserunt sunt qui exercitation non."
+            }
+        ],
+        "address": {
+            "id": 9
+        }
+    },
+    {
+        "id": 60,
+        "firstName": "Kim",
+        "lastName": "Davis",
+        "contact": {
+            "phone": "(818) 598-3175",
+            "email": "kimdavis@delphide.com"
+        },
+        "workContact": {
+            "phone": "(929) 412-3131",
+            "email": "kimdavis@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1990,
+                "description": "Ea deserunt minim enim velit excepteur occaecat laborum mollit tempor anim fugiat veniam."
+            },
+            {
+                "year": 2017,
+                "description": "Exercitation cillum duis id dolore Lorem sunt esse."
+            },
+            {
+                "year": 1993,
+                "description": "Incididunt aliquip sunt et excepteur exercitation cupidatat elit laborum adipisicing in ex nostrud."
+            },
+            {
+                "year": 2000,
+                "description": "Nostrud aute enim aliqua in nisi."
+            },
+            {
+                "year": 2000,
+                "description": "Reprehenderit ex aliquip eiusmod veniam Lorem officia."
+            }
+        ],
+        "address": {
+            "id": 7
+        }
+    },
+    {
+        "id": 61,
+        "firstName": "Carter",
+        "lastName": "Roy",
+        "contact": {
+            "phone": "(829) 552-2077",
+            "email": "carterroy@delphide.com"
+        },
+        "workContact": {
+            "phone": "(944) 586-3759",
+            "email": "carterroy@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2009,
+                "description": "Elit qui nostrud deserunt tempor irure nostrud."
+            },
+            {
+                "year": 2013,
+                "description": "Aute do sunt amet ipsum reprehenderit consequat proident ea laboris duis tempor velit in."
+            }
+        ],
+        "address": {
+            "id": 5
+        }
+    },
+    {
+        "id": 62,
+        "firstName": "Ortega",
+        "lastName": "Mayo",
+        "contact": {
+            "phone": "(834) 491-2839",
+            "email": "ortegamayo@delphide.com"
+        },
+        "workContact": {
+            "phone": "(921) 438-3146",
+            "email": "ortegamayo@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1998,
+                "description": "Sit id minim esse sunt minim reprehenderit culpa aliquip laboris enim."
+            },
+            {
+                "year": 2007,
+                "description": "Minim ea incididunt est commodo labore voluptate."
+            },
+            {
+                "year": 2000,
+                "description": "Occaecat nostrud fugiat eu elit cupidatat officia non reprehenderit eiusmod amet velit quis eu quis."
+            },
+            {
+                "year": 2019,
+                "description": "Veniam incididunt irure ad est."
+            }
+        ],
+        "address": {
+            "id": 9
+        }
+    },
+    {
+        "id": 63,
+        "firstName": "Walton",
+        "lastName": "Lawrence",
+        "contact": {
+            "phone": "(858) 517-3409",
+            "email": "waltonlawrence@delphide.com"
+        },
+        "workContact": {
+            "phone": "(838) 467-2038",
+            "email": "waltonlawrence@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2004,
+                "description": "Sint ea ipsum consectetur duis nulla id."
+            },
+            {
+                "year": 2000,
+                "description": "Lorem esse ullamco nisi id consequat eiusmod fugiat aliqua."
+            }
+        ],
         "address": {
             "id": 10
         }
     },
     {
-        "id": 60,
-        "firstName": "Odessa",
-        "lastName": "Clemons",
-        "contact": {
-            "phone": "(827) 576-2324",
-            "email": "odessaclemons@permadyne.com"
-        },
-        "address": {
-            "id": 9
-        }
-    },
-    {
-        "id": 61,
-        "firstName": "Krista",
-        "lastName": "Petty",
-        "contact": {
-            "phone": "(969) 493-2541",
-            "email": "kristapetty@permadyne.com"
-        },
-        "address": {
-            "id": 1
-        }
-    },
-    {
-        "id": 62,
-        "firstName": "Dianna",
-        "lastName": "Holden",
-        "contact": {
-            "phone": "(897) 597-2676",
-            "email": "diannaholden@permadyne.com"
-        },
-        "address": {
-            "id": 1
-        }
-    },
-    {
-        "id": 63,
-        "firstName": "Eddie",
-        "lastName": "Whitley",
-        "contact": {
-            "phone": "(958) 542-2313",
-            "email": "eddiewhitley@permadyne.com"
-        },
-        "address": {
-            "id": 3
-        }
-    },
-    {
         "id": 64,
-        "firstName": "Winifred",
-        "lastName": "Blair",
+        "firstName": "Bentley",
+        "lastName": "Bernard",
         "contact": {
-            "phone": "(924) 542-2042",
-            "email": "winifredblair@permadyne.com"
+            "phone": "(809) 564-3239",
+            "email": "bentleybernard@delphide.com"
         },
-        "address": {
-            "id": 2
-        }
-    },
-    {
-        "id": 65,
-        "firstName": "King",
-        "lastName": "Burris",
-        "contact": {
-            "phone": "(864) 494-2759",
-            "email": "kingburris@permadyne.com"
+        "workContact": {
+            "phone": "(850) 493-2720",
+            "email": "bentleybernard@delphide.com"
         },
-        "address": {
-            "id": 7
-        }
-    },
-    {
-        "id": 66,
-        "firstName": "Rosella",
-        "lastName": "Contreras",
-        "contact": {
-            "phone": "(991) 510-2742",
-            "email": "rosellacontreras@permadyne.com"
-        },
-        "address": {
-            "id": 1
-        }
-    },
-    {
-        "id": 67,
-        "firstName": "Wynn",
-        "lastName": "Perez",
-        "contact": {
-            "phone": "(978) 590-3230",
-            "email": "wynnperez@permadyne.com"
-        },
-        "address": {
-            "id": 7
-        }
-    },
-    {
-        "id": 68,
-        "firstName": "Oneill",
-        "lastName": "Mack",
-        "contact": {
-            "phone": "(905) 499-2247",
-            "email": "oneillmack@permadyne.com"
-        },
-        "address": {
-            "id": 5
-        }
-    },
-    {
-        "id": 69,
-        "firstName": "Osborne",
-        "lastName": "Brock",
-        "contact": {
-            "phone": "(907) 520-2351",
-            "email": "osbornebrock@permadyne.com"
-        },
-        "address": {
-            "id": 3
-        }
-    },
-    {
-        "id": 70,
-        "firstName": "Hardy",
-        "lastName": "Macias",
-        "contact": {
-            "phone": "(822) 551-2726",
-            "email": "hardymacias@permadyne.com"
-        },
-        "address": {
-            "id": 7
-        }
-    },
-    {
-        "id": 71,
-        "firstName": "Kate",
-        "lastName": "Monroe",
-        "contact": {
-            "phone": "(800) 540-2181",
-            "email": "katemonroe@permadyne.com"
-        },
-        "address": {
-            "id": 5
-        }
-    },
-    {
-        "id": 72,
-        "firstName": "Reba",
-        "lastName": "Dyer",
-        "contact": {
-            "phone": "(995) 483-3605",
-            "email": "rebadyer@permadyne.com"
-        },
-        "address": {
-            "id": 5
-        }
-    },
-    {
-        "id": 73,
-        "firstName": "Andrews",
-        "lastName": "Powers",
-        "contact": {
-            "phone": "(999) 401-2335",
-            "email": "andrewspowers@permadyne.com"
-        },
-        "address": {
-            "id": 3
-        }
-    },
-    {
-        "id": 74,
-        "firstName": "Kendra",
-        "lastName": "Simon",
-        "contact": {
-            "phone": "(911) 521-3242",
-            "email": "kendrasimon@permadyne.com"
-        },
-        "address": {
-            "id": 8
-        }
-    },
-    {
-        "id": 75,
-        "firstName": "Alford",
-        "lastName": "Whitehead",
-        "contact": {
-            "phone": "(994) 588-3128",
-            "email": "alfordwhitehead@permadyne.com"
-        },
-        "address": {
-            "id": 2
-        }
-    },
-    {
-        "id": 76,
-        "firstName": "Alejandra",
-        "lastName": "Lott",
-        "contact": {
-            "phone": "(892) 483-3958",
-            "email": "alejandralott@permadyne.com"
-        },
-        "address": {
-            "id": 5
-        }
-    },
-    {
-        "id": 77,
-        "firstName": "Marsha",
-        "lastName": "Brooks",
-        "contact": {
-            "phone": "(807) 586-3773",
-            "email": "marshabrooks@permadyne.com"
-        },
-        "address": {
-            "id": 8
-        }
-    },
-    {
-        "id": 78,
-        "firstName": "Laurel",
-        "lastName": "Ray",
-        "contact": {
-            "phone": "(970) 484-3455",
-            "email": "laurelray@permadyne.com"
-        },
-        "address": {
-            "id": 9
-        }
-    },
-    {
-        "id": 79,
-        "firstName": "Madeleine",
-        "lastName": "Pope",
-        "contact": {
-            "phone": "(818) 405-3187",
-            "email": "madeleinepope@permadyne.com"
-        },
-        "address": {
-            "id": 7
-        }
-    },
-    {
-        "id": 80,
-        "firstName": "Madelyn",
-        "lastName": "Washington",
-        "contact": {
-            "phone": "(905) 436-2061",
-            "email": "madelynwashington@permadyne.com"
-        },
-        "address": {
-            "id": 7
-        }
-    },
-    {
-        "id": 81,
-        "firstName": "Victoria",
-        "lastName": "Justice",
-        "contact": {
-            "phone": "(836) 439-3512",
-            "email": "victoriajustice@permadyne.com"
-        },
+        "lifeEvents": [
+            {
+                "year": 1992,
+                "description": "Ullamco esse consequat in Lorem tempor amet ad elit laboris nisi qui."
+            },
+            {
+                "year": 2014,
+                "description": "Consequat ad reprehenderit nulla eiusmod dolor ea esse qui officia anim consectetur."
+            }
+        ],
         "address": {
             "id": 6
         }
     },
     {
-        "id": 82,
-        "firstName": "Kelly",
-        "lastName": "Robbins",
+        "id": 65,
+        "firstName": "Bettye",
+        "lastName": "Nieves",
         "contact": {
-            "phone": "(911) 561-2218",
-            "email": "kellyrobbins@permadyne.com"
+            "phone": "(981) 499-3901",
+            "email": "bettyenieves@delphide.com"
         },
+        "workContact": {
+            "phone": "(917) 492-3943",
+            "email": "bettyenieves@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1999,
+                "description": "Dolore adipisicing deserunt fugiat excepteur."
+            },
+            {
+                "year": 1997,
+                "description": "Ullamco consectetur incididunt sunt eu anim cillum laborum non."
+            },
+            {
+                "year": 2000,
+                "description": "Tempor deserunt id ullamco sint."
+            },
+            {
+                "year": 1997,
+                "description": "Dolore dolore adipisicing proident deserunt consequat labore id sunt et in."
+            },
+            {
+                "year": 2002,
+                "description": "Aliqua esse amet in et amet aliquip eiusmod ad magna eu reprehenderit fugiat aliquip cillum."
+            }
+        ],
+        "address": {
+            "id": 1
+        }
+    },
+    {
+        "id": 66,
+        "firstName": "Kathrine",
+        "lastName": "Boyle",
+        "contact": {
+            "phone": "(905) 495-3262",
+            "email": "kathrineboyle@delphide.com"
+        },
+        "workContact": {
+            "phone": "(939) 448-2214",
+            "email": "kathrineboyle@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2008,
+                "description": "Aute sit anim aute est duis cupidatat ad commodo sint officia irure elit veniam nisi."
+            },
+            {
+                "year": 2005,
+                "description": "Sunt aliqua aute officia laboris culpa aliqua culpa aute commodo minim non aliquip."
+            }
+        ],
+        "address": {
+            "id": 5
+        }
+    },
+    {
+        "id": 67,
+        "firstName": "Lena",
+        "lastName": "Fitzgerald",
+        "contact": {
+            "phone": "(866) 506-2270",
+            "email": "lenafitzgerald@delphide.com"
+        },
+        "workContact": {
+            "phone": "(948) 493-2618",
+            "email": "lenafitzgerald@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2011,
+                "description": "Deserunt duis sunt consequat voluptate do ex enim consectetur ullamco aliqua."
+            },
+            {
+                "year": 2004,
+                "description": "Exercitation aliquip amet anim magna eu ad minim eu aliqua nostrud."
+            },
+            {
+                "year": 2002,
+                "description": "Eu excepteur consectetur anim ad fugiat."
+            },
+            {
+                "year": 2017,
+                "description": "Pariatur sunt ea anim laboris."
+            }
+        ],
+        "address": {
+            "id": 4
+        }
+    },
+    {
+        "id": 68,
+        "firstName": "Murphy",
+        "lastName": "Torres",
+        "contact": {
+            "phone": "(924) 409-3410",
+            "email": "murphytorres@delphide.com"
+        },
+        "workContact": {
+            "phone": "(923) 496-3481",
+            "email": "murphytorres@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2019,
+                "description": "Ullamco deserunt qui id in magna id esse tempor aliqua occaecat ad."
+            },
+            {
+                "year": 2001,
+                "description": "Tempor sint in dolor consequat laborum proident ut non aliquip incididunt esse proident sunt sunt."
+            },
+            {
+                "year": 1992,
+                "description": "Magna veniam ex aute deserunt minim labore cillum cillum elit non excepteur."
+            },
+            {
+                "year": 2000,
+                "description": "Laborum tempor ut est nisi nostrud cillum eiusmod minim."
+            },
+            {
+                "year": 2008,
+                "description": "Labore officia excepteur ex commodo pariatur irure veniam non duis ut ea dolor."
+            }
+        ],
+        "address": {
+            "id": 10
+        }
+    },
+    {
+        "id": 69,
+        "firstName": "Leanne",
+        "lastName": "Boone",
+        "contact": {
+            "phone": "(875) 547-2189",
+            "email": "leanneboone@delphide.com"
+        },
+        "workContact": {
+            "phone": "(981) 408-3784",
+            "email": "leanneboone@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2019,
+                "description": "Consequat ullamco proident nostrud aute officia excepteur excepteur eiusmod reprehenderit magna."
+            },
+            {
+                "year": 2003,
+                "description": "Et id aliquip esse cillum."
+            },
+            {
+                "year": 2014,
+                "description": "Do esse voluptate velit consequat id consequat."
+            },
+            {
+                "year": 2006,
+                "description": "Laborum ipsum nostrud et ullamco culpa nostrud voluptate Lorem occaecat voluptate elit tempor ipsum."
+            }
+        ],
+        "address": {
+            "id": 2
+        }
+    },
+    {
+        "id": 70,
+        "firstName": "Hunter",
+        "lastName": "Hurst",
+        "contact": {
+            "phone": "(922) 456-2639",
+            "email": "hunterhurst@delphide.com"
+        },
+        "workContact": {
+            "phone": "(952) 547-3600",
+            "email": "hunterhurst@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1996,
+                "description": "In quis exercitation sint mollit qui est ipsum adipisicing id non commodo."
+            },
+            {
+                "year": 1996,
+                "description": "Excepteur nulla elit velit incididunt ipsum anim velit nulla quis eiusmod in."
+            },
+            {
+                "year": 2011,
+                "description": "Consectetur aute culpa amet mollit voluptate voluptate amet commodo."
+            },
+            {
+                "year": 2013,
+                "description": "Consequat aute nulla esse voluptate proident exercitation eiusmod cillum."
+            },
+            {
+                "year": 2015,
+                "description": "Laborum duis exercitation deserunt magna do et consequat occaecat voluptate veniam laboris laborum velit."
+            }
+        ],
+        "address": {
+            "id": 4
+        }
+    },
+    {
+        "id": 71,
+        "firstName": "Vega",
+        "lastName": "Montoya",
+        "contact": {
+            "phone": "(934) 459-2691",
+            "email": "vegamontoya@delphide.com"
+        },
+        "workContact": {
+            "phone": "(827) 472-3232",
+            "email": "vegamontoya@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1998,
+                "description": "Mollit tempor laborum ullamco occaecat reprehenderit ullamco laboris sit id irure ullamco."
+            },
+            {
+                "year": 2019,
+                "description": "Occaecat qui incididunt nostrud ex sunt nostrud fugiat cupidatat consequat laboris aute."
+            },
+            {
+                "year": 2015,
+                "description": "Ad fugiat sint veniam laborum deserunt minim eiusmod velit sunt consequat eiusmod veniam."
+            }
+        ],
+        "address": {
+            "id": 3
+        }
+    },
+    {
+        "id": 72,
+        "firstName": "Corrine",
+        "lastName": "Moss",
+        "contact": {
+            "phone": "(967) 494-3958",
+            "email": "corrinemoss@delphide.com"
+        },
+        "workContact": {
+            "phone": "(852) 436-2094",
+            "email": "corrinemoss@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1991,
+                "description": "Occaecat qui laborum nostrud id tempor id."
+            },
+            {
+                "year": 2010,
+                "description": "Sunt dolore dolor irure id dolore elit consequat proident non non laboris."
+            },
+            {
+                "year": 1994,
+                "description": "Mollit amet proident quis minim aliqua labore amet laboris magna officia tempor."
+            },
+            {
+                "year": 1997,
+                "description": "Dolore est duis veniam irure in voluptate ex amet enim minim officia veniam."
+            }
+        ],
+        "address": {
+            "id": 10
+        }
+    },
+    {
+        "id": 73,
+        "firstName": "Brenda",
+        "lastName": "Peters",
+        "contact": {
+            "phone": "(852) 560-2254",
+            "email": "brendapeters@delphide.com"
+        },
+        "workContact": {
+            "phone": "(867) 541-3856",
+            "email": "brendapeters@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2017,
+                "description": "Nulla nisi pariatur consequat Lorem."
+            },
+            {
+                "year": 2006,
+                "description": "Anim aliquip nostrud non exercitation ipsum cillum mollit dolore minim velit minim Lorem."
+            },
+            {
+                "year": 2000,
+                "description": "Incididunt eiusmod sunt anim dolore irure."
+            },
+            {
+                "year": 2008,
+                "description": "Ex commodo commodo eiusmod elit laborum cillum qui ad."
+            },
+            {
+                "year": 1993,
+                "description": "Sint elit irure esse elit magna fugiat mollit nisi."
+            }
+        ],
+        "address": {
+            "id": 5
+        }
+    },
+    {
+        "id": 74,
+        "firstName": "Tasha",
+        "lastName": "Lopez",
+        "contact": {
+            "phone": "(840) 487-2191",
+            "email": "tashalopez@delphide.com"
+        },
+        "workContact": {
+            "phone": "(826) 480-3768",
+            "email": "tashalopez@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1991,
+                "description": "Enim amet sunt aliqua cillum velit veniam velit in anim proident ad."
+            },
+            {
+                "year": 2001,
+                "description": "Irure ut commodo tempor do consectetur occaecat veniam excepteur mollit anim quis."
+            },
+            {
+                "year": 1992,
+                "description": "Enim id non dolor eiusmod tempor nulla."
+            },
+            {
+                "year": 2012,
+                "description": "Reprehenderit deserunt do minim ea non aliquip ad nulla voluptate consectetur exercitation elit amet exercitation."
+            }
+        ],
+        "address": {
+            "id": 1
+        }
+    },
+    {
+        "id": 75,
+        "firstName": "Ryan",
+        "lastName": "Moody",
+        "contact": {
+            "phone": "(827) 465-3482",
+            "email": "ryanmoody@delphide.com"
+        },
+        "workContact": {
+            "phone": "(859) 491-3176",
+            "email": "ryanmoody@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1997,
+                "description": "Laboris id exercitation esse voluptate enim in exercitation do voluptate reprehenderit dolore."
+            },
+            {
+                "year": 1996,
+                "description": "Anim excepteur labore laboris incididunt Lorem sunt nostrud ex in irure culpa."
+            },
+            {
+                "year": 2011,
+                "description": "Ea ea ex excepteur in excepteur."
+            },
+            {
+                "year": 1993,
+                "description": "Excepteur mollit qui et voluptate anim eiusmod."
+            },
+            {
+                "year": 2003,
+                "description": "Dolore culpa voluptate excepteur aliquip enim ex amet tempor laborum."
+            }
+        ],
+        "address": {
+            "id": 4
+        }
+    },
+    {
+        "id": 76,
+        "firstName": "Villarreal",
+        "lastName": "Stephenson",
+        "contact": {
+            "phone": "(944) 526-3929",
+            "email": "villarrealstephenson@delphide.com"
+        },
+        "workContact": {
+            "phone": "(818) 585-3952",
+            "email": "villarrealstephenson@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2013,
+                "description": "Eu consectetur officia incididunt do id dolor non commodo aliqua velit fugiat."
+            },
+            {
+                "year": 1991,
+                "description": "Eu reprehenderit elit reprehenderit exercitation laborum nulla ex est irure irure occaecat occaecat magna culpa."
+            },
+            {
+                "year": 2009,
+                "description": "Et laborum enim commodo officia quis quis deserunt."
+            },
+            {
+                "year": 2001,
+                "description": "Veniam tempor laborum minim aute non veniam ullamco tempor sunt incididunt aliquip."
+            },
+            {
+                "year": 2007,
+                "description": "Cillum ex sint elit culpa."
+            }
+        ],
+        "address": {
+            "id": 4
+        }
+    },
+    {
+        "id": 77,
+        "firstName": "Wooten",
+        "lastName": "Dunlap",
+        "contact": {
+            "phone": "(936) 415-2169",
+            "email": "wootendunlap@delphide.com"
+        },
+        "workContact": {
+            "phone": "(947) 585-3888",
+            "email": "wootendunlap@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2011,
+                "description": "Minim sunt tempor et incididunt consequat qui amet excepteur sunt esse esse."
+            },
+            {
+                "year": 2013,
+                "description": "Dolore dolor dolore sit id ullamco commodo ullamco."
+            },
+            {
+                "year": 2010,
+                "description": "Officia laborum magna mollit fugiat do tempor do cillum minim in quis."
+            }
+        ],
+        "address": {
+            "id": 2
+        }
+    },
+    {
+        "id": 78,
+        "firstName": "Elsa",
+        "lastName": "Haney",
+        "contact": {
+            "phone": "(905) 413-2675",
+            "email": "elsahaney@delphide.com"
+        },
+        "workContact": {
+            "phone": "(805) 570-3906",
+            "email": "elsahaney@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1996,
+                "description": "Eiusmod aliqua reprehenderit veniam do occaecat ea."
+            },
+            {
+                "year": 1996,
+                "description": "Quis dolor magna anim duis magna ipsum ex."
+            },
+            {
+                "year": 2012,
+                "description": "Deserunt occaecat aute veniam aliqua mollit amet cillum eu enim minim officia non commodo."
+            },
+            {
+                "year": 1999,
+                "description": "Eu fugiat nulla dolor reprehenderit in irure consectetur nostrud commodo dolor labore qui velit irure."
+            }
+        ],
+        "address": {
+            "id": 6
+        }
+    },
+    {
+        "id": 79,
+        "firstName": "Mildred",
+        "lastName": "Hendrix",
+        "contact": {
+            "phone": "(983) 449-3689",
+            "email": "mildredhendrix@delphide.com"
+        },
+        "workContact": {
+            "phone": "(892) 531-3662",
+            "email": "mildredhendrix@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2016,
+                "description": "Est enim labore commodo aliquip excepteur exercitation commodo amet."
+            },
+            {
+                "year": 1995,
+                "description": "Sit sint aliquip esse adipisicing sint aliqua esse aliquip proident fugiat duis minim."
+            }
+        ],
+        "address": {
+            "id": 3
+        }
+    },
+    {
+        "id": 80,
+        "firstName": "Peters",
+        "lastName": "Reid",
+        "contact": {
+            "phone": "(851) 431-2881",
+            "email": "petersreid@delphide.com"
+        },
+        "workContact": {
+            "phone": "(958) 451-2608",
+            "email": "petersreid@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2017,
+                "description": "Nisi culpa velit nostrud aute anim elit reprehenderit et nostrud laborum reprehenderit laborum."
+            },
+            {
+                "year": 2001,
+                "description": "Minim ipsum labore aliqua nisi consequat."
+            }
+        ],
         "address": {
             "id": 8
         }
     },
     {
-        "id": 83,
-        "firstName": "Savage",
-        "lastName": "Gallegos",
+        "id": 81,
+        "firstName": "Angelique",
+        "lastName": "Jennings",
         "contact": {
-            "phone": "(874) 417-2919",
-            "email": "savagegallegos@permadyne.com"
+            "phone": "(840) 596-3793",
+            "email": "angeliquejennings@delphide.com"
         },
+        "workContact": {
+            "phone": "(900) 431-3239",
+            "email": "angeliquejennings@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2011,
+                "description": "Pariatur est nisi in mollit occaecat duis deserunt."
+            },
+            {
+                "year": 2003,
+                "description": "Lorem duis duis velit est incididunt esse fugiat eu enim sunt."
+            }
+        ],
+        "address": {
+            "id": 9
+        }
+    },
+    {
+        "id": 82,
+        "firstName": "Vaughn",
+        "lastName": "Finley",
+        "contact": {
+            "phone": "(951) 420-2284",
+            "email": "vaughnfinley@delphide.com"
+        },
+        "workContact": {
+            "phone": "(922) 423-2802",
+            "email": "vaughnfinley@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2004,
+                "description": "Reprehenderit pariatur duis id dolor culpa."
+            },
+            {
+                "year": 1996,
+                "description": "Labore velit mollit commodo irure ea ea ex pariatur ipsum."
+            },
+            {
+                "year": 1999,
+                "description": "Dolor ad laboris esse laboris est nulla."
+            },
+            {
+                "year": 2004,
+                "description": "Labore amet velit ad ad fugiat do minim do minim laboris."
+            }
+        ],
+        "address": {
+            "id": 1
+        }
+    },
+    {
+        "id": 83,
+        "firstName": "Carey",
+        "lastName": "Dodson",
+        "contact": {
+            "phone": "(915) 426-3304",
+            "email": "careydodson@delphide.com"
+        },
+        "workContact": {
+            "phone": "(879) 441-2916",
+            "email": "careydodson@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2010,
+                "description": "Nostrud esse officia aute voluptate consequat consequat cupidatat."
+            },
+            {
+                "year": 1999,
+                "description": "Esse ipsum consequat exercitation aliqua sint ea ad enim ullamco velit elit reprehenderit ullamco elit."
+            },
+            {
+                "year": 2010,
+                "description": "Voluptate reprehenderit cillum ut ea ipsum reprehenderit consectetur reprehenderit aute dolore ut magna aliquip."
+            },
+            {
+                "year": 2017,
+                "description": "Excepteur reprehenderit occaecat Lorem nisi qui in qui adipisicing adipisicing id aliquip."
+            },
+            {
+                "year": 2005,
+                "description": "Cillum ex officia sint enim non."
+            }
+        ],
         "address": {
             "id": 9
         }
     },
     {
         "id": 84,
-        "firstName": "Gale",
-        "lastName": "Adams",
+        "firstName": "Reed",
+        "lastName": "Barron",
         "contact": {
-            "phone": "(950) 590-2461",
-            "email": "galeadams@permadyne.com"
+            "phone": "(985) 437-2174",
+            "email": "reedbarron@delphide.com"
         },
+        "workContact": {
+            "phone": "(991) 426-3925",
+            "email": "reedbarron@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2004,
+                "description": "Nisi nisi exercitation incididunt consectetur adipisicing Lorem fugiat qui cillum ut proident tempor."
+            },
+            {
+                "year": 2001,
+                "description": "Consectetur tempor nostrud proident amet qui."
+            }
+        ],
         "address": {
             "id": 2
         }
     },
     {
         "id": 85,
-        "firstName": "Howe",
-        "lastName": "Montgomery",
+        "firstName": "Duke",
+        "lastName": "Hester",
         "contact": {
-            "phone": "(828) 561-2676",
-            "email": "howemontgomery@permadyne.com"
+            "phone": "(872) 442-2293",
+            "email": "dukehester@delphide.com"
         },
-        "address": {
-            "id": 6
-        }
-    },
-    {
-        "id": 86,
-        "firstName": "Simpson",
-        "lastName": "Phelps",
-        "contact": {
-            "phone": "(898) 449-2319",
-            "email": "simpsonphelps@permadyne.com"
+        "workContact": {
+            "phone": "(946) 460-2894",
+            "email": "dukehester@delphide.com"
         },
-        "address": {
-            "id": 2
-        }
-    },
-    {
-        "id": 87,
-        "firstName": "Mercedes",
-        "lastName": "Spencer",
-        "contact": {
-            "phone": "(852) 540-3181",
-            "email": "mercedesspencer@permadyne.com"
-        },
-        "address": {
-            "id": 7
-        }
-    },
-    {
-        "id": 88,
-        "firstName": "Flowers",
-        "lastName": "Curtis",
-        "contact": {
-            "phone": "(992) 475-2293",
-            "email": "flowerscurtis@permadyne.com"
-        },
-        "address": {
-            "id": 7
-        }
-    },
-    {
-        "id": 89,
-        "firstName": "Juana",
-        "lastName": "Osborn",
-        "contact": {
-            "phone": "(921) 472-2707",
-            "email": "juanaosborn@permadyne.com"
-        },
-        "address": {
-            "id": 7
-        }
-    },
-    {
-        "id": 90,
-        "firstName": "Marsh",
-        "lastName": "Lucas",
-        "contact": {
-            "phone": "(975) 442-2484",
-            "email": "marshlucas@permadyne.com"
-        },
-        "address": {
-            "id": 2
-        }
-    },
-    {
-        "id": 91,
-        "firstName": "Potts",
-        "lastName": "Mcmahon",
-        "contact": {
-            "phone": "(823) 577-2068",
-            "email": "pottsmcmahon@permadyne.com"
-        },
-        "address": {
-            "id": 7
-        }
-    },
-    {
-        "id": 92,
-        "firstName": "Morris",
-        "lastName": "Newton",
-        "contact": {
-            "phone": "(937) 528-2425",
-            "email": "morrisnewton@permadyne.com"
-        },
-        "address": {
-            "id": 10
-        }
-    },
-    {
-        "id": 93,
-        "firstName": "Saunders",
-        "lastName": "Cross",
-        "contact": {
-            "phone": "(999) 586-3194",
-            "email": "saunderscross@permadyne.com"
-        },
-        "address": {
-            "id": 6
-        }
-    },
-    {
-        "id": 94,
-        "firstName": "Blair",
-        "lastName": "Lawrence",
-        "contact": {
-            "phone": "(818) 567-3130",
-            "email": "blairlawrence@permadyne.com"
-        },
-        "address": {
-            "id": 9
-        }
-    },
-    {
-        "id": 95,
-        "firstName": "Francine",
-        "lastName": "Collins",
-        "contact": {
-            "phone": "(818) 572-3714",
-            "email": "francinecollins@permadyne.com"
-        },
-        "address": {
-            "id": 9
-        }
-    },
-    {
-        "id": 96,
-        "firstName": "Cheryl",
-        "lastName": "Norman",
-        "contact": {
-            "phone": "(827) 596-3138",
-            "email": "cherylnorman@permadyne.com"
-        },
-        "address": {
-            "id": 8
-        }
-    },
-    {
-        "id": 97,
-        "firstName": "Cardenas",
-        "lastName": "Harmon",
-        "contact": {
-            "phone": "(986) 459-2252",
-            "email": "cardenasharmon@permadyne.com"
-        },
+        "lifeEvents": [
+            {
+                "year": 2014,
+                "description": "Sint sit exercitation ea reprehenderit veniam consequat amet voluptate elit."
+            },
+            {
+                "year": 1993,
+                "description": "Irure et sint veniam cillum consectetur laborum minim esse ullamco."
+            },
+            {
+                "year": 2003,
+                "description": "Velit nisi ipsum velit duis irure velit amet magna."
+            }
+        ],
         "address": {
             "id": 3
         }
     },
     {
-        "id": 98,
-        "firstName": "Meadows",
-        "lastName": "Mccarthy",
+        "id": 86,
+        "firstName": "Sue",
+        "lastName": "Everett",
         "contact": {
-            "phone": "(829) 524-2397",
-            "email": "meadowsmccarthy@permadyne.com"
+            "phone": "(978) 442-2867",
+            "email": "sueeverett@delphide.com"
         },
+        "workContact": {
+            "phone": "(914) 414-3556",
+            "email": "sueeverett@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1991,
+                "description": "Laboris est culpa proident ea amet ipsum id ea quis aliquip."
+            },
+            {
+                "year": 2005,
+                "description": "Pariatur cupidatat anim proident ex."
+            },
+            {
+                "year": 1999,
+                "description": "Ad et ut culpa elit Lorem ipsum sint pariatur."
+            }
+        ],
+        "address": {
+            "id": 3
+        }
+    },
+    {
+        "id": 87,
+        "firstName": "Cunningham",
+        "lastName": "Guerrero",
+        "contact": {
+            "phone": "(844) 543-2229",
+            "email": "cunninghamguerrero@delphide.com"
+        },
+        "workContact": {
+            "phone": "(910) 437-2228",
+            "email": "cunninghamguerrero@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2003,
+                "description": "Quis elit ipsum mollit ea enim amet ut quis veniam dolor reprehenderit veniam fugiat."
+            },
+            {
+                "year": 2018,
+                "description": "Enim tempor aliqua dolor exercitation duis commodo proident."
+            },
+            {
+                "year": 2017,
+                "description": "Anim et sit consectetur consequat nulla."
+            }
+        ],
+        "address": {
+            "id": 1
+        }
+    },
+    {
+        "id": 88,
+        "firstName": "Silva",
+        "lastName": "Huber",
+        "contact": {
+            "phone": "(819) 587-3468",
+            "email": "silvahuber@delphide.com"
+        },
+        "workContact": {
+            "phone": "(868) 483-2250",
+            "email": "silvahuber@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2005,
+                "description": "Aliquip sint dolor sit consectetur commodo sit proident ut veniam elit non esse et."
+            },
+            {
+                "year": 2009,
+                "description": "Voluptate est sit magna nulla fugiat laborum aute ut."
+            },
+            {
+                "year": 1998,
+                "description": "Occaecat sunt ea mollit cillum tempor aute qui dolore irure minim in mollit."
+            }
+        ],
+        "address": {
+            "id": 5
+        }
+    },
+    {
+        "id": 89,
+        "firstName": "Ray",
+        "lastName": "Tyler",
+        "contact": {
+            "phone": "(986) 413-2954",
+            "email": "raytyler@delphide.com"
+        },
+        "workContact": {
+            "phone": "(936) 433-3629",
+            "email": "raytyler@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2000,
+                "description": "Dolor adipisicing Lorem elit cillum nostrud in proident nulla."
+            },
+            {
+                "year": 1995,
+                "description": "Laboris fugiat cillum ex non ullamco."
+            },
+            {
+                "year": 2000,
+                "description": "Consequat tempor officia quis nisi."
+            },
+            {
+                "year": 2009,
+                "description": "Labore quis consectetur duis nisi fugiat id."
+            },
+            {
+                "year": 2018,
+                "description": "Labore cillum velit elit laborum duis sit aute."
+            }
+        ],
+        "address": {
+            "id": 1
+        }
+    },
+    {
+        "id": 90,
+        "firstName": "Spears",
+        "lastName": "Alexander",
+        "contact": {
+            "phone": "(840) 409-2713",
+            "email": "spearsalexander@delphide.com"
+        },
+        "workContact": {
+            "phone": "(823) 451-3626",
+            "email": "spearsalexander@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2009,
+                "description": "Est consequat consectetur dolore et aliqua Lorem culpa."
+            },
+            {
+                "year": 2012,
+                "description": "Dolor labore duis incididunt sunt nisi enim."
+            },
+            {
+                "year": 2007,
+                "description": "Nostrud est non ut aliquip."
+            },
+            {
+                "year": 1999,
+                "description": "Culpa dolore commodo irure esse Lorem."
+            },
+            {
+                "year": 2016,
+                "description": "Non minim adipisicing sint incididunt laborum consectetur enim veniam voluptate."
+            }
+        ],
+        "address": {
+            "id": 9
+        }
+    },
+    {
+        "id": 91,
+        "firstName": "Hewitt",
+        "lastName": "Burt",
+        "contact": {
+            "phone": "(827) 512-2726",
+            "email": "hewittburt@delphide.com"
+        },
+        "workContact": {
+            "phone": "(889) 451-3257",
+            "email": "hewittburt@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2010,
+                "description": "Qui ea nostrud proident anim sit in officia nisi deserunt commodo aute."
+            },
+            {
+                "year": 2016,
+                "description": "Id velit quis in duis cupidatat."
+            },
+            {
+                "year": 2001,
+                "description": "Veniam sint ullamco enim dolore ut."
+            }
+        ],
+        "address": {
+            "id": 10
+        }
+    },
+    {
+        "id": 92,
+        "firstName": "Walker",
+        "lastName": "Hurley",
+        "contact": {
+            "phone": "(888) 488-3646",
+            "email": "walkerhurley@delphide.com"
+        },
+        "workContact": {
+            "phone": "(835) 444-2703",
+            "email": "walkerhurley@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2014,
+                "description": "Dolor excepteur nisi in enim do dolore id ad veniam laborum."
+            },
+            {
+                "year": 2018,
+                "description": "Amet aliquip proident est fugiat laborum."
+            },
+            {
+                "year": 2004,
+                "description": "Duis duis magna in exercitation laborum veniam eiusmod amet aliquip exercitation consectetur qui sint irure."
+            },
+            {
+                "year": 2006,
+                "description": "Consequat amet incididunt qui ea adipisicing consequat anim."
+            }
+        ],
+        "address": {
+            "id": 5
+        }
+    },
+    {
+        "id": 93,
+        "firstName": "Hickman",
+        "lastName": "Underwood",
+        "contact": {
+            "phone": "(907) 436-3030",
+            "email": "hickmanunderwood@delphide.com"
+        },
+        "workContact": {
+            "phone": "(926) 566-2253",
+            "email": "hickmanunderwood@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1994,
+                "description": "Mollit consectetur voluptate veniam incididunt magna consectetur nisi excepteur elit tempor nisi veniam."
+            },
+            {
+                "year": 1994,
+                "description": "Dolor ea duis proident excepteur officia."
+            },
+            {
+                "year": 2010,
+                "description": "Sunt ad id minim nostrud."
+            },
+            {
+                "year": 2006,
+                "description": "Pariatur reprehenderit ex nisi excepteur proident et."
+            }
+        ],
         "address": {
             "id": 2
         }
     },
     {
-        "id": 99,
-        "firstName": "Kari",
-        "lastName": "Rodriguez",
+        "id": 94,
+        "firstName": "Violet",
+        "lastName": "Lyons",
         "contact": {
-            "phone": "(828) 576-3566",
-            "email": "karirodriguez@permadyne.com"
+            "phone": "(912) 575-3394",
+            "email": "violetlyons@delphide.com"
         },
+        "workContact": {
+            "phone": "(882) 439-3920",
+            "email": "violetlyons@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2019,
+                "description": "Deserunt consectetur in fugiat proident esse voluptate cupidatat eiusmod qui officia."
+            },
+            {
+                "year": 1999,
+                "description": "Quis quis aliquip irure nisi non amet magna ut nostrud."
+            },
+            {
+                "year": 2018,
+                "description": "Eu velit amet sint enim magna."
+            },
+            {
+                "year": 1991,
+                "description": "Voluptate eu dolore aliqua sint elit reprehenderit sint non ullamco irure ipsum."
+            }
+        ],
         "address": {
-            "id": 4
+            "id": 1
+        }
+    },
+    {
+        "id": 95,
+        "firstName": "Alba",
+        "lastName": "Hogan",
+        "contact": {
+            "phone": "(833) 520-2264",
+            "email": "albahogan@delphide.com"
+        },
+        "workContact": {
+            "phone": "(925) 452-3888",
+            "email": "albahogan@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1994,
+                "description": "Dolore sit anim enim fugiat minim quis sint."
+            },
+            {
+                "year": 1990,
+                "description": "Cillum duis veniam pariatur excepteur magna adipisicing minim aute."
+            }
+        ],
+        "address": {
+            "id": 8
+        }
+    },
+    {
+        "id": 96,
+        "firstName": "Emily",
+        "lastName": "Merrill",
+        "contact": {
+            "phone": "(988) 579-3201",
+            "email": "emilymerrill@delphide.com"
+        },
+        "workContact": {
+            "phone": "(988) 497-3473",
+            "email": "emilymerrill@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1999,
+                "description": "Irure pariatur amet Lorem id duis adipisicing esse."
+            },
+            {
+                "year": 2016,
+                "description": "Exercitation occaecat exercitation eu esse cillum sint ut nostrud eu proident eiusmod sint."
+            }
+        ],
+        "address": {
+            "id": 1
+        }
+    },
+    {
+        "id": 97,
+        "firstName": "Beatrice",
+        "lastName": "Hughes",
+        "contact": {
+            "phone": "(944) 501-3986",
+            "email": "beatricehughes@delphide.com"
+        },
+        "workContact": {
+            "phone": "(981) 487-3444",
+            "email": "beatricehughes@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2008,
+                "description": "Lorem aliqua proident aliquip reprehenderit."
+            },
+            {
+                "year": 1992,
+                "description": "Aliqua in voluptate cupidatat consectetur duis consequat do sint."
+            },
+            {
+                "year": 2013,
+                "description": "Voluptate excepteur ea adipisicing labore ullamco."
+            }
+        ],
+        "address": {
+            "id": 6
+        }
+    },
+    {
+        "id": 98,
+        "firstName": "Knox",
+        "lastName": "Briggs",
+        "contact": {
+            "phone": "(879) 543-2797",
+            "email": "knoxbriggs@delphide.com"
+        },
+        "workContact": {
+            "phone": "(895) 435-3954",
+            "email": "knoxbriggs@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 1990,
+                "description": "Culpa officia ad aliqua nulla eu cillum do excepteur incididunt incididunt do mollit dolore laborum."
+            },
+            {
+                "year": 1992,
+                "description": "Proident dolore commodo proident qui esse aliquip amet eiusmod culpa labore reprehenderit magna culpa commodo."
+            },
+            {
+                "year": 1998,
+                "description": "Do magna commodo ipsum mollit duis minim."
+            }
+        ],
+        "address": {
+            "id": 5
+        }
+    },
+    {
+        "id": 99,
+        "firstName": "Wolfe",
+        "lastName": "Henson",
+        "contact": {
+            "phone": "(992) 402-2113",
+            "email": "wolfehenson@delphide.com"
+        },
+        "workContact": {
+            "phone": "(836) 517-3021",
+            "email": "wolfehenson@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2013,
+                "description": "Id ipsum consequat aliqua excepteur ullamco est veniam."
+            },
+            {
+                "year": 1993,
+                "description": "Reprehenderit eiusmod irure dolore dolor aute aute amet excepteur irure."
+            },
+            {
+                "year": 2000,
+                "description": "Quis exercitation fugiat et proident aliqua magna do deserunt nostrud est occaecat."
+            },
+            {
+                "year": 2009,
+                "description": "Incididunt aliqua laborum ipsum ut ea officia ex do ad deserunt."
+            },
+            {
+                "year": 1994,
+                "description": "Qui eiusmod eiusmod sint eiusmod cillum deserunt amet cupidatat irure magna."
+            }
+        ],
+        "address": {
+            "id": 2
         }
     },
     {
         "id": 100,
-        "firstName": "Todd",
-        "lastName": "Eaton",
+        "firstName": "Simon",
+        "lastName": "Stokes",
         "contact": {
-            "phone": "(920) 492-2231",
-            "email": "toddeaton@permadyne.com"
+            "phone": "(840) 426-2334",
+            "email": "simonstokes@delphide.com"
         },
+        "workContact": {
+            "phone": "(975) 449-3544",
+            "email": "simonstokes@delphide.com"
+        },
+        "lifeEvents": [
+            {
+                "year": 2003,
+                "description": "Anim qui dolor quis non laboris incididunt aute magna ex do."
+            },
+            {
+                "year": 2002,
+                "description": "Culpa cupidatat do enim sint magna."
+            },
+            {
+                "year": 2013,
+                "description": "Duis quis do proident nisi Lorem occaecat nulla."
+            },
+            {
+                "year": 2008,
+                "description": "Dolor proident et irure sint amet."
+            }
+        ],
         "address": {
-            "id": 8
+            "id": 3
         }
     }
 ]

@@ -1,5 +1,6 @@
-package com.example.demo.company;
+package com.example.demo.repositories.jpa;
 
+import com.example.demo.company.Company;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

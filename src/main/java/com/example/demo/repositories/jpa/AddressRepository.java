@@ -1,5 +1,6 @@
-package com.example.demo.addresses;
+package com.example.demo.repositories.jpa;
 
+import com.example.demo.addresses.Address;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;

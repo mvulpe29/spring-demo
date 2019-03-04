@@ -1,8 +1,12 @@
 package com.example.demo.addresses;
 
+import org.hibernate.envers.Audited;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
+@Audited
 public class Person {
 
     @Id
@@ -18,6 +22,15 @@ public class Person {
 
     @Embedded
     private Contact contact;
+
+    @Embedded
+    private Contact workContact;
+
+
+    @ElementCollection
+    @CollectionTable(name = "life_events", joinColumns = @JoinColumn(name = "person_id"))
+    @OrderColumn
+    private List<LifeEvent> lifeEvents;
 
     public Person() {
         this.deleted = false;
@@ -69,5 +82,21 @@ public class Person {
 
     public void setContact(Contact contact) {
         this.contact = contact;
+    }
+
+    public Contact getWorkContact() {
+        return workContact;
+    }
+
+    public void setWorkContact(Contact workContact) {
+        this.workContact = workContact;
+    }
+
+    public List<LifeEvent> getLifeEvents() {
+        return lifeEvents;
+    }
+
+    public void setLifeEvents(List<LifeEvent> lifeEvents) {
+        this.lifeEvents = lifeEvents;
     }
 }

@@ -11,6 +11,17 @@
       phone:'{{phone()}}',      
       email:'{{email()}}'
     },
+    workContact:{
+      phone:'{{phone()}}',      
+      email:'{{email()}}'
+    },
+    lifeEvents:[
+      '{{repeat(2,5)}}',
+      {
+       year: '{{integer([1990], [2019])}}',
+       description: '{{lorem()}}'
+      }
+	],
     address:{
 		id:'{{integer([1],[10])}}'
 	}
