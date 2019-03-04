@@ -1,15 +1,15 @@
 package com.example.demo;
 
 import com.example.demo.addresses.Address;
-import com.example.demo.repositories.jpa.AddressRepository;
 import com.example.demo.addresses.Person;
-import com.example.demo.repositories.jpaSpecificationExecutorWithProjection.PersonRepository;
 import com.example.demo.company.Company;
-import com.example.demo.repositories.jpa.CompanyRepository;
 import com.example.demo.library.Author;
-import com.example.demo.repositories.jpa.AuthorRepository;
 import com.example.demo.library.Book;
+import com.example.demo.repositories.jpa.AddressRepository;
+import com.example.demo.repositories.jpa.AuthorRepository;
 import com.example.demo.repositories.jpa.BookRepository;
+import com.example.demo.repositories.jpa.CompanyRepository;
+import com.example.demo.repositories.jpaSpecificationExecutorWithProjection.PersonRepository;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.context.event.ContextRefreshedEvent;

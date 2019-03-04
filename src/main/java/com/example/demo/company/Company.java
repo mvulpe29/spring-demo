@@ -3,8 +3,11 @@ package com.example.demo.company;
 import com.example.demo.BaseEntityInterface;
 import org.hibernate.envers.Audited;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.List;
 
 @Entity
 @Audited
@@ -16,6 +19,9 @@ public class Company implements BaseEntityInterface {
     private String owner;
     private String name;
     private String registryNo;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<Invoice> invoices;
 
     public Company() {
     }
@@ -56,5 +62,13 @@ public class Company implements BaseEntityInterface {
 
     public void setRegistryNo(String registryNo) {
         this.registryNo = registryNo;
+    }
+
+    public List<Invoice> getInvoices() {
+        return invoices;
+    }
+
+    public void setInvoices(List<Invoice> invoices) {
+        this.invoices = invoices;
     }
 }

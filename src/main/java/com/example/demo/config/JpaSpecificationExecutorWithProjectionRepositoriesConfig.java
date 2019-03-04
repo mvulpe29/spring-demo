@@ -6,6 +6,8 @@ import th.co.geniustree.springdata.jpa.repository.support.JpaSpecificationExecut
 
 
 @Configuration
-@EnableJpaRepositories(basePackages = "com.example.demo.repositories.jpaSpecificationExecutorWithProjection", repositoryBaseClass = JpaSpecificationExecutorWithProjectionImpl.class)
+@EnableJpaRepositories(
+        basePackages = "com.example.demo.repositories.jpaSpecificationExecutorWithProjection",
+        repositoryBaseClass = JpaSpecificationExecutorWithProjectionImpl.class)
 public class JpaSpecificationExecutorWithProjectionRepositoriesConfig {
 }

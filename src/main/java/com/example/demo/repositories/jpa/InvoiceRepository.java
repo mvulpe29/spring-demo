@@ -1,12 +1,13 @@
 package com.example.demo.repositories.jpa;
 
-import com.example.demo.addresses.Address;
+import com.example.demo.company.Invoice;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-@RepositoryRestResource(collectionResourceRel = "addresses", path = "addresses")
-public interface AddressRepository extends JpaRepository<Address, Long>, JpaSpecificationExecutor {
+
+@RepositoryRestResource(collectionResourceRel = "invoices", path = "invoices")
+public interface InvoiceRepository extends JpaRepository<Invoice, Long>, JpaSpecificationExecutor {
 
 }
 

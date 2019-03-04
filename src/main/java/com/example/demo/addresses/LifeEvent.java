@@ -1,7 +1,6 @@
 package com.example.demo.addresses;
 
 import javax.persistence.Embeddable;
-import javax.persistence.Id;
 
 @Embeddable
 public class LifeEvent {

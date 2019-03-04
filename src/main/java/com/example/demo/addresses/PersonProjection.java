@@ -3,7 +3,7 @@ package com.example.demo.addresses;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.rest.core.config.Projection;
 
-@Projection(name = "personprojection", types = { Person.class })
+@Projection(name = "personprojection", types = {Person.class})
 public interface PersonProjection {
 
     String getFirstName();
