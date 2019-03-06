@@ -4,6 +4,7 @@ import org.hibernate.envers.Audited;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.time.Instant;
 
 @Entity
 @Audited
@@ -13,7 +14,7 @@ public class Invoice {
     private long id;
 
     private String code;
-    private String date;
+    private Instant date;
 
     public Invoice() {
     }
@@ -34,11 +35,11 @@ public class Invoice {
         this.code = code;
     }
 
-    public String getDate() {
+    public Instant getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(Instant date) {
         this.date = date;
     }
 }

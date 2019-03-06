@@ -3,10 +3,7 @@ package com.example.demo.company;
 import com.example.demo.BaseEntityInterface;
 import org.hibernate.envers.Audited;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -71,4 +68,12 @@ public class Company implements BaseEntityInterface {
     public void setInvoices(List<Invoice> invoices) {
         this.invoices = invoices;
     }
+
+
+    @PrePersist
+    @PreUpdate
+    public void updateInvoices() {
+
+    }
+
 }

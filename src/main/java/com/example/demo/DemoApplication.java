@@ -9,7 +9,9 @@ import org.springframework.data.web.PageableHandlerMethodArgumentResolver;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+import javax.annotation.PostConstruct;
 import java.util.List;
+import java.util.TimeZone;
 
 @SpringBootConfiguration
 @ComponentScan(basePackages = "com.example")
@@ -24,6 +26,12 @@ public class DemoApplication implements WebMvcConfigurer {
     public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
         argumentResolvers.add(new SpecificationArgumentResolver());
         argumentResolvers.add(new PageableHandlerMethodArgumentResolver());
+    }
+
+
+    @PostConstruct
+    void started() {
+        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
     }
 
 }

@@ -54,3 +54,17 @@
   }
 ]
 ```
+
+
+#invoices
+
+```$xslt
+[
+  '{{repeat(10)}}',
+  {
+    id: '{{index(1)}}',
+    code: '{{integer(100,999)}}',
+    date: '{{date(new Date(1970, 0, 1),new Date(),"ISODateTime")}}'
+  }
+]
+```

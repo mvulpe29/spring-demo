@@ -35,3 +35,15 @@ Annotated methods should have 2 params: source and linked
     public void handleAfterLinkDelete(RouteSheet routeSheet, Car oldCar) {
     }
 
+
+
+## h2 console displays instants in local timezone
+
+Solution
+
+
+    @PostConstruct
+    void started() {
+        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
+    }
+ 
