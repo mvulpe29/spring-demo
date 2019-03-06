@@ -2,6 +2,7 @@ package com.example.demo.addresses;
 
 import com.example.demo.BaseEntityInterface;
 import org.hibernate.envers.Audited;
+import org.springframework.data.rest.core.annotation.RestResource;
 
 import javax.persistence.*;
 import java.util.Collection;
@@ -18,6 +19,7 @@ public class Address implements BaseEntityInterface {
 
     private String streetName;
 
+    @RestResource(exported = false)
     @OneToMany(mappedBy = "address", cascade = CascadeType.ALL)
     private List<Person> people;
 
@@ -29,14 +31,6 @@ public class Address implements BaseEntityInterface {
         this.id = id;
     }
 
-    public List<Person> getPeople() {
-        return people;
-    }
-
-    public void setPeople(List<Person> people) {
-        this.people = people;
-    }
-
     public String getStreetName() {
         return streetName;
     }
@@ -45,12 +39,11 @@ public class Address implements BaseEntityInterface {
         this.streetName = streetName;
     }
 
-    @PrePersist
-    @PreUpdate
+    @PreRemove
     public void updatePeopleAssociation() {
         Optional.ofNullable(this.people)
                 .map(Collection::stream)
                 .orElseGet(Stream::empty)
-                .forEach(person -> person.setAddress(this));
+                .forEach(person -> person.setAddress(null));
     }
 }
