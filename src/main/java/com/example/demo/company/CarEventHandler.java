@@ -2,7 +2,10 @@ package com.example.demo.company;
 
 import com.example.demo.repositories.jpa.CarAuditRepository;
 import com.example.demo.repositories.jpa.RouteSheetRepository;
-import org.springframework.data.rest.core.annotation.*;
+import org.springframework.data.rest.core.annotation.HandleBeforeCreate;
+import org.springframework.data.rest.core.annotation.HandleBeforeDelete;
+import org.springframework.data.rest.core.annotation.HandleBeforeSave;
+import org.springframework.data.rest.core.annotation.RepositoryEventHandler;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -18,12 +21,10 @@ public class CarEventHandler {
 
     @HandleBeforeCreate
     public void handleBeforeCreate(Car car) {
-        System.out.print(car);
     }
 
     @HandleBeforeSave
     public void handleBeforeSave(Car car) {
-        System.out.print(car);
     }
 
     @HandleBeforeDelete
@@ -31,24 +32,5 @@ public class CarEventHandler {
         this.routeSheetRepository.removeCarRelation(car.getId());
     }
 
-    @HandleBeforeLinkSave
-    public void handleBeforeLinkSave(Car car, RouteSheet rs) {
-        System.out.print(car);
-    }
-
-    @HandleAfterLinkSave
-    public void handleAfterLinkSave(Car car, RouteSheet rs) {
-        System.out.print(car);
-    }
-
-    @HandleBeforeLinkDelete
-    public void handleBeforeLinkDelete(Car car, RouteSheet rs) {
-        System.out.print(car);
-    }
-
-    @HandleAfterLinkDelete
-    public void handleAfterLinkDelete(Car car, RouteSheet rs) {
-        System.out.print(car);
-    }
 
 }
