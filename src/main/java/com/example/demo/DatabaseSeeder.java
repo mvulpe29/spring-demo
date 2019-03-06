@@ -2,8 +2,8 @@ package com.example.demo;
 
 import com.example.demo.addresses.Address;
 import com.example.demo.addresses.Person;
-import com.example.demo.company.Company;
-import com.example.demo.company.Invoice;
+import com.example.demo.company.domain.Company;
+import com.example.demo.company.domain.Invoice;
 import com.example.demo.library.Author;
 import com.example.demo.library.Book;
 import com.example.demo.repositories.jpa.*;

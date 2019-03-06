@@ -1,5 +1,8 @@
 package com.example.demo.company;
 
+import com.example.demo.company.domain.Car;
+import com.example.demo.company.domain.CarAudit;
+import com.example.demo.company.domain.RouteSheet;
 import com.example.demo.repositories.jpa.CarAuditRepository;
 import org.springframework.data.rest.core.annotation.*;
 import org.springframework.stereotype.Component;
@@ -44,9 +47,9 @@ public class RouteSheetEventHandler {
 
 
     private void addCarAuditToRouteSheet(RouteSheet routeSheet) {
-        Optional.of(routeSheet).map(RouteSheet::getCar).ifPresent(car -> {
+        Optional.of(routeSheet).map(RouteSheet::getCarMutable).ifPresent(car -> {
             CarAudit carAudit = this.carAuditRepository.findFirstByIdOrderByRevDesc(car.getId());
-            routeSheet.setCarAudit(carAudit);
+            routeSheet.setCarImmutable(carAudit);
         });
     }
 }

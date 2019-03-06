@@ -4,7 +4,7 @@ import org.springframework.data.rest.core.event.AbstractRepositoryEventListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class RepositoryEventListener  extends AbstractRepositoryEventListener {
+public class RepositoryEventListener extends AbstractRepositoryEventListener {
     @Override
     protected void onBeforeCreate(Object entity) {
         super.onBeforeCreate(entity);

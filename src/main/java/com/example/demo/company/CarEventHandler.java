@@ -1,5 +1,6 @@
 package com.example.demo.company;
 
+import com.example.demo.company.domain.Car;
 import com.example.demo.repositories.jpa.CarAuditRepository;
 import com.example.demo.repositories.jpa.RouteSheetRepository;
 import org.springframework.data.rest.core.annotation.HandleBeforeCreate;

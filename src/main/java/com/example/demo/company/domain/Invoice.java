@@ -1,4 +1,4 @@
-package com.example.demo.company;
+package com.example.demo.company.domain;
 
 import org.hibernate.envers.Audited;
 

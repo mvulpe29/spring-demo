@@ -1,6 +1,7 @@
-package com.example.demo.company;
+package com.example.demo.company.domain;
 
 import org.hibernate.envers.Audited;
+import org.springframework.data.rest.core.annotation.RestResource;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -8,22 +9,21 @@ import java.time.LocalDate;
 @Entity
 @Audited
 public class RouteSheet {
-    @Id
-    private long id;
-    private LocalDate date;
-    private String description;
-    private String label;
-
-    @ManyToOne
-    @JoinColumn(name = "car_id")
-    private Car car;
-
+    @RestResource(exported = false)
     @ManyToOne
     @JoinColumns({
             @JoinColumn(name = "car_audit_id", referencedColumnName = "id"),
             @JoinColumn(name = "car_audit_rev", referencedColumnName = "rev")
     })
-    CarAudit carAudit;
+    CarAudit carImmutable;
+    @Id
+    private long id;
+    private LocalDate date;
+    private String description;
+    private String label;
+    @ManyToOne
+    @JoinColumn(name = "car_id")
+    private Car carMutable;
 
     public RouteSheet() {
     }
@@ -60,19 +60,23 @@ public class RouteSheet {
         this.label = label;
     }
 
-    public Car getCar() {
-        return car;
+    public Car getCarMutable() {
+        return carMutable;
     }
 
-    public void setCar(Car car) {
-        this.car = car;
+    public void setCarMutable(Car carMutable) {
+        this.carMutable = carMutable;
     }
 
-    public CarAudit getCarAudit() {
-        return carAudit;
+    public void setCarImmutable(CarAudit carImmutable) {
+        this.carImmutable = carImmutable;
     }
 
-    public void setCarAudit(CarAudit carAudit) {
-        this.carAudit = carAudit;
+    public CarBase getCar() {
+        if (carMutable != null) {
+            return carMutable;
+        }
+        return carImmutable;
     }
+
 }

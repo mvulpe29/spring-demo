@@ -1,7 +1,7 @@
 package com.example.demo.repositories.jpa;
 
-import com.example.demo.company.AuditId;
-import com.example.demo.company.CarAudit;
+import com.example.demo.company.domain.AuditId;
+import com.example.demo.company.domain.CarAudit;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.query.Param;
