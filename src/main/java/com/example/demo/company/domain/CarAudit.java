@@ -4,7 +4,10 @@ import org.hibernate.annotations.Subselect;
 import org.hibernate.envers.Audited;
 import org.springframework.data.annotation.Immutable;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import java.io.Serializable;
 
 import static org.hibernate.envers.RelationTargetAuditMode.NOT_AUDITED;
 
@@ -14,16 +17,12 @@ import static org.hibernate.envers.RelationTargetAuditMode.NOT_AUDITED;
 @Subselect(
         "SELECT CAR_AUD.*, REVINFO.REVTSTMP FROM CAR_AUD join REVINFO on CAR_AUD.REV=REVINFO.REV"
 )
-public class CarAudit extends CarBase {
+public class CarAudit implements Serializable {
 
     @EmbeddedId
-    @AttributeOverrides({
-            @AttributeOverride(name = "id",
-                    column = @Column(name = "id")),
-            @AttributeOverride(name = "rev",
-                    column = @Column(name = "rev"))
-    })
     private AuditId auditId;
+    private Car car;
+
 
     @Column(insertable = false, updatable = false)
     private long id;
@@ -47,15 +46,13 @@ public class CarAudit extends CarBase {
         return id;
     }
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
     public long getRev() {
         return rev;
     }
 
-    public void setRev(long rev) {
-        this.rev = rev;
+
+    public Car getCar() {
+        return car;
     }
+
 }

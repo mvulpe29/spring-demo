@@ -4,7 +4,8 @@ import org.hibernate.envers.Audited;
 import org.springframework.data.rest.core.annotation.RestResource;
 
 import javax.persistence.*;
-import java.time.LocalDate;
+import java.time.Instant;
+import java.util.Optional;
 
 @Entity
 @Audited
@@ -18,7 +19,7 @@ public class RouteSheet {
     CarAudit carImmutable;
     @Id
     private long id;
-    private LocalDate date;
+    private Instant date;
     private String description;
     private String label;
     @ManyToOne
@@ -36,11 +37,12 @@ public class RouteSheet {
         this.id = id;
     }
 
-    public LocalDate getDate() {
+
+    public Instant getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(Instant date) {
         this.date = date;
     }
 
@@ -72,11 +74,17 @@ public class RouteSheet {
         this.carImmutable = carImmutable;
     }
 
-    public CarBase getCar() {
+    public Car getCar() {
         if (carMutable != null) {
             return carMutable;
         }
-        return carImmutable;
+        return Optional.ofNullable(carImmutable).map(CarAudit::getCar).orElse(null);
+    }
+
+    @PrePersist
+    @PreUpdate
+    private void addCarAuditToRouteSheet() {
+
     }
 
 }

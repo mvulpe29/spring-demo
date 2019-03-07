@@ -24,6 +24,12 @@ public class Person {
     private Contact contact;
 
     @Embedded
+    @AttributeOverrides(
+            {
+                    @AttributeOverride(name = "phone", column = @Column(name = "work_phone")),
+                    @AttributeOverride(name = "email", column = @Column(name = "work_email"))
+            }
+    )
     private Contact workContact;
 
 
