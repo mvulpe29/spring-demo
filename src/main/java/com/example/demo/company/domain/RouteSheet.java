@@ -17,6 +17,10 @@ public class RouteSheet {
             @JoinColumn(name = "car_audit_rev", referencedColumnName = "rev")
     })
     CarAudit carImmutable;
+
+    @Embedded
+    private Car carEmbedded;
+
     @Id
     private long id;
     private Instant date;
@@ -74,6 +78,14 @@ public class RouteSheet {
         this.carImmutable = carImmutable;
     }
 
+    public Car getCarEmbedded() {
+        return carEmbedded;
+    }
+
+    public void setCarEmbedded(Car carEmbedded) {
+        this.carEmbedded = carEmbedded;
+    }
+
     public Car getCar() {
         if (carMutable != null) {
             return carMutable;
@@ -84,7 +96,7 @@ public class RouteSheet {
     @PrePersist
     @PreUpdate
     private void addCarAuditToRouteSheet() {
-
+        this.carEmbedded = Optional.ofNullable(carMutable).orElse(new Car());
     }
 
 }

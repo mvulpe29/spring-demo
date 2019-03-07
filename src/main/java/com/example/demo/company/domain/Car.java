@@ -3,6 +3,7 @@ package com.example.demo.company.domain;
 import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
+import java.time.Instant;
 
 @Entity
 @Audited
@@ -13,6 +14,7 @@ public class Car {
 
     private String plate;
     private String type;
+    private Instant lastModifiedAt;
 
     public Car() {
     }
@@ -43,10 +45,13 @@ public class Car {
         this.type = type;
     }
 
+    public Instant getLastModifiedAt() {
+        return lastModifiedAt;
+    }
 
     @PreUpdate
     @PrePersist
     void beforeChangeHandler() {
-
+        this.lastModifiedAt = Instant.now();
     }
 }
