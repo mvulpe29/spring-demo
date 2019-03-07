@@ -4,6 +4,7 @@ import com.example.demo.addresses.Address;
 import com.example.demo.addresses.Person;
 import com.example.demo.company.domain.Company;
 import com.example.demo.company.domain.Invoice;
+import com.example.demo.company.domain.RouteSheet;
 import com.example.demo.library.Author;
 import com.example.demo.library.Book;
 import com.example.demo.repositories.jpa.*;
@@ -31,18 +32,20 @@ public class DatabaseSeeder {
     final private BookRepository bookRepository;
     final private AuthorRepository authorRepository;
     final private InvoiceRepository invoiceRepository;
+    final private RouteSheetRepository routeSheetRepository;
 
     public DatabaseSeeder(PersonRepository personRepository,
                           AddressRepository addressRepository,
                           CompanyRepository companyRepository,
                           BookRepository bookRepository,
-                          AuthorRepository authorRepository, InvoiceRepository invoiceRepository) {
+                          AuthorRepository authorRepository, InvoiceRepository invoiceRepository, RouteSheetRepository routeSheetRepository) {
         this.personRepository = personRepository;
         this.addressRepository = addressRepository;
         this.companyRepository = companyRepository;
         this.bookRepository = bookRepository;
         this.authorRepository = authorRepository;
         this.invoiceRepository = invoiceRepository;
+        this.routeSheetRepository = routeSheetRepository;
     }
 
     @EventListener
@@ -53,6 +56,7 @@ public class DatabaseSeeder {
         seedEntities("books", Book.class, bookRepository);
         seedEntities("authors", Author.class, authorRepository);
         seedEntities("invoices", Invoice.class, invoiceRepository);
+        seedEntities("route-sheets", RouteSheet.class, routeSheetRepository);
     }
 
 
