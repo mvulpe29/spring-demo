@@ -1,15 +1,21 @@
-package com.example.demo.company.domain;
+package com.example.demo.envers;
 
-import javax.persistence.Embeddable;
+import javax.persistence.Column;
 import java.io.Serializable;
 import java.util.Objects;
 
-@Embeddable
 public class AuditId implements Serializable {
+    @Column(name = "id")
     private long id;
-    private long rev;
+    @Column(name = "rev")
+    private Integer rev;
 
     public AuditId() {
+    }
+
+    public AuditId(long id, Integer rev) {
+        this.id = id;
+        this.rev = rev;
     }
 
     public long getId() {
@@ -20,11 +26,11 @@ public class AuditId implements Serializable {
         this.id = id;
     }
 
-    public long getRev() {
+    public Integer getRev() {
         return rev;
     }
 
-    public void setRev(long rev) {
+    public void setRev(Integer rev) {
         this.rev = rev;
     }
 
@@ -32,7 +38,7 @@ public class AuditId implements Serializable {
     public boolean equals(Object obj) {
 
         if (this == obj) return true;
-        if (!(obj instanceof CarAudit)) return false;
+        if (!(obj instanceof AuditId)) return false;
         AuditId that = (AuditId) obj;
         return Objects.equals(getId(), that.getId()) &&
                 Objects.equals(getRev(), that.getRev());

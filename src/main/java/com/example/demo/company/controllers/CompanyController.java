@@ -1,4 +1,4 @@
-package com.example.demo.company;
+package com.example.demo.company.controllers;
 
 import com.example.demo.addresses.Address;
 import com.example.demo.company.domain.Company;

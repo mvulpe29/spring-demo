@@ -2,15 +2,12 @@ package com.example.demo.company.domain;
 
 import org.hibernate.envers.Audited;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
 import java.time.Instant;
 
 @Entity
 @Audited
-@Embeddable
-public class Car {
-    @Id
-    private long id;
+public class Car extends BaseEntity {
 
     private String plate;
     private String type;
@@ -18,16 +15,6 @@ public class Car {
 
     public Car() {
     }
-
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
 
     public String getPlate() {
         return plate;
@@ -49,9 +36,7 @@ public class Car {
         return lastModifiedAt;
     }
 
-    @PreUpdate
-    @PrePersist
-    void beforeChangeHandler() {
-        this.lastModifiedAt = Instant.now();
+    public void setLastModifiedAt(Instant lastModifiedAt) {
+        this.lastModifiedAt = lastModifiedAt;
     }
 }

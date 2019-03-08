@@ -1,31 +1,30 @@
 package com.example.demo.company.domain;
 
+import com.example.demo.envers.AuditId;
 import org.hibernate.envers.Audited;
 import org.springframework.data.rest.core.annotation.RestResource;
 
 import javax.persistence.*;
 import java.time.Instant;
-import java.util.Optional;
+
 
 @Entity
 @Audited
 public class RouteSheet {
     @RestResource(exported = false)
-    @ManyToOne
-    @JoinColumns({
-            @JoinColumn(name = "car_audit_id", referencedColumnName = "id"),
-            @JoinColumn(name = "car_audit_rev", referencedColumnName = "rev")
-    })
-    CarAudit carImmutable;
-
     @Embedded
-    private Car carEmbedded;
+    @AttributeOverrides({
+            @AttributeOverride(name = "id", column = @Column(name = "car_audit_id")),
+            @AttributeOverride(name = "rev", column = @Column(name = "car_audit_rev"))
+    })
+    private AuditId carAuditId;
 
     @Id
     private long id;
     private Instant date;
     private String description;
     private String label;
+
     @ManyToOne
     @JoinColumn(name = "car_id")
     private Car carMutable;
@@ -74,29 +73,19 @@ public class RouteSheet {
         this.carMutable = carMutable;
     }
 
-    public void setCarImmutable(CarAudit carImmutable) {
-        this.carImmutable = carImmutable;
+
+    public AuditId getCarAuditId() {
+        return carAuditId;
     }
 
-    public Car getCarEmbedded() {
-        return carEmbedded;
-    }
-
-    public void setCarEmbedded(Car carEmbedded) {
-        this.carEmbedded = carEmbedded;
-    }
-
-    public Car getCar() {
-        if (carMutable != null) {
-            return carMutable;
-        }
-        return Optional.ofNullable(carImmutable).map(CarAudit::getCar).orElse(null);
+    public void setCarAuditId(AuditId carAuditId) {
+        this.carAuditId = carAuditId;
     }
 
     @PrePersist
     @PreUpdate
     private void addCarAuditToRouteSheet() {
-        this.carEmbedded = Optional.ofNullable(carMutable).orElse(new Car());
+
     }
 
 }

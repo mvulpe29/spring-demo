@@ -1,4 +1,4 @@
-package com.example.demo.company;
+package com.example.demo.company.processors;
 
 import com.example.demo.BaseEntityInterface;
 import org.springframework.hateoas.Link;
@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class CompanyResourceProcessor implements ResourceProcessor<Resource<BaseEntityInterface>> {
+
     @Override
     public Resource<BaseEntityInterface> process(Resource<BaseEntityInterface> resource) {
 

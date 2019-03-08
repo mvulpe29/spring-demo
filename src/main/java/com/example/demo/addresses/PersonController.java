@@ -1,6 +1,6 @@
 package com.example.demo.addresses;
 
-import com.example.demo.repositories.jpaSpecificationExecutorWithProjection.PersonRepository;
+import com.example.demo.repositories.jpa.PersonRepository;
 import net.kaczmarzyk.spring.data.jpa.domain.Equal;
 import net.kaczmarzyk.spring.data.jpa.web.annotation.And;
 import net.kaczmarzyk.spring.data.jpa.web.annotation.Spec;

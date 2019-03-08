@@ -1,22 +1,24 @@
-package com.example.demo.company;
+package com.example.demo.company.services;
 
+import com.example.demo.envers.AuditId;
 import com.example.demo.company.domain.Car;
-import com.example.demo.company.domain.CarAudit;
 import com.example.demo.company.domain.RouteSheet;
-import com.example.demo.repositories.jpa.CarAuditRepository;
+import com.example.demo.repositories.enversRevision.CarRevisionRepository;
 import org.springframework.data.rest.core.annotation.*;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
+
 @Component
 @RepositoryEventHandler
 public class RouteSheetEventHandler {
-    private final CarAuditRepository carAuditRepository;
+    private final CarRevisionRepository carRevisionRepository;
 
-    public RouteSheetEventHandler(CarAuditRepository carAuditRepository) {
-        this.carAuditRepository = carAuditRepository;
+    public RouteSheetEventHandler(CarRevisionRepository carRevisionRepository) {
+        this.carRevisionRepository = carRevisionRepository;
     }
+
 
     @HandleBeforeCreate
     public void handleBeforeCreate(RouteSheet routeSheet) {
@@ -48,8 +50,10 @@ public class RouteSheetEventHandler {
 
     private void addCarAuditToRouteSheet(RouteSheet routeSheet) {
         Optional.of(routeSheet).map(RouteSheet::getCarMutable).ifPresent(car -> {
-            CarAudit carAudit = this.carAuditRepository.findFirstByIdOrderByRevDesc(car.getId());
-            routeSheet.setCarImmutable(carAudit);
+            carRevisionRepository.findLastChangeRevision(car.getId()).ifPresent(revision -> {
+                AuditId carAuditId = new AuditId(car.getId(), revision.getRequiredRevisionNumber());
+                routeSheet.setCarAuditId(carAuditId);
+            });
         });
     }
 }

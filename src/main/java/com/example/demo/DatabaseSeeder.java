@@ -2,13 +2,13 @@ package com.example.demo;
 
 import com.example.demo.addresses.Address;
 import com.example.demo.addresses.Person;
+import com.example.demo.company.domain.Car;
 import com.example.demo.company.domain.Company;
 import com.example.demo.company.domain.Invoice;
 import com.example.demo.company.domain.RouteSheet;
 import com.example.demo.library.Author;
 import com.example.demo.library.Book;
 import com.example.demo.repositories.jpa.*;
-import com.example.demo.repositories.jpaSpecificationExecutorWithProjection.PersonRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
@@ -33,12 +33,13 @@ public class DatabaseSeeder {
     final private AuthorRepository authorRepository;
     final private InvoiceRepository invoiceRepository;
     final private RouteSheetRepository routeSheetRepository;
+    final private CarRepository carRepository;
 
     public DatabaseSeeder(PersonRepository personRepository,
                           AddressRepository addressRepository,
                           CompanyRepository companyRepository,
                           BookRepository bookRepository,
-                          AuthorRepository authorRepository, InvoiceRepository invoiceRepository, RouteSheetRepository routeSheetRepository) {
+                          AuthorRepository authorRepository, InvoiceRepository invoiceRepository, RouteSheetRepository routeSheetRepository, CarRepository carRepository) {
         this.personRepository = personRepository;
         this.addressRepository = addressRepository;
         this.companyRepository = companyRepository;
@@ -46,6 +47,7 @@ public class DatabaseSeeder {
         this.authorRepository = authorRepository;
         this.invoiceRepository = invoiceRepository;
         this.routeSheetRepository = routeSheetRepository;
+        this.carRepository = carRepository;
     }
 
     @EventListener
@@ -57,6 +59,7 @@ public class DatabaseSeeder {
         seedEntities("authors", Author.class, authorRepository);
         seedEntities("invoices", Invoice.class, invoiceRepository);
         seedEntities("route-sheets", RouteSheet.class, routeSheetRepository);
+        seedEntities("cars", Car.class, carRepository);
     }
 
 

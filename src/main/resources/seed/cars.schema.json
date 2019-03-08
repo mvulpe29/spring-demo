@@ -1,0 +1,28 @@
+{
+  "id": 158107,
+  "num_rows": 100,
+  "file_format": "json",
+  "name": "Cars Schema",
+  "array": true,
+  "columns": [
+    {
+      "name": "id",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": ""
+    },
+    {
+      "name": "type",
+      "null_percentage": 0,
+      "type": "Car Make",
+      "formula": ""
+    },
+    {
+      "name": "plate",
+      "null_percentage": 0,
+      "type": "Regular Expression",
+      "value": "(AB|AR|AG|BC|BH|BN|BT|BV|BR|BZ|CS|CL|CJ|CT|CV|DB|DJ|GL|GR|GJ|HR|HD|IL|IS|IF|MM|MH|MS|NT|OT|PH|SM|SJ|SB|SV|TR|TM|TL|VS|VL|VN)\\d{2,2}[:upper:]{3,3}",
+      "formula": ""
+    }
+  ]
+}

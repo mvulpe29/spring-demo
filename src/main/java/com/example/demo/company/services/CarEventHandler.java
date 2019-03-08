@@ -1,7 +1,6 @@
-package com.example.demo.company;
+package com.example.demo.company.services;
 
 import com.example.demo.company.domain.Car;
-import com.example.demo.repositories.jpa.CarAuditRepository;
 import com.example.demo.repositories.jpa.RouteSheetRepository;
 import org.springframework.data.rest.core.annotation.HandleBeforeCreate;
 import org.springframework.data.rest.core.annotation.HandleBeforeDelete;
@@ -12,13 +11,12 @@ import org.springframework.stereotype.Component;
 @Component
 @RepositoryEventHandler
 public class CarEventHandler {
-    private final CarAuditRepository carAuditRepository;
     private final RouteSheetRepository routeSheetRepository;
 
-    public CarEventHandler(CarAuditRepository carAuditRepository, RouteSheetRepository routeSheetRepository) {
-        this.carAuditRepository = carAuditRepository;
+    public CarEventHandler(RouteSheetRepository routeSheetRepository) {
         this.routeSheetRepository = routeSheetRepository;
     }
+
 
     @HandleBeforeCreate
     public void handleBeforeCreate(Car car) {
