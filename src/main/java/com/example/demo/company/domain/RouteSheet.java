@@ -1,16 +1,20 @@
 package com.example.demo.company.domain;
 
 import com.example.demo.envers.AuditId;
+import com.example.demo.envers.LastModifiedAuditId;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.envers.Audited;
 import org.hibernate.envers.RelationTargetAuditMode;
 import org.springframework.data.rest.core.annotation.RestResource;
 
 import javax.persistence.*;
 import java.time.Instant;
+import java.util.Optional;
 
 
 @Entity
 @Audited
+@JsonIgnoreProperties({"hibernateLazyInitializer"})
 public class RouteSheet {
     @Id
     private long id;
@@ -44,6 +48,13 @@ public class RouteSheet {
     })
     @Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
     private DriverAudit driverAudit;
+
+    @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name = "id", column = @Column(name = "driver_audit_lm_id")),
+            @AttributeOverride(name = "lastModifiedAt", column = @Column(name = "driver_audit_lm_lastModifiedAt"))
+    })
+    private LastModifiedAuditId driverLastModifiedAuditId;
 
     public RouteSheet() {
     }
@@ -114,10 +125,19 @@ public class RouteSheet {
         this.driverAudit = driverAudit;
     }
 
-    @PrePersist
+    public LastModifiedAuditId getDriverLastModifiedAuditId() {
+        return driverLastModifiedAuditId;
+    }
+
+    public void setDriverLastModifiedAuditId(LastModifiedAuditId driverLastModifiedAuditId) {
+        this.driverLastModifiedAuditId = driverLastModifiedAuditId;
+    }
+
     @PreUpdate
     private void preUpdate() {
-
+        Optional.of(this.driver).ifPresent(driver -> {
+            this.driverLastModifiedAuditId = new LastModifiedAuditId(driver.getId(), driver.getLastModifiedAt());
+        });
     }
 
 }

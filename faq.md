@@ -65,3 +65,8 @@ https://jira.spring.io/browse/DATAREST-972
 ## @Version in @Embeddable
 
 @Embeddable annotated classes may not have @Version annotated fields.
+
+
+## @PathVariable with dot (.) is getting truncated
+
+https://stackoverflow.com/questions/16332092/spring-mvc-pathvariable-with-dot-is-getting-truncated

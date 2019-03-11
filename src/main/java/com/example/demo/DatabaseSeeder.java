@@ -37,7 +37,11 @@ public class DatabaseSeeder {
                           AddressRepository addressRepository,
                           CompanyRepository companyRepository,
                           BookRepository bookRepository,
-                          AuthorRepository authorRepository, InvoiceRepository invoiceRepository, RouteSheetRepository routeSheetRepository, CarRepository carRepository, DriverRepository driverRepository) {
+                          AuthorRepository authorRepository,
+                          InvoiceRepository invoiceRepository,
+                          RouteSheetRepository routeSheetRepository,
+                          CarRepository carRepository,
+                          DriverRepository driverRepository) {
         this.personRepository = personRepository;
         this.addressRepository = addressRepository;
         this.companyRepository = companyRepository;

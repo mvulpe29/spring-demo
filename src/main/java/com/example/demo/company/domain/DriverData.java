@@ -3,9 +3,7 @@ package com.example.demo.company.domain;
 import com.example.demo.common.Auditable;
 import org.hibernate.envers.Audited;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
+import javax.persistence.*;
 
 @MappedSuperclass
 @Audited
@@ -14,7 +12,9 @@ public class DriverData extends Auditable {
     @Column(name = "id", updatable = false, insertable = false)
     private Long id;
 
-    private String name;
+    @OneToOne(cascade = CascadeType.ALL)
+    private Employee employee;
+
     private String licenseCategory;
 
     public DriverData() {
@@ -28,12 +28,13 @@ public class DriverData extends Auditable {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+
+    public Employee getEmployee() {
+        return employee;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
     }
 
     public String getLicenseCategory() {
