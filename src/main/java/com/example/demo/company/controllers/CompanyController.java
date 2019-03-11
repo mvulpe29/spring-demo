@@ -2,6 +2,7 @@ package com.example.demo.company.controllers;
 
 import com.example.demo.addresses.Address;
 import com.example.demo.company.domain.Company;
+import com.example.demo.repositories.enversRevision.CompanyRevisionRepository;
 import com.example.demo.repositories.jpa.CompanyRepository;
 import net.kaczmarzyk.spring.data.jpa.domain.Equal;
 import net.kaczmarzyk.spring.data.jpa.web.annotation.Spec;
@@ -17,6 +18,7 @@ import org.springframework.hateoas.ResourceAssembler;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -27,11 +29,13 @@ public class CompanyController {
 
     private final PagedResourcesAssembler<Company> pagedAssembler;
     private final CompanyRepository companyRepository;
+    private final CompanyRevisionRepository companyRevisionRepository;
 
     @Autowired
-    public CompanyController(PagedResourcesAssembler<Company> pagedAssembler, CompanyRepository companyRepository) {
+    public CompanyController(PagedResourcesAssembler<Company> pagedAssembler, CompanyRepository companyRepository, CompanyRevisionRepository companyRevisionRepository) {
         this.pagedAssembler = pagedAssembler;
         this.companyRepository = companyRepository;
+        this.companyRevisionRepository = companyRevisionRepository;
     }
 
     @PreAuthorize("hasPermission(#owner, 'read')")
@@ -45,5 +49,10 @@ public class CompanyController {
         Page<Company> page = this.companyRepository.findAll(specification, pageable);
         PagedResources<Company> pagedResources = pagedAssembler.toResource(page, (ResourceAssembler) assembler);
         return new ResponseEntity(pagedResources, HttpStatus.OK);
+    }
+
+    @RequestMapping(method = RequestMethod.GET, path = "/companies/{id}/revisions", produces = "application/hal+json")
+    public ResponseEntity<?> getCompaniesRevisions(@PathVariable("id") Long id, Pageable pageable) {
+        return new ResponseEntity(this.companyRevisionRepository.findRevisions(id, pageable), HttpStatus.OK);
     }
 }

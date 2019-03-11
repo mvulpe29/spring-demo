@@ -10,7 +10,7 @@ import th.co.geniustree.springdata.jpa.repository.JpaSpecificationExecutorWithPr
 
 import java.util.List;
 
-@RepositoryRestResource(collectionResourceRel = "people", path = "ppl")
+@RepositoryRestResource(collectionResourceRel = "people", path = "people")
 public interface PersonRepository extends JpaRepository<Person, Long>, JpaSpecificationExecutor<Person>, QueryByExampleExecutor<Person>, JpaSpecificationExecutorWithProjection<Person> {
 
     List<Person> findByLastName(@Param("name") String name);

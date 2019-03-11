@@ -2,6 +2,7 @@ package com.example.demo.company.domain;
 
 import com.example.demo.envers.AuditId;
 import org.hibernate.envers.Audited;
+import org.hibernate.envers.RelationTargetAuditMode;
 import org.springframework.data.rest.core.annotation.RestResource;
 
 import javax.persistence.*;
@@ -11,6 +12,12 @@ import java.time.Instant;
 @Entity
 @Audited
 public class RouteSheet {
+    @Id
+    private long id;
+    private Instant date;
+    private String description;
+    private String label;
+
     @RestResource(exported = false)
     @Embedded
     @AttributeOverrides({
@@ -19,15 +26,24 @@ public class RouteSheet {
     })
     private AuditId carAuditId;
 
-    @Id
-    private long id;
-    private Instant date;
-    private String description;
-    private String label;
-
     @ManyToOne
     @JoinColumn(name = "car_id")
     private Car carMutable;
+
+
+    @ManyToOne
+    @JoinColumn(name = "driver_id")
+    private Driver driver;
+
+
+    @RestResource(exported = false)
+    @ManyToOne
+    @JoinColumns({
+            @JoinColumn(name = "driver_audit_id", referencedColumnName = "id"),
+            @JoinColumn(name = "driver_audit_rev", referencedColumnName = "rev")
+    })
+    @Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
+    private DriverAudit driverAudit;
 
     public RouteSheet() {
     }
@@ -82,9 +98,25 @@ public class RouteSheet {
         this.carAuditId = carAuditId;
     }
 
+    public Driver getDriver() {
+        return driver;
+    }
+
+    public void setDriver(Driver driver) {
+        this.driver = driver;
+    }
+
+    public DriverAudit getDriverAudit() {
+        return driverAudit;
+    }
+
+    public void setDriverAudit(DriverAudit driverAudit) {
+        this.driverAudit = driverAudit;
+    }
+
     @PrePersist
     @PreUpdate
-    private void addCarAuditToRouteSheet() {
+    private void preUpdate() {
 
     }
 

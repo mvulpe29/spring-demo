@@ -2,10 +2,7 @@ package com.example.demo;
 
 import com.example.demo.addresses.Address;
 import com.example.demo.addresses.Person;
-import com.example.demo.company.domain.Car;
-import com.example.demo.company.domain.Company;
-import com.example.demo.company.domain.Invoice;
-import com.example.demo.company.domain.RouteSheet;
+import com.example.demo.company.domain.*;
 import com.example.demo.library.Author;
 import com.example.demo.library.Book;
 import com.example.demo.repositories.jpa.*;
@@ -34,12 +31,13 @@ public class DatabaseSeeder {
     final private InvoiceRepository invoiceRepository;
     final private RouteSheetRepository routeSheetRepository;
     final private CarRepository carRepository;
+    final private DriverRepository driverRepository;
 
     public DatabaseSeeder(PersonRepository personRepository,
                           AddressRepository addressRepository,
                           CompanyRepository companyRepository,
                           BookRepository bookRepository,
-                          AuthorRepository authorRepository, InvoiceRepository invoiceRepository, RouteSheetRepository routeSheetRepository, CarRepository carRepository) {
+                          AuthorRepository authorRepository, InvoiceRepository invoiceRepository, RouteSheetRepository routeSheetRepository, CarRepository carRepository, DriverRepository driverRepository) {
         this.personRepository = personRepository;
         this.addressRepository = addressRepository;
         this.companyRepository = companyRepository;
@@ -48,6 +46,7 @@ public class DatabaseSeeder {
         this.invoiceRepository = invoiceRepository;
         this.routeSheetRepository = routeSheetRepository;
         this.carRepository = carRepository;
+        this.driverRepository = driverRepository;
     }
 
     @EventListener
@@ -60,6 +59,7 @@ public class DatabaseSeeder {
         seedEntities("invoices", Invoice.class, invoiceRepository);
         seedEntities("route-sheets", RouteSheet.class, routeSheetRepository);
         seedEntities("cars", Car.class, carRepository);
+        seedEntities("drivers", Driver.class, driverRepository);
     }
 
 

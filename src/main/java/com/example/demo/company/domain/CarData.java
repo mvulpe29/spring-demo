@@ -1,18 +1,19 @@
 package com.example.demo.company.domain;
 
-import com.example.demo.common.BaseEntity;
+import com.example.demo.common.Auditable;
 import org.hibernate.envers.Audited;
 
-import javax.persistence.Entity;
+import javax.persistence.Embeddable;
+import javax.persistence.MappedSuperclass;
 
-@Entity
+@MappedSuperclass
+@Embeddable
 @Audited
-public class Car extends BaseEntity {
-
+public class CarData extends Auditable {
     private String plate;
     private String type;
 
-    public Car() {
+    public CarData() {
     }
 
     public String getPlate() {

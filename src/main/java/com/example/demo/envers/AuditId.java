@@ -1,13 +1,13 @@
 package com.example.demo.envers;
 
-import javax.persistence.Column;
+import javax.persistence.Embeddable;
 import java.io.Serializable;
 import java.util.Objects;
 
+@Embeddable
 public class AuditId implements Serializable {
-    @Column(name = "id")
+
     private long id;
-    @Column(name = "rev")
     private Integer rev;
 
     public AuditId() {
@@ -16,6 +16,12 @@ public class AuditId implements Serializable {
     public AuditId(long id, Integer rev) {
         this.id = id;
         this.rev = rev;
+    }
+
+    public AuditId(String id) {
+        String[] parts = id.split("_");
+        this.id = Long.parseLong(parts[0]);
+        this.rev = Integer.parseInt(parts[1]);
     }
 
     public long getId() {
@@ -48,6 +54,11 @@ public class AuditId implements Serializable {
     @Override
     public int hashCode() {
         return Objects.hash(getId(), getRev());
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s_%s", getId(), getRev());
     }
 
 }

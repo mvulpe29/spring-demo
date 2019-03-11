@@ -47,3 +47,21 @@ Solution
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
     }
  
+ 
+##@RequestMapping on @RepsitoryRestController: controller is added twice
+
+When using @RequestMapping with @RepsitoryRestController or @BasePathAwareController the controller is added twice
+
+
+Solution: extend a base controller with @RequestMapping
+
+    @RequestMapping(path = "cars")
+    public class BaseCarController {
+    }
+    
+https://jira.spring.io/browse/DATAREST-972
+
+
+## @Version in @Embeddable
+
+@Embeddable annotated classes may not have @Version annotated fields.

@@ -1,6 +1,7 @@
 package com.example.demo.addresses;
 
 import com.example.demo.BaseEntityInterface;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.envers.Audited;
 import org.springframework.data.rest.core.annotation.RestResource;
 
@@ -12,6 +13,7 @@ import java.util.stream.Stream;
 
 @Entity
 @Audited
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Address implements BaseEntityInterface {
 
     @Id

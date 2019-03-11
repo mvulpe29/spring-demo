@@ -1,4 +1,4 @@
-package com.example.demo.company.domain;
+package com.example.demo.common;
 
 import org.hibernate.envers.Audited;
 import org.springframework.data.annotation.*;
