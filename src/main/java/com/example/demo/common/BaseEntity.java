@@ -20,22 +20,18 @@ public class BaseEntity implements Serializable {
 
     @CreatedBy
     @ReadOnlyProperty
-    @Nullable
     private String createdBy;
 
     @CreatedDate
     @ReadOnlyProperty
-    @Nullable
     private Instant createdAt;
 
     @LastModifiedBy
     @ReadOnlyProperty
-    @Nullable
     private String lastModifiedBy;
 
     @LastModifiedDate
     @ReadOnlyProperty
-    @Nullable
     private Instant lastModifiedAt;
 
 
