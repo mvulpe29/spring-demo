@@ -3,10 +3,12 @@ package com.example.demo.company.domain;
 import com.example.demo.common.BaseEntity;
 import org.hibernate.envers.Audited;
 
+import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 
 @Entity
 @Audited
+@Embeddable
 public class Car extends BaseEntity {
 
     private String plate;

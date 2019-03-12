@@ -34,6 +34,19 @@ public class RouteSheet {
     @JoinColumn(name = "car_id")
     private Car carMutable;
 
+    @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name = "id", column = @Column(name = "car_emb_id")),
+            @AttributeOverride(name = "plate", column = @Column(name = "car_emb_plate")),
+            @AttributeOverride(name = "type", column = @Column(name = "car_emb_type")),
+            @AttributeOverride(name = "createdBy", column = @Column(name = "car_emb_createdBy")),
+            @AttributeOverride(name = "createdAt", column = @Column(name = "car_emb_createdAt")),
+            @AttributeOverride(name = "lastModifiedBy", column = @Column(name = "car_emb_lastModifiedBy")),
+            @AttributeOverride(name = "lastModifiedAt", column = @Column(name = "car_emb_lastModifiedAt")),
+            @AttributeOverride(name = "version", column = @Column(name = "car_emb_version"))
+    })
+    private Car carEmbedded;
+
 
     @ManyToOne
     @JoinColumn(name = "driver_id")
@@ -109,6 +122,15 @@ public class RouteSheet {
         this.carAuditId = carAuditId;
     }
 
+
+    public Car getCarEmbedded() {
+        return carEmbedded;
+    }
+
+    public void setCarEmbedded(Car carEmbedded) {
+        this.carEmbedded = carEmbedded;
+    }
+
     public Driver getDriver() {
         return driver;
     }
@@ -136,8 +158,11 @@ public class RouteSheet {
     @PrePersist
     @PreUpdate
     private void preUpdate() {
-        Optional.ofNullable(this.getDriver()).ifPresent(driver -> {
+        Optional.ofNullable(this.driver).ifPresent(driver -> {
             this.driverLastModifiedAuditId = new LastModifiedAuditId(driver.getId(), driver.getLastModifiedAt());
+        });
+        Optional.ofNullable(this.carMutable).ifPresent(car -> {
+            this.carEmbedded = car;
         });
     }
 
