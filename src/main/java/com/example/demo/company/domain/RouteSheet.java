@@ -133,9 +133,10 @@ public class RouteSheet {
         this.driverLastModifiedAuditId = driverLastModifiedAuditId;
     }
 
+    @PrePersist
     @PreUpdate
     private void preUpdate() {
-        Optional.of(this.driver).ifPresent(driver -> {
+        Optional.ofNullable(this.getDriver()).ifPresent(driver -> {
             this.driverLastModifiedAuditId = new LastModifiedAuditId(driver.getId(), driver.getLastModifiedAt());
         });
     }
