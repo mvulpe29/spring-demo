@@ -3,6 +3,7 @@ package com.example.demo.common;
 import org.hibernate.envers.Audited;
 import org.springframework.data.annotation.*;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import org.springframework.lang.Nullable;
 
 import javax.persistence.Id;
 import javax.persistence.Version;
@@ -19,18 +20,22 @@ public class BaseEntity implements Serializable {
 
     @CreatedBy
     @ReadOnlyProperty
+    @Nullable
     private String createdBy;
 
     @CreatedDate
     @ReadOnlyProperty
+    @Nullable
     private Instant createdAt;
 
     @LastModifiedBy
     @ReadOnlyProperty
+    @Nullable
     private String lastModifiedBy;
 
     @LastModifiedDate
     @ReadOnlyProperty
+    @Nullable
     private Instant lastModifiedAt;
 
 
@@ -39,7 +44,7 @@ public class BaseEntity implements Serializable {
 
 
     @Id
-    @Column(name = "id", updatable = false)
+    @Column(name = "id")
     public long getId() {
         return id;
     }

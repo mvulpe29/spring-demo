@@ -24,28 +24,14 @@ public class RouteSheet {
 
     @RestResource(exported = false)
     @Embedded
-    @AttributeOverrides({
-            @AttributeOverride(name = "id", column = @Column(name = "car_audit_id")),
-            @AttributeOverride(name = "rev", column = @Column(name = "car_audit_rev"))
-    })
-    private AuditId carAuditId;
+    private AuditId carAuditId = new AuditId();
 
     @ManyToOne
     @JoinColumn(name = "car_id")
     private Car carMutable;
 
     @Embedded
-    @AttributeOverrides({
-            @AttributeOverride(name = "id", column = @Column(name = "car_emb_id")),
-            @AttributeOverride(name = "plate", column = @Column(name = "car_emb_plate")),
-            @AttributeOverride(name = "type", column = @Column(name = "car_emb_type")),
-            @AttributeOverride(name = "createdBy", column = @Column(name = "car_emb_createdBy")),
-            @AttributeOverride(name = "createdAt", column = @Column(name = "car_emb_createdAt")),
-            @AttributeOverride(name = "lastModifiedBy", column = @Column(name = "car_emb_lastModifiedBy")),
-            @AttributeOverride(name = "lastModifiedAt", column = @Column(name = "car_emb_lastModifiedAt")),
-            @AttributeOverride(name = "version", column = @Column(name = "car_emb_version"))
-    })
-    private Car carEmbedded;
+    private Car carEmbedded = new Car();
 
 
     @ManyToOne
@@ -63,11 +49,7 @@ public class RouteSheet {
     private DriverAudit driverAudit;
 
     @Embedded
-    @AttributeOverrides({
-            @AttributeOverride(name = "id", column = @Column(name = "driver_audit_lm_id")),
-            @AttributeOverride(name = "lastModifiedAt", column = @Column(name = "driver_audit_lm_lastModifiedAt"))
-    })
-    private LastModifiedAuditId driverLastModifiedAuditId;
+    private LastModifiedAuditId driverLastModifiedAuditId = new LastModifiedAuditId();
 
     public RouteSheet() {
     }
@@ -106,6 +88,10 @@ public class RouteSheet {
     }
 
     public Car getCarMutable() {
+        return carMutable;
+    }
+
+    public Car getCar() {
         return carMutable;
     }
 

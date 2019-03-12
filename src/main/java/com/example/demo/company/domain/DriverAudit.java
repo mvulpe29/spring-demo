@@ -4,6 +4,7 @@ import com.example.demo.common.AuditTable;
 import com.example.demo.envers.AuditId;
 import org.hibernate.annotations.Subselect;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
@@ -14,6 +15,7 @@ import javax.persistence.IdClass;
 public class DriverAudit extends DriverData implements AuditTable<Long> {
 
     @Id
+    @Column(name = "rev")
     private Integer rev;
 
     public Integer getRev() {

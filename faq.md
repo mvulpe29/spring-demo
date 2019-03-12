@@ -70,3 +70,14 @@ https://jira.spring.io/browse/DATAREST-972
 ## @PathVariable with dot (.) is getting truncated
 
 https://stackoverflow.com/questions/16332092/spring-mvc-pathvariable-with-dot-is-getting-truncated
+
+
+## Embedded null not allowed
+
+https://hibernate.atlassian.net/browse/HHH-7610
+
+Solution: init the property with empty object
+```
+   @Embedded
+   private AuditId carAuditId = new AuditId();
+```

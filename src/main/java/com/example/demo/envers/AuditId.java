@@ -6,7 +6,6 @@ import java.util.Objects;
 
 @Embeddable
 public class AuditId implements Serializable {
-
     private long id;
     private Integer rev;
 

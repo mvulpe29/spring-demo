@@ -23,16 +23,10 @@ public class Person {
     private Address address;
 
     @Embedded
-    private Contact contact;
+    private Contact contact = new Contact();
 
     @Embedded
-    @AttributeOverrides(
-            {
-                    @AttributeOverride(name = "phone", column = @Column(name = "work_phone")),
-                    @AttributeOverride(name = "email", column = @Column(name = "work_email"))
-            }
-    )
-    private Contact workContact;
+    private Contact workContact = new Contact();
 
 
     @ElementCollection
