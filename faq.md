@@ -85,4 +85,21 @@ Solution: init the property with empty object
 # @Embedded and @Entity 
 
     Cannot lookup property %s on null intermediate! Original path was: %s on %s.
+
+Solution
     
+    private AuditId carAuditId = new AuditId();
+
+    
+https://stackoverflow.com/questions/2838528/hibernate-does-not-allow-an-embedded-object-with-an-int-field-to-be-null
+    
+# org.hibernate.MappingException: Could not determine type for:
+
+Solution: move @Id annotation from getter to field
+
+    @Id
+    @Column(name = "id")
+    private long id;
+ 
+
+https://stackoverflow.com/questions/6164123/org-hibernate-mappingexception-could-not-determine-type-for-java-util-set

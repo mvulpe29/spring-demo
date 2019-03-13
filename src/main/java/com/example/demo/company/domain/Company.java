@@ -8,14 +8,13 @@ import java.util.List;
 
 @Entity
 @Audited
-public class Company implements BaseEntityInterface {
+public class Company extends CompanyData implements BaseEntityInterface {
 
     @Id
     private long id;
 
-    private String owner;
-    private String name;
-    private String registryNo;
+    @Version
+    private long version;
 
     @OneToMany(cascade = CascadeType.ALL)
     private List<Invoice> invoices;
@@ -23,11 +22,6 @@ public class Company implements BaseEntityInterface {
     public Company() {
     }
 
-    public Company(String owner, String name, String registryNo) {
-        this.owner = owner;
-        this.name = name;
-        this.registryNo = registryNo;
-    }
 
     public long getId() {
         return id;
@@ -37,28 +31,12 @@ public class Company implements BaseEntityInterface {
         this.id = id;
     }
 
-    public String getOwner() {
-        return owner;
+    public long getVersion() {
+        return version;
     }
 
-    public void setOwner(String owner) {
-        this.owner = owner;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getRegistryNo() {
-        return registryNo;
-    }
-
-    public void setRegistryNo(String registryNo) {
-        this.registryNo = registryNo;
+    public void setVersion(long version) {
+        this.version = version;
     }
 
     public List<Invoice> getInvoices() {

@@ -14,14 +14,14 @@ import java.util.List;
 
 @RepositoryRestResource(collectionResourceRel = "route-sheets", path = "route-sheets")
 public interface RouteSheetRepository extends JpaRepository<RouteSheet, Long>, JpaSpecificationExecutor {
-    List<RouteSheet> findAllByCarMutableId(long id);
+    List<RouteSheet> findAllByCarId(long id);
 
     @Transactional
-    List<RouteSheet> removeByCarMutableId(long id);
+    List<RouteSheet> removeByCarId(long id);
 
     @Modifying
     @Transactional
-    @Query(value = "update RouteSheet r set r.carMutable = null where r.carMutable.id = :id")
+    @Query(value = "update RouteSheet r set r.car = null where r.car.id = :id")
     int removeCarRelation(@Param("id") long id);
 }
 

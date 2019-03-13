@@ -1,5 +1,7 @@
 package com.example.demo.company.domain;
 
+import com.example.demo.company.domain.mappers.CarMapper;
+import com.example.demo.company.domain.mappers.CompanyMapper;
 import com.example.demo.envers.AuditId;
 import com.example.demo.envers.LastModifiedAuditId;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -22,24 +24,26 @@ public class RouteSheet {
     private String description;
     private String label;
 
-    @RestResource(exported = false)
+    @ManyToOne
+    @JoinColumn(name = "car_id")
+    private Car car;
+
     @Embedded
     private AuditId carAuditId = new AuditId();
 
-    @ManyToOne
-    @JoinColumn(name = "car_id",
-            foreignKey = @ForeignKey(
-                    name = "FK_ROUTE_SHEET_CAR",
-                    foreignKeyDefinition = "FOREIGN KEY (car_id) REFERENCES car ON DELETE SET NULL"
-            ))
-    private Car carMutable;
+    @Embedded
+    private CarSnapshot carSnapshot = new CarSnapshot();
 
     @Embedded
-    private CarData carImmutable;
+    private CompanySnapshot carCompanySnapshot = new CompanySnapshot();
 
 
     @ManyToOne
-    @JoinColumn(name = "driver_id")
+    @JoinColumn(name = "driver_id",
+            foreignKey = @ForeignKey(
+                    name = "FK_ROUTE_SHEET_CAR",
+                    foreignKeyDefinition = "FOREIGN KEY (driver_id) REFERENCES driver ON DELETE SET NULL"
+            ))
     private Driver driver;
 
 
@@ -91,21 +95,23 @@ public class RouteSheet {
         this.label = label;
     }
 
-    public Car getCarMutable() {
-        return carMutable;
-    }
-
-    public void setCarMutable(Car carMutable) {
-        this.carMutable = carMutable;
-    }
-
-    public CarData getCarImmutable() {
-        return carImmutable;
-    }
 
     public Car getCar() {
-        return carMutable;
+        return car;
     }
+
+    public void setCar(Car car) {
+        this.car = car;
+    }
+
+    public CarSnapshot getCarSnapshot() {
+        return carSnapshot;
+    }
+
+    public CompanySnapshot getCarCompanySnapshot() {
+        return carCompanySnapshot;
+    }
+
 
     public AuditId getCarAuditId() {
         return carAuditId;
@@ -139,13 +145,19 @@ public class RouteSheet {
         this.driverLastModifiedAuditId = driverLastModifiedAuditId;
     }
 
+
     @PrePersist
     @PreUpdate
     private void preUpdate() {
         Optional.ofNullable(this.driver).ifPresent(driver -> {
             this.driverLastModifiedAuditId = new LastModifiedAuditId(driver.getId(), driver.getLastModifiedAt());
         });
-        Optional.ofNullable(this.carMutable).ifPresent(car -> this.carImmutable = car);
+        Optional.ofNullable(this.car).ifPresent(car -> {
+            this.carSnapshot = CarMapper.INSTANCE.carToCarSnapshot(car);
+            Optional.ofNullable(car.getCompany()).ifPresent(company -> {
+                this.carCompanySnapshot = CompanyMapper.INSTANCE.companyToCompanySnapshot(company);
+            });
+        });
     }
 
 }

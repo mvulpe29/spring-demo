@@ -28,7 +28,7 @@ public class CarEventHandler {
 
     @HandleBeforeDelete
     public void handleBeforeDelete(Car car) {
-//        this.routeSheetRepository.removeCarRelation(car.getId());
+        this.routeSheetRepository.removeCarRelation(car.getId());
     }
 
 

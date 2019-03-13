@@ -18,7 +18,6 @@ import java.io.InputStream;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Component
 public class DatabaseSeeder {
@@ -56,26 +55,14 @@ public class DatabaseSeeder {
     @EventListener
     public void seed(ContextRefreshedEvent event) {
         seedEntities("addresses", Address.class, addressRepository);
-        seedPeople();
-        seedEntities("companies", Company.class, companyRepository);
+        seedEntities("people", Person.class, personRepository);
         seedEntities("books", Book.class, bookRepository);
         seedEntities("authors", Author.class, authorRepository);
+        seedEntities("companies", Company.class, companyRepository);
         seedEntities("invoices", Invoice.class, invoiceRepository);
         seedEntities("route-sheets", RouteSheet.class, routeSheetRepository);
         seedEntities("cars", Car.class, carRepository);
         seedEntities("drivers", Driver.class, driverRepository);
-    }
-
-
-    private void seedPeople() {
-        List<Person> people = Optional.ofNullable(readEntities("people", Person.class))
-                .orElseGet(Collections::emptyList).stream().peek(person -> {
-                    long id = person.getAddress().getId();
-                    Address address = addressRepository.getOne(id);
-                    person.setAddress(address);
-                }).collect(Collectors.toList());
-        personRepository.saveAll(people);
-        System.out.println("people saved!");
     }
 
     private <T> void seedEntities(String fileName, Class<T> type, JpaRepository repository) {

@@ -59,7 +59,7 @@ public class RouteSheetEventHandler {
 
 
     private void addCarAuditToRouteSheet(RouteSheet routeSheet) {
-        Optional.of(routeSheet).map(RouteSheet::getCarMutable).ifPresent(car -> {
+        Optional.of(routeSheet).map(RouteSheet::getCar).ifPresent(car -> {
             carRevisionRepository.findLastChangeRevision(car.getId()).ifPresent(revision -> {
                 AuditId carAuditId = new AuditId(car.getId(), revision.getRequiredRevisionNumber());
                 routeSheet.setCarAuditId(carAuditId);

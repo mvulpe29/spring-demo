@@ -2,7 +2,6 @@ package com.example.demo.security;
 
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -48,7 +47,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers(HttpMethod.GET, "/api/**").authenticated()
+//                .antMatchers( "/api/**").authenticated()
+//                .antMatchers(HttpMethod.PATCH, "/api/**").authenticated()
+//                .antMatchers(HttpMethod.PUT, "/api/**").authenticated()
+//                .antMatchers(HttpMethod.DELETE, "/api/**").authenticated()
+//                .antMatchers(HttpMethod.POST, "/api/**").authenticated()
+                .antMatchers("/api/**").permitAll()
                 .and()
                 .httpBasic()
                 .and().headers().addHeaderWriter(new XFrameOptionsHeaderWriter(XFrameOptionsHeaderWriter.XFrameOptionsMode.SAMEORIGIN))

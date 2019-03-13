@@ -6,7 +6,7 @@ Envers & Snapshot reference
 
 # Problem
 
-Lorem ipsum
+
 
 ---
 # Solutions
@@ -37,3 +37,5 @@ public class LastModifiedAuditId implements Serializable {
     private long id;
     private Instant lastModifiedAt;
 ```
+Question:
+Is id & lastModifiedAt a natural id?

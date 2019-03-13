@@ -2,7 +2,10 @@
     {
         "id": 1,
         "type": "Chevrolet",
-        "plate": "TL58TDO"
+        "plate": "TL58TDO",
+        "company": {
+            "id": 1
+        }
     },
     {
         "id": 2,

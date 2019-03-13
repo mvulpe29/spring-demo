@@ -4,7 +4,6 @@ import org.hibernate.envers.Audited;
 import org.springframework.data.annotation.*;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import javax.persistence.Column;
 import javax.persistence.EntityListeners;
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
@@ -17,22 +16,18 @@ public class Auditable implements Serializable {
 
     @CreatedBy
     @ReadOnlyProperty
-    @Column(name = "created_by")
     private String createdBy;
 
     @CreatedDate
     @ReadOnlyProperty
-    @Column(name = "created_at")
     private Instant createdAt;
 
     @LastModifiedBy
     @ReadOnlyProperty
-    @Column(name = "last_modified_by")
     private String lastModifiedBy;
 
     @LastModifiedDate
     @ReadOnlyProperty
-    @Column(name = "last_modified_at")
     private Instant lastModifiedAt;
 
 
