@@ -5,7 +5,10 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.envers.Audited;
 import org.springframework.data.rest.core.annotation.RestResource;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.PreRemove;
 import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
@@ -22,7 +25,8 @@ public class Address implements BaseEntityInterface {
     private String streetName;
 
     @RestResource(exported = false)
-    @OneToMany(mappedBy = "address", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "address")
+//    @OneToMany(mappedBy = "address", cascade = CascadeType.ALL)
     private List<Person> people;
 
     public long getId() {
