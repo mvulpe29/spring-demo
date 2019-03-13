@@ -1,36 +1,39 @@
 package com.example.demo.company.domain;
 
-import com.example.demo.common.BaseEntity;
 import org.hibernate.envers.Audited;
 
-import javax.persistence.Embeddable;
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Version;
 
 @Entity
 @Audited
-@Embeddable
-public class Car extends BaseEntity {
-
-    private String plate;
-    private String type;
+public class Car extends CarData {
+    private long id;
+    private long version;
 
     public Car() {
     }
 
-    public String getPlate() {
-        return plate;
+    @Id
+    @Column(name = "id")
+    public long getId() {
+        return id;
     }
 
-    public void setPlate(String plate) {
-        this.plate = plate;
+    public void setId(long id) {
+        this.id = id;
     }
 
-    public String getType() {
-        return type;
+    @Version
+    @Column(name = "version")
+    public long getVersion() {
+        return version;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setVersion(long version) {
+        this.version = version;
     }
 
 }

@@ -27,11 +27,15 @@ public class RouteSheet {
     private AuditId carAuditId = new AuditId();
 
     @ManyToOne
-    @JoinColumn(name = "car_id")
+    @JoinColumn(name = "car_id",
+            foreignKey = @ForeignKey(
+                    name = "FK_ROUTE_SHEET_CAR",
+                    foreignKeyDefinition = "FOREIGN KEY (car_id) REFERENCES car ON DELETE SET NULL"
+            ))
     private Car carMutable;
 
     @Embedded
-    private Car carEmbedded = new Car();
+    private CarData carImmutable;
 
 
     @ManyToOne
@@ -43,7 +47,7 @@ public class RouteSheet {
     @ManyToOne
     @JoinColumns({
             @JoinColumn(name = "driver_audit_id", referencedColumnName = "id"),
-            @JoinColumn(name = "driver_audit_rev", referencedColumnName = "rev")
+            @JoinColumn(name = "driver_audit_rev", referencedColumnName = "rev"),
     })
     @Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
     private DriverAudit driverAudit;
@@ -91,14 +95,17 @@ public class RouteSheet {
         return carMutable;
     }
 
-    public Car getCar() {
-        return carMutable;
-    }
-
     public void setCarMutable(Car carMutable) {
         this.carMutable = carMutable;
     }
 
+    public CarData getCarImmutable() {
+        return carImmutable;
+    }
+
+    public Car getCar() {
+        return carMutable;
+    }
 
     public AuditId getCarAuditId() {
         return carAuditId;
@@ -106,15 +113,6 @@ public class RouteSheet {
 
     public void setCarAuditId(AuditId carAuditId) {
         this.carAuditId = carAuditId;
-    }
-
-
-    public Car getCarEmbedded() {
-        return carEmbedded;
-    }
-
-    public void setCarEmbedded(Car carEmbedded) {
-        this.carEmbedded = carEmbedded;
     }
 
     public Driver getDriver() {
@@ -147,9 +145,7 @@ public class RouteSheet {
         Optional.ofNullable(this.driver).ifPresent(driver -> {
             this.driverLastModifiedAuditId = new LastModifiedAuditId(driver.getId(), driver.getLastModifiedAt());
         });
-        Optional.ofNullable(this.carMutable).ifPresent(car -> {
-            this.carEmbedded = car;
-        });
+        Optional.ofNullable(this.carMutable).ifPresent(car -> this.carImmutable = car);
     }
 
 }

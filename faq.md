@@ -81,3 +81,8 @@ Solution: init the property with empty object
    @Embedded
    private AuditId carAuditId = new AuditId();
 ```
+
+# @Embedded and @Entity 
+
+    Cannot lookup property %s on null intermediate! Original path was: %s on %s.
+    

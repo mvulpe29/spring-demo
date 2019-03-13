@@ -3,7 +3,9 @@ package com.example.demo.company.domain;
 import com.example.demo.common.Auditable;
 import org.hibernate.envers.Audited;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
