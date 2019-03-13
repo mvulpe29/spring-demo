@@ -1,5 +1,6 @@
 package com.example.demo.company.domain;
 
+import com.example.demo.common.Auditable;
 import com.example.demo.company.domain.mappers.CarMapper;
 import com.example.demo.company.domain.mappers.CompanyMapper;
 import com.example.demo.envers.AuditId;
@@ -17,7 +18,7 @@ import java.util.Optional;
 @Entity
 @Audited
 @JsonIgnoreProperties({"hibernateLazyInitializer"})
-public class RouteSheet {
+public class RouteSheet extends Auditable {
     @Id
     private long id;
     private Instant date;
@@ -32,7 +33,7 @@ public class RouteSheet {
     private AuditId carAuditId = new AuditId();
 
     @Embedded
-    private CarSnapshot carSnapshot = new CarSnapshot();
+    private CarSnapshot carSnapshot;
 
     @Embedded
     private CompanySnapshot carCompanySnapshot = new CompanySnapshot();
@@ -60,6 +61,7 @@ public class RouteSheet {
     private LastModifiedAuditId driverLastModifiedAuditId = new LastModifiedAuditId();
 
     public RouteSheet() {
+        this.carSnapshot = new CarSnapshot();
     }
 
     public long getId() {
