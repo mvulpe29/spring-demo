@@ -33,7 +33,7 @@ public class RouteSheet extends Auditable {
     private AuditId carAuditId = new AuditId();
 
     @Embedded
-    private CarSnapshot carSnapshot;
+    private CarSnapshot carSnapshot = new CarSnapshot();
 
     @Embedded
     private CompanySnapshot carCompanySnapshot = new CompanySnapshot();
@@ -61,7 +61,6 @@ public class RouteSheet extends Auditable {
     private LastModifiedAuditId driverLastModifiedAuditId = new LastModifiedAuditId();
 
     public RouteSheet() {
-        this.carSnapshot = new CarSnapshot();
     }
 
     public long getId() {

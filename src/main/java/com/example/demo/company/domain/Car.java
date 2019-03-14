@@ -14,7 +14,7 @@ public class Car extends CarData {
 
     private long version;
 
-    @ManyToOne(targetEntity = Company.class)
+    @ManyToOne
     @JoinColumn(name = "company_id")
     private Company company;
 
