@@ -19,11 +19,10 @@ import org.springframework.hateoas.PagedResources;
 import org.springframework.hateoas.ResourceAssembler;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import java.util.Map;
 
 @SuppressWarnings("unchecked")
 @RepositoryRestController
@@ -54,7 +53,7 @@ public class RouteSheetController {
 
     @RequestMapping(method = RequestMethod.GET, path = "/route-sheets/search/qdsl", produces = "application/hal+json")
     public ResponseEntity<Page<Address>> findAllThatMatch(
-            @RequestParam Map<String, Object> filter,
+            @RequestParam MultiValueMap<String, Object> filter,
             Pageable pageable,
             PersistentEntityResourceAssembler assembler) {
 
