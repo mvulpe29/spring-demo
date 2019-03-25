@@ -1,10 +1,11 @@
 package com.example.demo.company.services;
 
 import com.example.demo.company.domain.RouteSheet;
+import com.example.demo.company.domain.mappers.RouteSheetMapper;
 import com.example.demo.envers.AuditId;
 import com.example.demo.repositories.enversRevision.CarRevisionRepository;
-import com.example.demo.repositories.enversRevision.DriverRevisionRepository;
 import com.example.demo.repositories.jpa.DriverAuditRepository;
+import com.example.demo.repositories.mongo.RouteSheetMongoRepository;
 import org.springframework.data.rest.core.annotation.*;
 import org.springframework.stereotype.Component;
 
@@ -15,15 +16,14 @@ import java.util.Optional;
 @RepositoryEventHandler
 public class RouteSheetEventHandler {
     private final CarRevisionRepository carRevisionRepository;
-    private final DriverRevisionRepository driverRevisionRepository;
     private final DriverAuditRepository driverAuditRepository;
+    private final RouteSheetMongoRepository routeSheetMongoRepository;
 
     public RouteSheetEventHandler(CarRevisionRepository carRevisionRepository,
-                                  DriverRevisionRepository driverRevisionRepository,
-                                  DriverAuditRepository driverAuditRepository) {
+                                  DriverAuditRepository driverAuditRepository, RouteSheetMongoRepository routeSheetMongoRepository) {
         this.carRevisionRepository = carRevisionRepository;
-        this.driverRevisionRepository = driverRevisionRepository;
         this.driverAuditRepository = driverAuditRepository;
+        this.routeSheetMongoRepository = routeSheetMongoRepository;
     }
 
 
@@ -38,6 +38,11 @@ public class RouteSheetEventHandler {
     public void handleBeforeSave(RouteSheet routeSheet) {
     }
 
+    @HandleAfterSave
+    public void handleAfterSave(RouteSheet routeSheet) {
+        this.routeSheetMongoRepository.save(RouteSheetMapper.INSTANCE.toRouteSheetDocument(routeSheet));
+    }
+
     @HandleBeforeLinkSave
     public void handleBeforeLinkSave(RouteSheet routeSheet, Object linked) {
         this.addCarAuditToRouteSheet(routeSheet);
@@ -46,7 +51,7 @@ public class RouteSheetEventHandler {
 
     @HandleAfterLinkSave
     public void handleAfterLinkSave(RouteSheet routeSheet, Object linked) {
-
+        this.routeSheetMongoRepository.save(RouteSheetMapper.INSTANCE.toRouteSheetDocument(routeSheet));
     }
 
     @HandleBeforeLinkDelete

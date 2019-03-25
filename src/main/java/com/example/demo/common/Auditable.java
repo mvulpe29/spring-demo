@@ -15,19 +15,15 @@ import java.time.Instant;
 public class Auditable implements Serializable {
 
     @CreatedBy
-    @ReadOnlyProperty
     private String createdBy;
 
     @CreatedDate
-    @ReadOnlyProperty
     private Instant createdAt;
 
     @LastModifiedBy
-    @ReadOnlyProperty
     private String lastModifiedBy;
 
     @LastModifiedDate
-    @ReadOnlyProperty
     private Instant lastModifiedAt;
 
 

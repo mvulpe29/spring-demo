@@ -1,19 +1,12 @@
 Are soft deletes a good idea?
 ===
 
----
-
-> I will not try to be "politically correct about it". If you are advocating soft-delete then you need to go for a brain checkup.
-> 
-
-<div style="text-align: right"><a href="https://stackoverflow.com/users/262376/rjha94">rjha94</a></div>
 
 ---
 
 # Problems
 
 - unique constrains
-- in time database will 
 - custom delete implementation (spring data rest)
 - extra ```where deleted=false``` on entities list & associations list
 - soft deletes are not GDPR-compliant
