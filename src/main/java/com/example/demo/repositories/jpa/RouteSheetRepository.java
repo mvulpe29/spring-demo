@@ -12,6 +12,7 @@ import org.springframework.data.querydsl.binding.QuerydslBinderCustomizer;
 import org.springframework.data.querydsl.binding.QuerydslBindings;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+import org.springframework.data.rest.core.annotation.RestResource;
 
 import javax.transaction.Transactional;
 import java.util.List;
@@ -28,8 +29,8 @@ public interface RouteSheetRepository extends JpaRepository<RouteSheet, Long>, J
     @Modifying
     @Transactional
     @Query(value = "update RouteSheet r set r.car = null where r.car.id = :id")
+    @RestResource(exported = false)
     int removeCarRelation(@Param("id") long id);
-
 
     @Override
     default void customize(QuerydslBindings bindings, QRouteSheet root) {

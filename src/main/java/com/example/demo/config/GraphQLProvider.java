@@ -54,7 +54,10 @@ public class GraphQLProvider {
                         .dataFetcher("bookById", dataFetchingEnvironment -> {
                             String id = dataFetchingEnvironment.getArgument("id");
                             return bookRepository.findById(Long.parseLong(id));
-                        }).dataFetcher("books", dataFetchingEnvironment -> bookRepository.findAll()))
+                        }).dataFetcher("books", dataFetchingEnvironment -> {
+                            Object filter = dataFetchingEnvironment.getArgument("filter");
+                            return bookRepository.findAll();
+                        }))
                 .build();
     }
 

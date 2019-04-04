@@ -2,6 +2,8 @@ package com.example.demo.company.controllers;
 
 import com.example.demo.addresses.Address;
 import com.example.demo.common.DynamicExpresionBuilder;
+import com.example.demo.common.QsFilter;
+import com.example.demo.company.domain.QRouteSheet;
 import com.example.demo.company.domain.RouteSheet;
 import com.example.demo.repositories.jpa.RouteSheetRepository;
 import com.github.vineey.rql.filter.parser.DefaultFilterParser;
@@ -28,6 +30,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.persistence.EntityManager;
 import java.util.Map;
 
 import static com.github.vineey.rql.querydsl.filter.QueryDslFilterContext.withMapping;
@@ -38,11 +41,15 @@ public class RouteSheetController {
 
     private final PagedResourcesAssembler<RouteSheet> pagedAssembler;
     private final RouteSheetRepository routeSheetRepository;
+    private final EntityManager entityManager;
 
     @Autowired
-    public RouteSheetController(PagedResourcesAssembler<RouteSheet> pagedAssembler, RouteSheetRepository routeSheetRepository) {
+    public RouteSheetController(PagedResourcesAssembler<RouteSheet> pagedAssembler,
+                                RouteSheetRepository routeSheetRepository,
+                                EntityManager entityManager) {
         this.pagedAssembler = pagedAssembler;
         this.routeSheetRepository = routeSheetRepository;
+        this.entityManager = entityManager;
     }
 
     @RequestMapping(method = RequestMethod.GET, path = "/route-sheets/search/findAll", produces = "application/hal+json")
@@ -72,6 +79,19 @@ public class RouteSheetController {
         return new ResponseEntity(pagedResources, HttpStatus.OK);
     }
 
+    @RequestMapping(method = RequestMethod.GET, path = "/route-sheets/search/qs", produces = "application/hal+json")
+    public ResponseEntity<Page<Address>> findAllQs(
+            QsFilter qsFilter,
+            Pageable pageable,
+            PersistentEntityResourceAssembler assembler) {
+
+        Predicate predicate = qsFilter.getPredicate(QRouteSheet.routeSheet);
+
+        Page<RouteSheet> page = this.routeSheetRepository.findAll(predicate, pageable);
+        PagedResources<RouteSheet> pagedResources = pagedAssembler.toResource(page, (ResourceAssembler) assembler);
+        return new ResponseEntity(pagedResources, HttpStatus.OK);
+    }
+
     @RequestMapping(method = RequestMethod.GET, path = "/route-sheets/search/rsql", produces = "application/hal+json")
     public ResponseEntity<Page<Address>> findAllRsql(
             @RequestParam String rsqlFilter,
@@ -89,7 +109,6 @@ public class RouteSheetController {
 
         DefaultFilterParser filterParser = new DefaultFilterParser();
         Predicate predicate = filterParser.parse(rsqlFilter, withMapping(pathHashMap));
-
 
         Page<RouteSheet> page = this.routeSheetRepository.findAll(predicate, pageable);
         PagedResources<RouteSheet> pagedResources = pagedAssembler.toResource(page, (ResourceAssembler) assembler);

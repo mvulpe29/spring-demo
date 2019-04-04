@@ -1,6 +1,6 @@
 type Query {
   bookById(id: ID): Book
-  books: [Book]
+  books(filter : BookFilterInputType): [Book]
 }
 
 type Book {
@@ -8,6 +8,14 @@ type Book {
   name: String
   pageCount: Int
   authors: [Author]
+}
+
+input BookFilterInputType {
+  name: String
+  pages: Int
+  car_plate__ne: String
+  OR: [BookFilterInputType!]
+  AND: [BookFilterInputType!]
 }
 
 type Author {

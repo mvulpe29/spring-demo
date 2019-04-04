@@ -1,5 +1,6 @@
 package com.example.demo.config;
 
+import com.example.demo.common.QsFilterHandlerMethodArgumentResolver;
 import net.kaczmarzyk.spring.data.jpa.web.SpecificationArgumentResolver;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,8 +52,10 @@ public class CustomRepositoryRestMvcConfiguration extends RepositoryRestMvcConfi
                 new ArrayList<>(super.defaultMethodArgumentResolvers());
         argumentResolvers.add(new SpecificationArgumentResolver());
         argumentResolvers.add(new PageableHandlerMethodArgumentResolver());
+        argumentResolvers.add(new QsFilterHandlerMethodArgumentResolver());
         return argumentResolvers;
     }
+
 
 
 }
