@@ -1,6 +1,6 @@
 package com.example.demo.config;
 
-import com.example.demo.common.QsFilterHandlerMethodArgumentResolver;
+import com.example.demo.qs.QsFilterHandlerMethodArgumentResolver;
 import net.kaczmarzyk.spring.data.jpa.web.SpecificationArgumentResolver;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.beans.factory.annotation.Autowired;

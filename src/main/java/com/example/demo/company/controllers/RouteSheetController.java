@@ -1,9 +1,7 @@
 package com.example.demo.company.controllers;
 
-import com.example.demo.addresses.Address;
 import com.example.demo.common.DynamicExpresionBuilder;
-import com.example.demo.common.QsFilter;
-import com.example.demo.company.domain.QRouteSheet;
+import com.example.demo.qs.QsFilterPredicate;
 import com.example.demo.company.domain.RouteSheet;
 import com.example.demo.repositories.jpa.RouteSheetRepository;
 import com.github.vineey.rql.filter.parser.DefaultFilterParser;
@@ -67,7 +65,7 @@ public class RouteSheetController {
     }
 
     @RequestMapping(method = RequestMethod.GET, path = "/route-sheets/search/qdsl", produces = "application/hal+json")
-    public ResponseEntity<Page<Address>> findAllQdsl(
+    public ResponseEntity<Page<RouteSheet>> findAllQdsl(
             @RequestParam MultiValueMap<String, Object> filter,
             Pageable pageable,
             PersistentEntityResourceAssembler assembler) {
@@ -80,12 +78,10 @@ public class RouteSheetController {
     }
 
     @RequestMapping(method = RequestMethod.GET, path = "/route-sheets/search/qs", produces = "application/hal+json")
-    public ResponseEntity<Page<Address>> findAllQs(
-            QsFilter qsFilter,
+    public ResponseEntity<Page<RouteSheet>> findAllQs(
+            @QsFilterPredicate(root = RouteSheet.class) Predicate predicate,
             Pageable pageable,
             PersistentEntityResourceAssembler assembler) {
-
-        Predicate predicate = qsFilter.getPredicate(QRouteSheet.routeSheet);
 
         Page<RouteSheet> page = this.routeSheetRepository.findAll(predicate, pageable);
         PagedResources<RouteSheet> pagedResources = pagedAssembler.toResource(page, (ResourceAssembler) assembler);
@@ -93,7 +89,7 @@ public class RouteSheetController {
     }
 
     @RequestMapping(method = RequestMethod.GET, path = "/route-sheets/search/rsql", produces = "application/hal+json")
-    public ResponseEntity<Page<Address>> findAllRsql(
+    public ResponseEntity<Page<RouteSheet>> findAllRsql(
             @RequestParam String rsqlFilter,
             Pageable pageable,
             PersistentEntityResourceAssembler assembler) {
@@ -114,6 +110,5 @@ public class RouteSheetController {
         PagedResources<RouteSheet> pagedResources = pagedAssembler.toResource(page, (ResourceAssembler) assembler);
         return new ResponseEntity(pagedResources, HttpStatus.OK);
     }
-
 
 }

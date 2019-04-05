@@ -1,7 +1,7 @@
 package com.example.demo;
 
-import com.example.demo.common.QsFilter;
-import com.example.demo.common.QsFilterHandlerMethodArgumentResolver;
+import com.example.demo.qs.QsFilter;
+import com.example.demo.qs.QsFilterHandlerMethodArgumentResolver;
 import com.example.demo.company.domain.QRouteSheet;
 import com.querydsl.core.types.Predicate;
 import org.apache.commons.lang3.ArrayUtils;
@@ -50,7 +50,7 @@ public class QsFilterTests {
 
         assertNotNull(parameters);
         assertArrayEquals(parameters.get("filter[label][SW]"), new String[]{"proident"});
-        assertArrayEquals(parameters.get("filter[carSnapshot][plate][EQ]"), new String[]{"TL58TDX", "TL58TDS"});
+        assertArrayEquals(parameters.get("filter[carSnapshot.plate][EQ]"), new String[]{"TL58TDX", "TL58TDS"});
 
     }
 
@@ -64,7 +64,7 @@ public class QsFilterTests {
     @Test
     public void mapJSONObjectToPredicate() throws JSONException {
         JSONObject jsonObject = qsFilterHandlerMethodArgumentResolver.getJsonObjectFrom(parameters);
-        Predicate predicate =  new QsFilter(jsonObject).getPredicate(QRouteSheet.routeSheet);
+        Predicate predicate =  new QsFilter(QRouteSheet.routeSheet, jsonObject).getPredicate();
         assertNotNull(predicate);
 
     }

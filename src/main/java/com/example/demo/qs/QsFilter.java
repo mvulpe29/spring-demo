@@ -1,5 +1,6 @@
-package com.example.demo.common;
+package com.example.demo.qs;
 
+import com.example.demo.common.StringToOpsMapper;
 import com.querydsl.core.types.Constant;
 import com.querydsl.core.types.Path;
 import com.querydsl.core.types.Predicate;
@@ -16,22 +17,15 @@ import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 
 public class QsFilter {
-    private Predicate predicate;
+    private Path<?> rootPath;
     private JSONObject jsonObject;
-    private Path<?> parentPath;
 
-    public QsFilter(JSONObject jsonObject) {
+    public QsFilter(Path<?> rootPath, JSONObject jsonObject) {
+        this.rootPath = rootPath;
         this.jsonObject = jsonObject;
     }
 
-    public Predicate getPredicate(Path<?> parentPath) {
-        //TODO Refactor me: move partentPath into annotation
-        this.parentPath = parentPath;
-        return this.getPredicate(this.jsonObject);
-    }
-
-
-    public BooleanExpression getPredicate(JSONObject jsonObject) {
+    public Predicate getPredicate() {
         return handleJSONObject(jsonObject, new ArrayList<>(), BooleanExpression::and);
 
     }
@@ -53,7 +47,7 @@ public class QsFilter {
             Constant<?> constant = (Constant<?>) Expressions.constant(item);
             String operatorAsString = parentKeys.get(parentKeys.size() - 1);
             String path = parentKeys.get(parentKeys.size() - 2);
-            Path<?> label = Expressions.path(Comparable.class, this.parentPath, path);
+            Path<?> label = Expressions.path(Comparable.class, this.rootPath, path);
 
             return Expressions.predicate(StringToOpsMapper.mapTo(operatorAsString), label, constant);
         }).collect(Collectors.toList());

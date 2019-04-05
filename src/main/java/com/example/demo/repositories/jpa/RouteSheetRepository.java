@@ -1,15 +1,11 @@
 package com.example.demo.repositories.jpa;
 
-import com.example.demo.company.domain.QRouteSheet;
 import com.example.demo.company.domain.RouteSheet;
-import com.querydsl.core.types.dsl.StringExpression;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.querydsl.QuerydslPredicateExecutor;
-import org.springframework.data.querydsl.binding.QuerydslBinderCustomizer;
-import org.springframework.data.querydsl.binding.QuerydslBindings;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.data.rest.core.annotation.RestResource;
@@ -20,7 +16,7 @@ import java.util.List;
 
 @RepositoryRestResource(collectionResourceRel = "route-sheets", path = "route-sheets")
 public interface RouteSheetRepository extends JpaRepository<RouteSheet, Long>, JpaSpecificationExecutor,
-        QuerydslPredicateExecutor, QuerydslBinderCustomizer<QRouteSheet> {
+        QuerydslPredicateExecutor {
     List<RouteSheet> findAllByCarId(long id);
 
     @Transactional
@@ -32,13 +28,6 @@ public interface RouteSheetRepository extends JpaRepository<RouteSheet, Long>, J
     @RestResource(exported = false)
     int removeCarRelation(@Param("id") long id);
 
-    @Override
-    default void customize(QuerydslBindings bindings, QRouteSheet root) {
-        bindings.bind(root.label).first(StringExpression::containsIgnoreCase);
-        bindings.bind(root.description).first(StringExpression::containsIgnoreCase);
-        bindings.bind(root.car.company.name).first(StringExpression::containsIgnoreCase);
-        bindings.bind(root.car.company.name).first(StringExpression::containsIgnoreCase);
-    }
 }
 
 

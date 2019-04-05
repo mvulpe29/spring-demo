@@ -3,7 +3,7 @@ package com.example.demo.common;
 import com.querydsl.core.types.Ops;
 
 public class StringToOpsMapper {
-    static Ops mapTo(String operator) {
+    public static Ops mapTo(String operator) {
         switch (operator) {
             case "LIKE":
                 return Ops.LIKE;

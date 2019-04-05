@@ -1,8 +1,12 @@
-package com.example.demo.common;
+package com.example.demo.qs;
 
+import com.querydsl.core.types.Path;
+import com.querydsl.core.types.Predicate;
+import com.querydsl.core.types.dsl.Expressions;
 import org.springframework.boot.configurationprocessor.json.JSONException;
 import org.springframework.boot.configurationprocessor.json.JSONObject;
 import org.springframework.core.MethodParameter;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.support.WebDataBinderFactory;
 import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
@@ -10,28 +14,41 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 
 import java.util.Arrays;
 import java.util.Map;
+import java.util.Objects;
 
 public class QsFilterHandlerMethodArgumentResolver implements HandlerMethodArgumentResolver {
 
 
     @Override
     public boolean supportsParameter(MethodParameter parameter) {
-        if (QsFilter.class.equals(parameter.getParameterType())) {
-            return true;
+        if (parameter.hasParameterAnnotation(QsFilterPredicate.class)) {
+            if (Predicate.class.equals(parameter.getParameterType())) {
+                return true;
+            }
+
+            throw new IllegalArgumentException(String.format("Parameter at position %s must be of type Predicate but was %s.",
+                    parameter.getParameterIndex(), parameter.getParameterType()));
         }
+
         return false;
+
     }
 
     @Override
-    public QsFilter resolveArgument(MethodParameter parameter,
-                                    ModelAndViewContainer mavContainer,
-                                    NativeWebRequest webRequest,
-                                    WebDataBinderFactory binderFactory) throws Exception {
+    public Predicate resolveArgument(MethodParameter parameter,
+                                     ModelAndViewContainer mavContainer,
+                                     NativeWebRequest webRequest,
+                                     WebDataBinderFactory binderFactory) throws Exception {
 
+        QsFilterPredicate annotation = parameter.getParameterAnnotation(QsFilterPredicate.class);
+        String className = Objects.requireNonNull(annotation).root().getSimpleName();
+        Path<?> rootPath = Expressions.path(annotation.root(), StringUtils.uncapitalize(className));
 
         JSONObject jsonObject = this.getJsonObjectFrom(webRequest.getParameterMap());
-        return new QsFilter(jsonObject);
+
+        return new QsFilter(rootPath, jsonObject).getPredicate();
     }
+
 
     public JSONObject getJsonObjectFrom(Map<String, String[]> parameterMap) throws JSONException {
         JSONObject jsonObject = new JSONObject();
